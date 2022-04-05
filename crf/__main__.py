@@ -1,9 +1,6 @@
 from lang_id_crf import LanguageIdentifier
 from helper.dataset_reader import read_tsv
 
-import sys
-sys.path.insert(0, '../helper')
-
 langid = LanguageIdentifier()
 
 #data = read_tsv('../raw dataset/all-tagged-280322.tsv')
@@ -18,5 +15,5 @@ data = read_tsv('../raw dataset/all-tagged-280322-v2.tsv')
 
 # Scenario 3: 80:20
 print('\n\n Scenario 3')
-langid.pipeline(data, test_size=0.2, model_name='mod_8_2_dtv2.pkl')
+langid.pipeline(data, test_size=0.2, model_name='mod_8_2.pkl')
 
