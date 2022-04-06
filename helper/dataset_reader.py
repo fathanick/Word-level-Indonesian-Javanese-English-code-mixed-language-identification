@@ -1,5 +1,9 @@
 def read_tsv(path):
+<<<<<<< HEAD
     with open(path, 'r') as file:
+=======
+    with open(path, 'r', encoding='utf-8') as file:
+>>>>>>> origin/main
         data = []
         all_words = []
         all_tags = []

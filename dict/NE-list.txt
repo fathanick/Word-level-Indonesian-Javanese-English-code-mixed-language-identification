@@ -42,4 +42,11 @@ suroboyo
 jogja
 yogyakarta
 semarang
+<<<<<<< HEAD
+=======
+yutub
+jimin
+jaehan
+indo
+>>>>>>> origin/main
 

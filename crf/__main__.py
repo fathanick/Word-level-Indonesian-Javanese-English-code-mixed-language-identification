@@ -6,13 +6,8 @@ sys.path.insert(0, '../helper')
 
 langid = LanguageIdentifier()
 
-<<<<<<< HEAD
-data = read_tsv('../raw dataset/all-tagged-280322.tsv')
-#data = read_tsv('../raw dataset/all-tagged-280322-v2.tsv')
-=======
 #data = read_tsv('../raw dataset/all-tagged-280322.tsv')
 data = read_tsv('../raw dataset/all-tagged-280322-v2.tsv')
->>>>>>> 7db1328 (New commit)
 # Scenario 1: 60:40
 #print('Scenario 1')
 #langid.pipeline(data, test_size=0.4, model_name='mod_6_4_dtv2.pkl')
@@ -23,9 +18,5 @@ data = read_tsv('../raw dataset/all-tagged-280322-v2.tsv')
 
 # Scenario 3: 80:20
 print('\n\n Scenario 3')
-<<<<<<< HEAD
-langid.pipeline(data, test_size=0.2, model_name='mod_8_2.pkl')
-=======
 langid.pipeline(data, test_size=0.2, model_name='mod_8_2_dtv2.pkl')
->>>>>>> 7db1328 (New commit)
 
