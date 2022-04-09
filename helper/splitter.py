@@ -1,10 +1,15 @@
+'''
+08042022:
+- Refactoring needed.
+- Refactor to class Splitter()
+'''
+
 from nltk.tokenize import wordpunct_tokenize, word_tokenize, TweetTokenizer
 import re
 import emot
 from helper.emoticon import STANDARD_EMOTICON_LISTS, NON_STANDARD_EMOTICON_LISTS
 
 tknzr = TweetTokenizer()
-
 
 def isFloat(num):
     try:
@@ -13,9 +18,7 @@ def isFloat(num):
     except ValueError:
         return False
 
-    # A function to check emoji from string
-
-
+# A function to check emoji from string
 def text_has_emoji(text):
     # input: a sentence
     # output: True or False

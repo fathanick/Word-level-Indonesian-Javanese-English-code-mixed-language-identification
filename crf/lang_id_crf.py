@@ -9,15 +9,14 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn_crfsuite import metrics
 from sklearn.metrics import confusion_matrix
-from warnings import simplefilter # import warnings filter
-simplefilter(action='ignore', category=FutureWarning) # ignore all future warnings
+from warnings import simplefilter   # import warnings filter
+
+simplefilter(action='ignore', category=FutureWarning)   # ignore all future warnings
 
 class LanguageIdentifier:
 
     model = None
     window = 5
-    #labels = ['ID', 'JV', 'EN', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
-    labels = ['ID', 'JV', 'EN', 'NE', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
 
     def __init__(self):
         random.seed(0)
@@ -30,31 +29,10 @@ class LanguageIdentifier:
             # Specify whether CRFsuite generates transition features that do not even occur in the training data
         )
 
-    '''
-    def feature_extraction_basic(self, tokens):
-        features = []
-
-        for idx, token in enumerate(tokens):
-            feature = {
-                'n_gram_0': token,
-                'is_alpha': token.isalpha(),
-                'is_numeric': token.isnumeric(),
-                'is_capital': token.isupper(),
-                'contains_alpha': bool(re.search('[a-zA-Z]', token)),
-                'contains_numeric': bool(re.search('[0-9]', token)),
-                'contains_aphostrope': '\'' in token,
-            }
-
-            if len(token) > 5:
-                for i in range(1, len(token) - self.window):
-                    feature[f'n_gram_{i}'] = token[i:(i + self.window)]
-
-            features.append(feature)
-
-        return features
-    '''
     def feature_extraction(self, tokens):
         features = []
+        sym1 = ['@','#','&','$']
+        sym2 = ['2','²','%']
 
         for idx, token in enumerate(tokens):
             feature = {
@@ -66,6 +44,11 @@ class LanguageIdentifier:
                 'contains_alpha': bool(re.search('[a-zA-Z]', token)),
                 'contains_numeric': bool(re.search('[0-9]', token)),
                 'contains_aphostrope': '\'' in token,
+                'contains_dash': '-' in token,
+                'contains_any_uppercase': (any(letter.isupper() for letter in token)),
+                'startswith_uppercase': token[0].isupper(),
+                'startswith_symbols': (any(token.startswith(x) for x in sym1)),
+                'endswith_any': (any(token.endswith(x) for x in sym2)),
             }
 
             if len(token) > 5:
@@ -109,28 +92,33 @@ class LanguageIdentifier:
 
         return y_pred
 
-    def show_confusion_matrix(self, y, y_pred):
+    def show_confusion_matrix(self, y, y_pred, n_label):
+        if n_label == 8:
+            labels = ['ID', 'JV', 'EN', 'NE', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
+        elif n_label == 7:
+            labels = ['ID', 'JV', 'EN', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
+
         # show classification report
-        print(metrics.flat_classification_report(y, y_pred, labels=self.labels))
+        print(metrics.flat_classification_report(y, y_pred, labels=labels))
 
         # create a confusion matrix
         print('Confusion Matrix')
         flat_y = [item for y_ in y for item in y_]
         flat_y_pred = [item for y_pred_ in y_pred for item in y_pred_]
-        cm = confusion_matrix(flat_y, flat_y_pred, labels=self.labels)
+        cm = confusion_matrix(flat_y, flat_y_pred, labels=labels)
         # print(cm)
 
         # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
         ax = plt.subplot()
-        sns.set(rc={'figure.figsize': (20, 18)})
+        sns.set(rc={'figure.figsize': (15, 12)})
         sns.heatmap(cm, annot=True, fmt='d', ax=ax)  # annot=True to annotate cells, ftm='g' to disable scientific notation
 
         # labels, title and ticks
         ax.set_title('Confusion Matrix')
         ax.set_xlabel('Predicted labels')
         ax.set_ylabel('True labels')
-        ax.xaxis.set_ticklabels(self.labels, rotation=90)
-        ax.yaxis.set_ticklabels(self.labels, rotation=0)
+        ax.xaxis.set_ticklabels(labels, rotation=90)
+        ax.yaxis.set_ticklabels(labels, rotation=0)
 
         #root_path = '../images/'
         #joined_path = os.path.join(root_path, )
@@ -144,7 +132,7 @@ class LanguageIdentifier:
         joined_path = os.path.join(root_path, model_name)
         pickle.dump(self.model, open(joined_path, 'wb'))
 
-    def pipeline(self, data, test_size, model_name):
+    def pipeline(self, data, test_size, n_label, model_name):
         # transform data
         X, y = self.data_transformer(data)
 
@@ -160,10 +148,30 @@ class LanguageIdentifier:
 
         # show confusion matrix
         print('\n Evaluation on the test data')
-        self.show_confusion_matrix(y_test, y_pred_test)
+        self.show_confusion_matrix(y_test, y_pred_test, n_label)
         print('\n Evaluation on the training data')
-        self.show_confusion_matrix(y_train, y_pred_train)
+        self.show_confusion_matrix(y_train, y_pred_train, n_label)
 
         # save model
         self.save_model(model_name)
 
+    def pipeline_(self, train_data, test_data, n_label, model_name):
+        # transform data
+        X_train, y_train = self.data_transformer(train_data)
+        X_test, y_test = self.data_transformer(test_data)
+
+        # train the data
+        self.train(X_train, y_train)
+
+        # prediction
+        y_pred_test = self.predict(X_test)
+        y_pred_train = self.predict(X_train)
+
+        # show confusion matrix
+        print('\n Evaluation on the test data')
+        self.show_confusion_matrix(y_test, y_pred_test, n_label)
+        print('\n Evaluation on the training data')
+        self.show_confusion_matrix(y_train, y_pred_train, n_label)
+
+        # save model
+        self.save_model(model_name)
