@@ -12126,7 +12126,7 @@ kacau	ID
 maine	JV
 
 Chelsea	NE
-desember	NE
+desember	ID
 iki	JV
 ng	JV
 EPL	NE
@@ -12160,7 +12160,7 @@ trus	ID
 pokoke	JV
 @ChelseaFC	O
 !!!	O
-Januari	NE
+Januari	ID
 sesuk	JV
 tulung	JV
 tuku	JV
@@ -22199,7 +22199,7 @@ penulisan	ID
 
 serum	ID
 sampe	ID
-maret	NE
+maret	ID
 22	O
 gung	JV
 ntek	JV
@@ -22762,10 +22762,10 @@ bingung	ID
 iki	JV
 mau	JV
 iseh	JV
-rabu	NE
+rabu	ID
 po	JV
 wis	JV
-kamis	NE
+kamis	ID
 ,	O
 dikon	JV
 tumbas	JV
@@ -25019,7 +25019,7 @@ hihi	O
 @kdrama_menfess	O
 kemungkinan	ID
 tayang	ID
-maret	NE
+maret	ID
 kak	ID
 ,	O
 tapi	ID
@@ -25097,7 +25097,7 @@ mengirim	ID
 foto	ID
 https://t.co/vVz0242WWC	O
 
-Maret	NE
+Maret	ID
 diskip	MIX-ID-EN
 aja	ID
 boleh	ID
@@ -25107,7 +25107,7 @@ sih	ID
 Langsung	ID
 ke	ID
 4	O
-April	NE
+April	ID
 gitu	ID
 misalnya	ID
 
@@ -30143,7 +30143,7 @@ masih	ID
 PO	EN
 dari	ID
 awal	ID
-januari	NE
+januari	ID
 sampe	ID
 skrg	ID
 belom	ID
@@ -40129,7 +40129,7 @@ dan	ID
 pembelian	ID
 dibursa	ID
 transfer	ID
-januari	NE
+januari	ID
 emang	ID
 bgus	ID
 mereka	ID
@@ -44255,7 +44255,7 @@ min	ID
 klo	ID
 uda	ID
 bulan	ID
-maret	NE
+maret	ID
 .	O
 Tiap	ID
 taun	ID
@@ -44480,7 +44480,7 @@ Army	EN
 msh	ID
 tgl	ID
 1	O
-Maret	NE
+Maret	ID
 2022	O
 nanti	ID
 Bs	ID
@@ -44630,7 +44630,7 @@ gmn	ID
 
 iki	JV
 dino	JV
-Senin	NE
+Senin	ID
 ,	O
 sesok	JV
 Seloso	NE
@@ -45505,7 +45505,7 @@ belum	ID
 disave	MIX-ID-EN
 
 Catetan	ID
-bahasa	NE
+bahasa	ID
 inggris	NE
 yang	ID
 gw	ID
@@ -47285,7 +47285,7 @@ bisa	ID
 distreaming	MIX-ID-EN
 mulai	ID
 8	O
-Juni	NE
+Juni	ID
 2022	O
 di	ID
 Disneyplus	NE
@@ -47301,7 +47301,7 @@ Knight	NE
 yang	ID
 tayang	ID
 30	O
-Maret	NE
+Maret	ID
 mendatang	ID
 .	O
 #marvel	O
@@ -49198,7 +49198,7 @@ kek	ID
 Your	EN
 Lie	EN
 in	EN
-April	NE
+April	EN
 sama	ID
 Kimetsu	NE
 no	NE
@@ -53354,7 +53354,7 @@ wkwkw	O
 
 feelingku	MIX-ID-EN
 semarang	NE
-sabtu	NE
+sabtu	ID
 ,	O
 semoga	ID
 bener	ID
@@ -54752,7 +54752,7 @@ saya	ID
 tunggu	ID
 sampai	ID
 8	O
-Maret	NE
+Maret	ID
 .	O
 gak	ID
 saya	ID
@@ -55154,7 +55154,7 @@ dh	ID
 dibooking	MIX-ID-EN
 buat	ID
 besok	ID
-senin	NE
+senin	ID
 :)))	O
 https://t.co/71GULOaueS	O
 
@@ -55813,7 +55813,7 @@ luwe	JV
 terus	ID
 🥲	O
 
-senin	NE
+senin	ID
 tenan	JV
 tibaknya	MIX-ID-JV
 😩	O
@@ -59937,7 +59937,7 @@ ki	JV
 gede	JV
 .	O
 Relasine	MIX-ID-JV
-oke	EN
+oke	ID
 tapi	JV
 lek	JV
 isek	JV
@@ -61537,7 +61537,7 @@ hari	ID
 Sabtu	ID
 tanggal	ID
 26	O
-Maret	NE
+Maret	ID
 pukul	ID
 15:30	O
 WIB	ID
@@ -62623,7 +62623,7 @@ cukkk	JV
 aku	ID
 dengerin	ID
 podcast	EN
-jumat	NE
+jumat	ID
 malam	ID
 ini	ID
 ..	O
@@ -65305,7 +65305,7 @@ didelay	MIX-ID-EN
 pengirimannya	ID
 sampe	ID
 mid	EN
-september	NE
+september	ID
 semua	ID
 dari	ID
 situs	ID
@@ -66852,7 +66852,7 @@ jadwal	ID
 udh	ID
 direschedule	MIX-ID-EN
 hari	ID
-senin	NE
+senin	ID
 .	O
 Niat	ID
 gw	ID
@@ -66894,7 +66894,7 @@ hari	ID
 ini	ID
 udh	ID
 direschedule	MIX-ID-EN
-senin	NE
+senin	ID
 kmrn	ID
 .	O
 Rasanya	ID
@@ -67015,7 +67015,7 @@ itu	ID
 untuk	ID
 tgl	ID
 23	O
-feb	NE
+feb	ID
 ,	O
 dgn	ID
 jadwal	ID
@@ -67145,7 +67145,7 @@ sebelumnya	ID
 udah	ID
 direschedule	MIX-ID-EN
 ke	ID
-maret	NE
+maret	ID
 
 udh	ID
 war	O
@@ -67195,7 +67195,7 @@ besok	ID
 pagi	ID
 mundur	ID
 jadi	ID
-rabu	NE
+rabu	ID
 depan	ID
 💔	O
 Mana	ID
@@ -67691,7 +67691,7 @@ untuk	ID
 support	EN
 tgl	ID
 27	O
-Des	NE
+Des	ID
 ini	ID
 ,	O
 namun	ID
@@ -70261,7 +70261,7 @@ email	EN
 RT	ID
 @mintorogo:	O
 @pasarsapi	O
-Senin	NE
+Senin	ID
 lalu	ID
 ,	O
 email	EN
@@ -70314,7 +70314,7 @@ wingi2	JV
 :)	O
 
 @vivinsz	O
-oke	EN
+oke	ID
 direminder	MIX-ID-EN
 :D	O
 wis	JV
@@ -79387,7 +79387,7 @@ https://t.co/aotbdmSwUN	O
 
 Per	ID
 1	O
-april	NE
+april	ID
 ,	O
 temen	ID
 "	O
@@ -80464,7 +80464,7 @@ kabeh	JV
 @AgusMagelangan	O
 Akun	ID
 anyar	JV
-Juli	NE
+Juli	ID
 2021	O
 ,	O
 postingane	MIX-ID-JV
@@ -84523,13 +84523,13 @@ sengaja	ID
 co	EN
 sekarang	ID
 biar	ID
-sabtu	NE
+sabtu	ID
 nyampe	ID
 terus	ID
 bisa	ID
 dipake	ID
 hari	ID
-minggu	NE
+minggu	ID
 ehh	ID
 gak	ID
 liat	ID
@@ -85293,10 +85293,10 @@ akan	ID
 diadakan	ID
 pada	ID
 🗓	O
-Sabtu	NE
+Sabtu	ID
 ,	O
 12	O
-Maret	NE
+Maret	ID
 2022	O
 🕛	O
 12.30	O
@@ -85712,9 +85712,9 @@ rumor	ID
 ada	ID
 digital	EN
 single	EN
-april	NE
+april	ID
 /	O
-mei	NE
+mei	ID
 ,	O
 kok	ID
 tiba	ID
@@ -87287,7 +87287,7 @@ Kenapa	ID
 🧒	O
 :	O
 Karena	ID
-April	NE
+April	ID
 mop	ID
 WKWKWK	O
 👩	O
@@ -87463,12 +87463,12 @@ diprank	MIX-ID-EN
 😄	O
 😄	O
 
-April	NE
+April	ID
 muop	ID
 ngeprank	MIX-ID-EN
 temen	ID
 ❌	O
-April	NE
+April	ID
 muop	ID
 diprank	MIX-ID-EN
 pemerintah	ID
@@ -87610,7 +87610,7 @@ sama	ID
 temen	ID
 😁	O
 
-april	NE
+april	ID
 fools	EN
 day	EN
 ku	ID
@@ -87696,7 +87696,7 @@ bias	ID
 ga	ID
 diprank	MIX-ID-EN
 pas	ID
-april	NE
+april	ID
 fools	EN
 berarti	ID
 gapunya	ID
@@ -87802,14 +87802,14 @@ taunya	ID
 ngga	ID
 :)	O
 
-april	NE
+april	ID
 mop	ID
 diprank	MIX-ID-EN
 temen	ID
 ❎	O
 ❎	O
 ❎	O
-april	NE
+april	ID
 mop	ID
 diprank	MIX-ID-EN
 dosen	ID
@@ -88185,7 +88185,7 @@ diprank	MIX-ID-EN
 ,	O
 padahal	ID
 belum	ID
-April	NE
+April	ID
 mop	ID
 .	O
 nah	ID
