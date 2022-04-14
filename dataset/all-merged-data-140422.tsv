@@ -79678,7 +79678,7 @@ gitu	ID
 Tapi	ID
 ini	ID
 partner	EN
-1   O
+1	O
 team	EN
 ,	O
 literally	EN
@@ -81575,7 +81575,7 @@ kehilangan	ID
 )	O
 5.	O
 Asnawi	O
-("  O
+("	O
 Thank	EN
 you	EN
 !!")	O
@@ -82536,7 +82536,7 @@ dari	ID
 hijrah	ID
 ”	O
 dan	ID
-tentang ID
+tentang	ID
 Islam	ID
 ,	O
 gak	ID
@@ -83405,7 +83405,7 @@ bukan	ID
 dari	ID
 high	EN
 class	EN
-gitu    ID
+gitu	ID
 /	O
 yah	ID
 jatuhnya	ID
@@ -83487,8 +83487,8 @@ tol	ID
 selamanya	ID
 ,	O
 diatas	ID
-100km/jam   ID
-,   O
+100km/jam	ID
+,	O
 kena	ID
 tilang	ID
 .	O
@@ -84062,7 +84062,7 @@ expose	EN
 karena	ID
 privacy	EN
 .	O
-^^  O
+^^	O
 )	O
 he	EN
 also	EN
@@ -84115,7 +84115,7 @@ he	EN
 chose	EN
 this	EN
 current	EN
-hairstyle   EN
+hairstyle	EN
 ;	O
 it	EN
 fits	EN
@@ -84398,9 +84398,9 @@ nanti	ID
 gue	ID
 pengen	ID
 ketemu	ID
-P'Mew   O
+P'Mew	O
 ,	O
-N'Gulf  O
+N'Gulf	O
 ,	O
 Ai	O
 Bai	O
@@ -85645,8 +85645,8 @@ layaknya	ID
 membaca	ID
 majalah	ID
 itu	ID
-sendiri ID
-(   O
+sendiri	ID
+(	O
 memang	ID
 pembawaanya	ID
 macam	ID
@@ -85694,7 +85694,7 @@ bs	ID
 jw	O
 nya	ID
 tuh	ID
-dipiting    JV
+dipiting	JV
 (?),	O
 klo	ID
 peluk	ID
@@ -87428,7 +87428,7 @@ dan	ID
 yang	ID
 paling	ID
 berasa	ID
-adalah  ID
+adalah	ID
 ;	O
 YOU	EN
 KNOW	EN
@@ -87908,7 +87908,7 @@ Nggak	ID
 krn	ID
 bisa	ID
 buat	ID
-kenang"an   ID
+kenang"an	ID
 .	O
 Klo	ID
 bosen	ID
@@ -88610,7 +88610,7 @@ gue	ID
 udah	ID
 sakit	ID
 dari	ID
-lama    ID
+lama	ID
 —	O
 im	EN
 tired	EN
@@ -102213,7 +102213,7 @@ kan	ID
 chartingnya	MIX-ID-EN
 pake	ID
 system	EN
-24Hits	E
+24Hits	EN
 ,	O
 which	EN
 is	EN
@@ -112343,7 +112343,7 @@ apa	ID
 nanti	ID
 prosesnya	ID
 ada	ID
-percabangan
+percabangan	ID
 (	O
 if	EN
 else	EN

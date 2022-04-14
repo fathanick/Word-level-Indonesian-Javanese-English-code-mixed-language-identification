@@ -182,6 +182,7 @@ class LanguageIdentifier:
         X, y = self.data_transformer(data)
 
         # split data into train and test set
+        # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=0, stratify=y)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=0)
 
         self.pipeline_crf(X_train, y_train, X_test, y_test, n_label, model_name)
