@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def code_mix_index(tags, langs):
     if len(np.unique(langs)) != len(langs):
         raise Exception('Languages provided should be unique.')
@@ -14,4 +15,4 @@ def code_mix_index(tags, langs):
 
     return float(1 - (w/(n-u)) if n != u else 0)
 
-#def switch_point_frac():
+#  def switch_point_frac():

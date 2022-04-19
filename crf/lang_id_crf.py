@@ -80,6 +80,8 @@ class LanguageIdentifier:
     y = list of tags for each token. 
     '''
 
+    # def token_tag_transformer(self, data):
+
     def train(self, X, y):
         X_train = []
 
