@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import eli5
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
+from helper.splitter import sentence_splitter
 from warnings import simplefilter  # import warnings filter
 from collections import Counter
 
@@ -75,7 +76,7 @@ class LanguageIdentifier:
             'prev_tag': '' if index == 0 else sentence[index - 1][1],
             'next_tag': '' if index == len(sentence) - 1 else sentence[index + 1][1],
             'prev_token': '' if index == 0 else sentence[index - 1][0],
-            'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][1],
+            'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][0],
             'token.lower': token.lower(),
             'token.prefix_2': token[:2],
             'token.prefix_3': token[:3],
@@ -219,3 +220,18 @@ class LanguageIdentifier:
         y_test = [self.sent2tags(s) for s in test]
 
         self.train_test_crf(X_train, y_train, X_test, y_test, model_name)
+
+    def lang_prediction(self, input_data, trained_model):
+
+        if type(input_data) == list:
+            X = [self.feature_extraction(input_data)]
+            tokens = input_data
+        else:
+            tokens = sentence_splitter(input_data)
+            X = [self.feature_extraction(tokens)]
+
+        tag_prediction = trained_model.predict(X)
+        doc_labels = tag_prediction[0]
+        token_tag = [(token, tag) for token, tag in zip(tokens, doc_labels)]
+        for t in token_tag:
+            print(t[0] + ' ' + t[1])
