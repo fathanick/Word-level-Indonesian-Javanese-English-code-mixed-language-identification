@@ -1,4 +1,6 @@
 import random
+
+import scipy.stats
 import sklearn_crfsuite
 import pickle
 import os
@@ -7,8 +9,9 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 import eli5
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.metrics import confusion_matrix, classification_report, make_scorer
+from sklearn_crfsuite import metrics
 from helper.splitter import sentence_splitter
 from warnings import simplefilter  # import warnings filter
 from collections import Counter
@@ -20,6 +23,9 @@ class LanguageIdentifier:
     model = None
     window = 5
     symbols = ['@', '#', '&', '$']
+    labels = ['ID', 'JV', 'EN', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
+    c1 = 0.1
+    c2 = 0.1
 
     def __init__(self):
         random.seed(0)
@@ -100,6 +106,44 @@ class LanguageIdentifier:
 
         return features
 
+    def hyperparameter_optimization(self, data):
+        data = self.data_transformer(data)
+
+        X = [self.sent2features(s) for s in data]
+        y = [self.sent2tags(s) for s in data]
+
+        params_space = {
+            'c1': scipy.stats.expon(scale=0.5),
+            'c2': scipy.stats.expon(scale=0.05),
+        }
+
+        f1_scorer = make_scorer(metrics.flat_f1_score,
+                                average='weighted',
+                                lebels=self.labels)
+
+        rs = RandomizedSearchCV(self.model, params_space,
+                                cv=5,
+                                verbose=1,
+                                n_jobs=-1,
+                                n_iter=50,
+                                scoring=f1_scorer)
+
+        rs.fit(X, y)
+
+        print('best params:', rs.best_params_)
+        print('best CV score:', rs.best_score_)
+        print('model size: {:0.2f}M'.format(rs.best_estimator_.size_ / 1000000))
+
+        self.c1 = rs.best_params_['c1']
+        self.c2 = rs.best_params_['c2']
+        self.model = sklearn_crfsuite.CRF(
+            algorithm='lbfgs',
+            max_iterations=100,
+            all_possible_transitions=True,
+            c1=self.c1,
+            c2=self.c2,
+        )
+
     @staticmethod
     def data_transformer(data):
         # input: [[[list of tokens],[list of tags]], [[list of tokens],[list of tags]]]
@@ -125,19 +169,17 @@ class LanguageIdentifier:
         # get tags from token-tag pairs
         return [tag for token, tag in sent]
 
-    @staticmethod
-    def show_confusion_matrix(y, y_pred):
-        labels = ['ID', 'JV', 'EN', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
+    def show_confusion_matrix(self, y, y_pred):
 
         # create a confusion matrix
         print('Confusion Matrix')
         flat_y = [item for y_ in y for item in y_]
         flat_y_pred = [item for y_pred_ in y_pred for item in y_pred_]
-        cm = confusion_matrix(flat_y, flat_y_pred, labels=labels)
+        cm = confusion_matrix(flat_y, flat_y_pred, labels=self.labels)
         # print(cm)
 
         # show classification report
-        print(classification_report(flat_y, flat_y_pred, labels=labels))
+        print(classification_report(flat_y, flat_y_pred, labels=self.labels))
 
         # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
         ax = plt.subplot()
@@ -149,8 +191,8 @@ class LanguageIdentifier:
         ax.set_title('Confusion Matrix')
         ax.set_xlabel('Predicted labels')
         ax.set_ylabel('True labels')
-        ax.xaxis.set_ticklabels(labels, rotation=90)
-        ax.yaxis.set_ticklabels(labels, rotation=0)
+        ax.xaxis.set_ticklabels(self.labels, rotation=90)
+        ax.yaxis.set_ticklabels(self.labels, rotation=0)
 
         plt.show()
 
