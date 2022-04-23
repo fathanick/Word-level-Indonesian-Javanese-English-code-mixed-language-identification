@@ -120,7 +120,7 @@ class LanguageIdentifier:
 
         f1_scorer = make_scorer(metrics.flat_f1_score,
                                 average='weighted',
-                                lebels=self.labels)
+                                labels=self.labels)
 
         rs = RandomizedSearchCV(self.model, params_space,
                                 cv=5,
