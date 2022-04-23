@@ -1,5 +1,4 @@
 import random
-
 import scipy.stats
 import sklearn_crfsuite
 import pickle
@@ -82,7 +81,7 @@ class LanguageIdentifier:
             'prev_tag': '' if index == 0 else sentence[index - 1][1],
             'next_tag': '' if index == len(sentence) - 1 else sentence[index + 1][1],
             'prev_2tag': '' if index == 0 or index == 1 else sentence[index - 2][1],
-            'next_2tag': '' if index == len(sentence) - 1 or index == len(sentence) - 2 else sentence[index + 2][1] ,
+            'next_2tag': '' if index == len(sentence) - 1 or index == len(sentence) - 2 else sentence[index + 2][1],
             'prev_token': '' if index == 0 else sentence[index - 1][0],
             'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][0],
             'token.lower': token.lower(),
@@ -102,7 +101,7 @@ class LanguageIdentifier:
             'token.contains_hyphen': '-' in token,
         }
 
-        if len(token) > 5 and not(any(token.startswith(x) for x in self.symbols)):
+        if len(token) > 5 and not (any(token.startswith(x) for x in self.symbols)):
             for i in range(0, len(token) - self.window):
                 features[f'n_gram_{i}'] = token[i:(i + self.window)]
 
