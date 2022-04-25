@@ -30,8 +30,8 @@ class LanguageIdentifier:
         random.seed(0)
         self.model = sklearn_crfsuite.CRF(
             algorithm='lbfgs',  # for gradient descent for optimization and getting model parameters
-            c1=0.1,  # Coefficient for Lasso (L1) regularization
-            c2=0.1,  # Coefficient for Ridge (L2) regularization
+            c1=0.012895801495414272,  # Coefficient for Lasso (L1) regularization for
+            c2=0.11117996778393682,  # Coefficient for Ridge (L2) regularization
             max_iterations=100,
             # The maximum number of iterations for optimization algorithms,
             # iteration for the gradient descent optimization
