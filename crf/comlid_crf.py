@@ -30,8 +30,8 @@ class LanguageIdentifier:
         random.seed(0)
         self.model = sklearn_crfsuite.CRF(
             algorithm='lbfgs',  # for gradient descent for optimization and getting model parameters
-            c1=0.012895801495414272,  # Coefficient for Lasso (L1) regularization for
-            c2=0.11117996778393682,  # Coefficient for Ridge (L2) regularization
+            c1=0.002468896291860494,  # Coefficient for Lasso (L1) regularization for
+            c2=0.02423329096488449,  # Coefficient for Ridge (L2) regularization
             max_iterations=100,
             # The maximum number of iterations for optimization algorithms,
             # iteration for the gradient descent optimization
@@ -70,7 +70,7 @@ class LanguageIdentifier:
 
     def token2features(self, sentence, index):
         # sentence: [w1, w2, ...], index: the index of the word
-        # apply 22 features for each token
+        # apply features for each token
 
         token = sentence[index][0]
 
@@ -82,8 +82,8 @@ class LanguageIdentifier:
             'next_tag': '' if index == len(sentence) - 1 else sentence[index + 1][1],
             'prev_2tag': '' if index == 0 or index == 1 else sentence[index - 2][1],
             'next_2tag': '' if index == len(sentence) - 1 or index == len(sentence) - 2 else sentence[index + 2][1],
-            'prev_token': '' if index == 0 else sentence[index - 1][0],
-            'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][0],
+            #'prev_token': '' if index == 0 else sentence[index - 1][0],
+            #'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][0],
             'token.lower': token.lower(),
             'token.prefix_2': token[:2],
             'token.prefix_3': token[:3],
@@ -122,11 +122,12 @@ class LanguageIdentifier:
                                 average='weighted',
                                 labels=self.labels)
 
-        rs = RandomizedSearchCV(self.model, params_space,
-                                cv=5,
-                                verbose=1,
-                                n_jobs=-1,
-                                n_iter=50,
+        rs = RandomizedSearchCV(self.model,
+                                params_space,  # pass the dictionary of parameters that we need to optimize
+                                cv=5,  # Determines the cross-validation splitting strategy
+                                verbose=1,  # Controls the verbosity: the higher, the more messages
+                                n_jobs=-1,  # Number of jobs to run in parallel, -1 means using all processors
+                                n_iter=50,  # Number of parameter settings that are sampled
                                 scoring=f1_scorer)
 
         rs.fit(X, y)

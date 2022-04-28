@@ -1,6 +1,6 @@
 Tumben	ID
 xl	O
-banter	ID
+banter	JV
 go	JV
 download	EN
 ,	O
@@ -126,11 +126,11 @@ pdahal	ID
 ....	O
 
 @Preteritoo	O
-flash	EN
+flash	O
 ambek	JV
 xl	O
 download	EN
-stabille	EN
+stabille	MIX-JV-EN
 350kbps	EN
 ,	O
 cuman	ID
@@ -267,7 +267,7 @@ ki	JV
 akeh	JV
 error	EN
 e	JV
-tp	ID
+tp	JV
 yo	JV
 apik	JV
 maine	JV
@@ -396,7 +396,7 @@ kali	ID
 pastiin	ID
 bener	ID
 bener	ID
-log	ID
+log	EN
 out	EN
 
 Aneh	ID
@@ -543,7 +543,7 @@ di	ID
 austria	O
 ada	ID
 namanya	ID
-printbox	EN
+printbox	O
 .	O
 Enakan	ID
 pake	ID
@@ -603,7 +603,7 @@ itu	ID
 ,	O
 dibelakang	ID
 orang	ID
-ngantri	JV
+ngantri	ID
 wkwkwkwk	O
 
 This	EN
@@ -1018,7 +1018,7 @@ kak	ID
 dikarekan	ID
 setiap	ID
 jalur	ID
-odp-nya	ID
+odp-nya	MIX-ID-EN
 berbeda	ID
 beda	ID
 maka	ID
@@ -1390,7 +1390,7 @@ cover	EN
 letter	EN
 dan	ID
 persiapan	ID
-nyebar	JV
+nyebar	ID
 lamaran	ID
 .	O
 Fact	EN
@@ -1653,7 +1653,7 @@ seneng	ID
 bgt	ID
 Dino	O
 finally	EN
-got	ID
+got	EN
 the	EN
 recognition	EN
 he	EN
@@ -1687,7 +1687,7 @@ dulu	ID
 jangankan	ID
 trending	EN
 ,	O
-diwaro	O
+diwaro	JV
 aja	ID
 engga	ID
 .	O
@@ -2162,9 +2162,9 @@ alat	ID
 politik	ID
 eh	ID
 ternyata	ID
-kalah	JV
+kalah	ID
 pas	JV
-pilihan	JV
+pilihan	ID
 njuk	JV
 klub	ID
 e	JV
@@ -2184,7 +2184,7 @@ untuk	ID
 pemain	ID
 dilapangan	ID
 
-menang	ID
+menang	JV
 ngebully	MIX-ID-EN
 kalah	JV
 ora	JV
@@ -2664,16 +2664,16 @@ lagi	ID
 
 Beli	ID
 spotify	O
-ora	O
+ora	JV
 danta	O
 Beli	ID
 Netflix	O
-ora	O
+ora	JV
 danta	O
 Belanja	ID
 di	ID
 tokped	O
-ora	O
+ora	JV
 danta	O
 Emang	ID
 lagi	ID
@@ -2756,7 +2756,7 @@ sing	JV
 ngatur	JV
 ceritane	JV
 kabeh	JV
-gusti	O
+gusti	JV
 Allah	O
 
 @dekka_n	O
@@ -2980,8 +2980,8 @@ aja	ID
 klo	ID
 mau	ID
 yg	ID
-virtual	ID
-its	ID
+virtual	EN
+its	EN
 to	EN
 risk	EN
 gitu	ID
@@ -3208,7 +3208,7 @@ hari	ID
 Angel	JV
 tenan	JV
 golek	JV
-pacar	JV
+pacar	ID
 sing	JV
 setia	ID
 ,	O
@@ -5164,8 +5164,8 @@ tau	ID
 hrga	ID
 baju	ID
 di	ID
-Mother	EN
-Care	EN
+Mother	O
+Care	O
 1	O
 nya	ID
 saja	ID
@@ -6097,7 +6097,7 @@ up	EN
 di	ID
 Tokped	O
 Ada	ID
-koq	JV
+koq	ID
 yg	ID
 50K	O
 😂	O
@@ -6111,7 +6111,7 @@ tokped	O
 soalnya	ID
 orenku	ID
 error	EN
-padal	JV
+padal	ID
 voc	EN
 nya	ID
 lumayan	ID
@@ -6673,7 +6673,7 @@ shopee	O
 w	ID
 kok	ID
 lemot	ID
-bat	EN
+bat	ID
 sih	ID
 ,	O
 masa	ID
@@ -7713,9 +7713,9 @@ Wuuuuusssshhhhh	O
 ..	O
 
 speed	EN
-banter	ID
+banter	JV
 ra	JV
-kenek	ID
+kenek	JV
 ge	JV
 download	EN
 10mb	EN
@@ -7723,7 +7723,7 @@ munggah	JV
 !	O
 Speed	EN
 lemot	JV
-kenek	ID
+kenek	JV
 ge	JV
 download	EN
 50mb	EN
@@ -8203,7 +8203,7 @@ mari	JV
 .	O
 Eh	JV
 mode	ID
-pesawatku	JV
+pesawatku	ID
 murup	JV
 .	O
 Gagal	ID
@@ -8221,8 +8221,8 @@ wis	JV
 malah	ID
 gagal	ID
 ,	O
-duh	ID
-gusti	ID
+duh	JV
+gusti	JV
 😭	O
 😭	O
 😭	O
@@ -8323,7 +8323,7 @@ yang	ID
 gue	ID
 cari	ID
 di	ID
-google	EN
+google	O
 dengan	ID
 keyword	EN
 png	EN
@@ -8379,11 +8379,11 @@ gagal	ID
 mna	ID
 hrs	EN
 nunggu	ID
-mlm	JV
+mlm	ID
 krna	ID
 pke	ID
 kuota	ID
-mlm	JV
+mlm	ID
 duh	ID
 
 mau	ID
@@ -8603,7 +8603,7 @@ RHEL	O
 koq	JV
 cek	JV
 suwi	JV
-men	EN
+men	JV
 ,	O
 hampir	ID
 3	O
@@ -8899,7 +8899,7 @@ aku	ID
 baru	ID
 ga	ID
 ada	ID
-paketan	JV
+paketan	ID
 T^T	O
 
 @secgron	O
@@ -9132,9 +9132,9 @@ Home	EN
 .	O
 Kesamaannya	ID
 :	O
-ORA	EN
+ORA	JV
 NYAMBUNG	JV
-INTERNET	JV
+INTERNET	ID
 KABEH	JV
 !	O
 !	O
@@ -9227,7 +9227,7 @@ Xl	O
 Bar	JV
 udan	JV
 mesti	JV
-sinyal	JV
+sinyal	ID
 mu	JV
 elek	JV
 ki	JV
@@ -9389,7 +9389,7 @@ tel	O
 Wo	JV
 cuek	ID
 @IndiHome	O
-tv	JV
+tv	ID
 yo	JV
 berlangganan	ID
 mbayar	JV
@@ -9399,7 +9399,7 @@ e	JV
 meh	JV
 kabeh	JV
 ra	JV
-kenek	ID
+kenek	JV
 di	JV
 delok	JV
 .	O
@@ -9835,7 +9835,7 @@ tuh	ID
 Kupikir	ID
 pake	ID
 XL	O
-Prioritas	ID
+Prioritas	O
 tuh	ID
 ada	ID
 kelebihan	ID
@@ -10127,7 +10127,7 @@ kemdikbud	O
 rancu	ID
 keluar	ID
 masuk	ID
-meet	EN
+meet	O
 padahal	ID
 sinyal	ID
 kuat	ID
@@ -10364,7 +10364,7 @@ indonesia	O
 lama2	ID
 rakyat	ID
 naik	ID
-angkot	JV
+angkot	ID
 pakai	ID
 traveloka	O
 
@@ -10771,7 +10771,7 @@ e	JV
 banyak	ID
 baget	ID
 .	O
-mesti	ID
+mesti	JV
 barang	ID
 sisaan	ID
 seng	JV
@@ -10785,8 +10785,8 @@ brand	EN
 lokal	ID
 murah	ID
 murah	ID
-apik	ID
-koyok	ID
+apik	JV
+koyok	JV
 rexus	O
 /	O
 fantech	O
@@ -10830,7 +10830,7 @@ ringkih	JV
 
 @biskims	O
 @srinindita	O
-Apik	ID
+Apik	JV
 iki	JV
 #saran	O
 -	O
@@ -11128,7 +11128,7 @@ pesawat	ID
 bulk	EN
 order	ID
 wajib	ID
-DP	JV
+DP	EN
 50%	O
 -	O
 pelunasan	ID
@@ -11600,7 +11600,7 @@ stiker	ID
 ,	O
 pen	ID
 warna	ID
-warni	JV
+warni	ID
 sepatu	ID
 /	O
 baju	ID
@@ -11811,11 +11811,11 @@ ngunu	JV
 ben	JV
 terpercaya	ID
 Opo	JV
-tekan	ID
+tekan	JV
 tokped	O
 penjualan	ID
 sekian	ID
-entok	ID
+entok	JV
 bonus	ID
 sekian	ID
 ?	O
@@ -11879,8 +11879,8 @@ dikembalikan	ID
 Akhirnya	ID
 telpon	ID
 CS	EN
-Bank	EN
-Jago	EN
+Bank	O
+Jago	O
 .	O
 Semoga	ID
 prosesnya	ID
@@ -11896,7 +11896,7 @@ buat	ID
 ngadepin	ID
 cuaca	ID
 panas	ID
-Semarang	ID
+Semarang	O
 pakai	ID
 apa	ID
 ?	O
@@ -11965,13 +11965,13 @@ ben	JV
 timnas	ID
 isok	JV
 juara	JV
-AFF	EN
+AFF	O
 
 @kaesangp	O
 Berharap	ID
 agen	ID
 e	JV
-dek	ID
+dek	JV
 e	JV
 wkwkwkwkwkwkwkwkwkwkwk	O
 trs	JV
@@ -12000,7 +12000,7 @@ realistis	ID
 ae	JV
 lek	JV
 delog	JV
-maen	ID
+maen	JV
 e	JV
 koyok	ID
 wingi	JV
@@ -12102,7 +12102,7 @@ Po	JV
 pengen	ID
 kejadian	ID
 timnas	ID
-itali	EN
+itali	O
 keulang	ID
 wis	JV
 isoh	JV
@@ -12261,7 +12261,7 @@ ucl	O
 Tahun	ID
 ngarep	JV
 tep	JV
-Mercedes	EN
+Mercedes	O
 meneh	JV
 seng	JV
 juara	JV
@@ -12269,7 +12269,7 @@ juara	JV
 ferrari	O
 elek	JV
 ,	O
-honda	EN
+honda	O
 kukut	JV
 
 Kenyataane	MIX-ID-JV
@@ -12336,7 +12336,7 @@ luck	EN
 Gk	JV
 pelanggaran	ID
 ??	O
-Bad	ID
+Bad	EN
 luck	EN
 barca	O
 ,	O
@@ -12578,7 +12578,7 @@ tikus	ID
 @plumeriacae	O
 @tubirfess	O
 i	EN
-got	ID
+got	EN
 your	EN
 point	EN
 ,	O
@@ -13104,7 +13104,7 @@ tau	JV
 onok	JV
 gratis	ID
 ongkir	ID
-ta	ID
+ta	JV
 ?	O
 shoope	O
 lo	JV
@@ -13302,7 +13302,7 @@ gbth	ID
 blg	ID
 ya	ID
 gapapa	ID
-ko	JV
+ko	ID
 ..	O
 skrg	ID
 ,	O
@@ -13407,7 +13407,7 @@ CO	EN
 ,	O
 eh	ID
 shopee	O
-gk	JV
+gk	ID
 dong	ID
 n	EN
 mlh	ID
@@ -13485,7 +13485,7 @@ pada	ID
 40k-an	ID
 Ya	ID
 Allah	O
-Gusti	ID
+Gusti	JV
 larang	JV
 pol	JV
 .	O
@@ -13573,7 +13573,7 @@ larang	JV
 :)	O
 
 Yutub	O
-an	EN
+an	ID
 di	ID
 spam	EN
 iklan	ID
@@ -13868,11 +13868,11 @@ pake	ID
 tokped	O
 dah	ID
 banyak	ID
-cb	JV
+cb	EN
 dan	ID
 diskon	ID
 lagi	ID
-truss	EN
+truss	ID
 cepet	ID
 banget	ID
 🙏	O
@@ -14094,7 +14094,7 @@ ONGKIR	ID
 +	O
 SPECIAL	EN
 GIFT	EN
-oh	JV
+oh	ID
 iya	ID
 jangan	ID
 lupa	ID
@@ -14219,7 +14219,7 @@ Tahajud-Dhuha	ID
 rajin	ID
 ,	O
 Puasa	ID
-Sunnah	JV
+Sunnah	ID
 udah	ID
 biasa	ID
 ,	O
@@ -14602,7 +14602,7 @@ emyu	O
 sak	JV
 iki	JV
 tak	JV
-sawang	ID
+sawang	JV
 kyo	JV
 madrid	O
 era	ID
@@ -15561,7 +15561,7 @@ keteteran	ID
 lemes	ID
 
 @arshrzn	O
-Oke	EN
+Oke	ID
 ngko	JV
 chattingane	MIX-JV-EN
 basa	JV
@@ -15810,7 +15810,7 @@ iki	JV
 penjuale	MIX-ID-JV
 
 @ismailsunni	O
-Ono	EN
+Ono	JV
 biyen	JV
 cah	JV
 bg	O
@@ -16137,7 +16137,7 @@ pas	ID
 harga	ID
 udah	ID
 ga	ID
-promo	EN
+promo	ID
 .	O
 😑	O
 
@@ -16209,7 +16209,7 @@ lah	ID
 gilak	ID
 ae	JV
 klien	ID
-paok	O
+paok	JV
 diturutin	ID
 ,	O
 udah	ID
@@ -16388,7 +16388,7 @@ bo	O
 
 Elokk	JV
 !	O
-Rampung	ID
+Rampung	JV
 donlotane	MIX-JV-EN
 ..	O
 tp	ID
@@ -16396,12 +16396,12 @@ gd	ID
 gak	ID
 bisa	ID
 ..	O
-mesti	ID
+mesti	JV
 videone	MIX-ID-JV
 le	JV
 rusak	JV
 ..	O
-udu	ID
+udu	JV
 hape	EN
 ku	JV
 kann	ID
@@ -16650,7 +16650,7 @@ neh	JV
 
 @dustykibou	O
 wkk	O
-hoo	O
+hoo	JV
 og	JV
 cah	JV
 ,	O
@@ -17022,7 +17022,7 @@ neh	JV
 ae	JV
 
 @mizmosa	O
-ntar	JV
+ntar	ID
 kamvek	O
 tinggal	ID
 masukin	ID
@@ -17226,7 +17226,7 @@ meneh	JV
 😢	O
 
 @r0tten37	O
-Kae	EN
+Kae	JV
 mau	JV
 ono	JV
 updatean	MIX-JV-EN
@@ -17235,7 +17235,7 @@ action	EN
 figur	ID
 e	JV
 tokoh	ID
-LGN	ID
+LGN	O
 
 @yashdaddy_	O
 @eskepalintisari	O
@@ -17600,8 +17600,8 @@ nder	EN
 .	O
 Biasane	JV
 lek	JV
-buka	JV
-vaksin	JV
+buka	ID
+vaksin	ID
 mesti	JV
 ono	JV
 apdetan	MIX-JV-EN
@@ -17654,7 +17654,7 @@ APDETAN	MIX-JV-EN
 ANYAR	JV
 ,	O
 GA	JV
-ONO	EN
+ONO	JV
 SIK	JV
 MINAT	ID
 MABAR	ID
@@ -17752,7 +17752,7 @@ le	JV
 gawe	JV
 aturan	ID
 jelas	ID
-oleh	ID
+oleh	JV
 gaji	ID
 bulanan	ID
 la	JV
@@ -17761,7 +17761,7 @@ gur	JV
 buruh	ID
 harian	ID
 je	JV
-buoss	JV
+buoss	ID
 !	O
 
 dekne	JV
@@ -18535,7 +18535,7 @@ iso	JV
 discan	MIX-JV-EN
 lnsg	JV
 metu	JV
-data	JV
+data	ID
 e	JV
 kabeeehhh	JV
 .	O
@@ -19054,7 +19054,7 @@ yen	JV
 ono	JV
 sing	JV
 share	EN
-foto	JV
+foto	ID
 ora	JV
 ono	JV
 keterangan	ID
@@ -19062,7 +19062,7 @@ mie	ID
 ayam	ID
 endi	JV
 ,	O
-foto	JV
+foto	ID
 dhewe	JV
 opo	JV
 colongan	JV
@@ -19394,7 +19394,7 @@ dewe	JV
 .	O
 
 @SoloMenfess	O
-Mutualan	MIX-ID-JV
+Mutualan	MIX-ID-EN
 tok	JV
 ,	O
 direply	MIX-JV-EN
@@ -19960,7 +19960,7 @@ album	ID
 e	JV
 yo	JV
 mesti	JV
-sue	EN
+sue	JV
 pol	JV
 ,	O
 dan	ID
@@ -20014,7 +20014,7 @@ kangelan	JV
 pemkot	ID
 wis	JV
 ndisik	JV
-i	EN
+i	JV
 ,	O
 pemkab	ID
 girung	JV
@@ -20529,7 +20529,7 @@ ngarep	JV
 we	JV
 lo	JV
 .	O
-Blunder	EN
+Blunder	ID
 dewe	JV
 to	JV
 njut	JV
@@ -21058,7 +21058,7 @@ motor	ID
 motor	ID
 anyar	JV
 .	O
-Mosok	ID
+Mosok	JV
 tukang	JV
 kok	JV
 ngapiki	JV
@@ -21238,7 +21238,7 @@ g	JV
 iso	JV
 ,	O
 di	JV
-start	ID
+start	EN
 g	JV
 iso	JV
 ,	O
@@ -21457,7 +21457,7 @@ https://t.co/wPnpwLzCe3	O
 
 mas	JV
 @tirta_hudhi	O
-vaksin	JV
+vaksin	ID
 covid	O
 ki	JV
 nggawene	JV
@@ -21487,7 +21487,7 @@ isoh	JV
 dicopy	MIX-JV-EN
 gak	JV
 kui	JV
-vaksine	JV
+vaksine	MIX-ID-JV
 trus	JV
 produksi	ID
 masal	ID
@@ -21544,7 +21544,7 @@ podo	JV
 jamaah	JV
 garap	JV
 neng	JV
-gazebo	JV
+gazebo	ID
 tp	JV
 ora	JV
 kenal	ID
@@ -22908,7 +22908,7 @@ halah	JV
 kadar	ID
 kuliah	ID
 kamu	ID
-guyon	ID
+guyon	JV
 wae	JV
 o	O
 wuu	O
@@ -23314,7 +23314,7 @@ genose	O
 po	JV
 rapid	EN
 ning	JV
-stasiun	JV
+stasiun	ID
 wae	JV
 e	JV
 Lik	JV
@@ -23344,7 +23344,7 @@ gakya	ID
 .	O
 
 ya	ID
-Allah	ID
+Allah	O
 Alhamdulillah	ID
 untung	ID
 kelas	ID
@@ -23477,7 +23477,7 @@ haein	O
 😁	O
 
 @convomf	O
-Hmm	JV
+Hmm	O
 ..	O
 iya	ID
 ?	O
@@ -23755,7 +23755,7 @@ berperilaku	ID
 biasa	ID
 aja	ID
 jangan	ID
-nambah	JV
+nambah	ID
 masalah	ID
 ,	O
 itu	ID
@@ -23811,8 +23811,8 @@ berebut	ID
 ,	O
 nanti	ID
 dishare	MIX-ID-EN
-in	EN
-jar	EN
+in	ID
+jar	O
 aja	ID
 ya	ID
 😉	O
@@ -23831,14 +23831,14 @@ dibantu	ID
 like	EN
 kalau	ID
 ga	ID
-rt	O
+rt	EN
 
 @sitishelma_	O
 @CmsnArtist_Id	O
 Eh	ID
 ...	O
 Astaga	ID
-selebtwt	ID
+selebtwt	EN
 kah	ID
 ,	O
 tapi	ID
@@ -24079,7 +24079,7 @@ Ya	ID
 pasti	ID
 ada	ID
 aja	ID
-tontonan	JV
+tontonan	ID
 .	O
 
 Aneh	ID
@@ -25054,7 +25054,7 @@ banget	ID
 dia	ID
 ,	O
 sebelum	ID
-skip	ID
+skip	EN
 kirim	ID
 vn	EN
 kata	ID
@@ -25268,7 +25268,7 @@ bisa	ID
 nggak	ID
 lebaran	ID
 di	ID
-skip	ID
+skip	EN
 ae	JV
 gt	ID
 ,	O
@@ -25279,7 +25279,7 @@ tahun	ID
 depan	ID
 ...	O
 tidaaakkkkkkk	ID
-nambah	JV
+nambah	ID
 umur	ID
 lagi	ID
 😭	O
@@ -25683,7 +25683,7 @@ kuatin	ID
 di	ID
 ujian	ID
 praktikum	ID
-ny	JV
+ny	ID
 ya	ID
 https://t.co/RAj9C6d7bL	O
 
@@ -25702,9 +25702,9 @@ buka	ID
 vscode	O
 +	O
 web	EN
-browser	ID
+browser	EN
 doang	ID
-lngsung	JV
+lngsung	ID
 ngeblank	MIX-ID-EN
 😡	O
 😡	O
@@ -25769,7 +25769,7 @@ gak	ID
 lu	ID
 ngerasa	ID
 lagi	ID
-ngobrol	JV
+ngobrol	ID
 sama	ID
 orang	ID
 gitu	ID
@@ -25904,7 +25904,7 @@ ngebully	MIX-ID-EN
 aku	ID
 doang	ID
 tau	ID
-gK	JV
+gK	ID
 .	O
 AYO	ID
 ,	O
@@ -26330,7 +26330,7 @@ tunggu	ID
 sambil	ID
 makan	ID
 sama	ID
-ngopi	JV
+ngopi	ID
 )	O
 
 thanks	EN
@@ -26413,7 +26413,7 @@ cerita	ID
 banyak	ID
 bgt	ID
 kacang	ID
-ijo	JV
+ijo	ID
 (	O
 sebutan	ID
 buat	ID
@@ -26840,7 +26840,7 @@ gua	ID
 trs	ID
 ngeadd	MIX-ID-EN
 ke	ID
-cfnya	ID
+cfnya	MIX-ID-EN
 .	O
 Tapi	ID
 ya	ID
@@ -26864,7 +26864,7 @@ ngeadd	MIX-ID-EN
 WA	O
 sama	ID
 follow	EN
-IG	EN
+IG	O
 .	O
 ya	ID
 sudah	ID
@@ -26941,7 +26941,7 @@ pct	EN
 https://t.co/e2zO15yOz1	O
 
 @mothasuckaaa	O
-eh	JV
+eh	ID
 gue	ID
 yg	ID
 ngeadd	MIX-ID-EN
@@ -26965,7 +26965,7 @@ jg	ID
 ,	O
 tinggal	ID
 klik	ID
-profile	ID
+profile	EN
 ..	O
 atau	ID
 bisa	ID
@@ -27215,7 +27215,7 @@ Ngelike	MIX-ID-EN
 postingan	MIX-ID-EN
 bagus	ID
 di	ID
-Ig	EN
+Ig	O
 ,	O
 tapi	ID
 lupa	ID
@@ -27826,8 +27826,8 @@ ehiya	ID
 sih	ID
 lg	ID
 minggu2	ID
-uts	EN
-yah	EN
+uts	ID
+yah	ID
 :")	O
 
 @bleushn	O
@@ -27839,7 +27839,7 @@ kedengeran	ID
 gk	ID
 pas	ID
 projectnya	MIX-ID-EN
-diputer	JV
+diputer	ID
 ?	O
 
 bgst	ID
@@ -27946,9 +27946,9 @@ kasih	ID
 
 @cassiedeobi	O
 @woojuzone	O
-Yuls	ID
+Yuls	O
 coba	ID
-yuls	ID
+yuls	O
 cari	ID
 WO	O
 yg	ID
@@ -28012,7 +28012,7 @@ kak	ID
 
 @Stray_Kids	O
 Assalamualaikum	ID
-open	ID
+open	EN
 dm	EN
 dong	ID
 kakkk	ID
@@ -28286,7 +28286,7 @@ dimanipulasi	ID
 wa	O
 ne	JV
 duduk	JV
-ori	ID
+ori	EN
 )	O
 
 @PrihatiFitriana	O
@@ -28354,7 +28354,7 @@ dilogout	MIX-JV-EN
 I	JV
 jyaaannn	JV
 --	O
-tak	ID
+tak	JV
 upili	JV
 loo	JV
 
@@ -28523,7 +28523,7 @@ ogak	JV
 akunku	JV
 durung	JV
 dilogout	MIX-JV-EN
-di	JV
+di	ID
 hapeneeee	MIX-JV-EN
 
 Pantes	JV
@@ -28580,7 +28580,7 @@ jail	ID
 email	EN
 ku	JV
 sing	JV
-go	EN
+go	JV
 daftar	JV
 akun	JV
 lawas	JV
@@ -28934,7 +28934,7 @@ RT	EN
 ...	O
 http://t.co/dvthGj6O	O
 
-He	EN
+He	JV
 ?	O
 Rak	JV
 mudeng	JV
@@ -28973,7 +28973,7 @@ Botol	ID
 minume	MIX-ID-JV
 ketinggalan	ID
 di	ID
-parkiran	JV
+parkiran	ID
 😔	O
 
 @AlwaysRanca_Bgt	O
@@ -29004,7 +29004,7 @@ tajin	ID
 minume	MIX-ID-JV
 teh	ID
 botol	ID
-sosor	ID
+sosor	O
 ra	JV
 .	O
 ?	O
@@ -30676,7 +30676,7 @@ kek	ID
 gituan	ID
 makanya	ID
 jadi	ID
-pro	ID
+pro	EN
 player	EN
 itu	ID
 berat	ID
@@ -31521,7 +31521,7 @@ gatau	ID
 buat	ID
 supply	EN
 chain	EN
-problem	ID
+problem	EN
 masih	ID
 berat	ID
 buat	ID
@@ -32219,9 +32219,9 @@ daily	EN
 scrum	EN
 meeting	EN
 .	O
-Dev	EN
+Dev	O
 vs	EN
-PM	EN
+PM	O
 Yang	ID
 menang	ID
 backlognya	MIX-ID-EN
@@ -33181,7 +33181,7 @@ GUE	ID
 MAU	ID
 BUAT	ID
 DI	ID
-SG	O
+SG	EN
 😭	O
 tp	ID
 followers	EN
@@ -33835,7 +33835,7 @@ bukti	ID
 
 @worm_girl18	O
 @pramestiadika	O
-Hiling	O
+Hiling	EN
 nganti	JV
 dicalling	MIX-ID-EN
 
@@ -33906,7 +33906,7 @@ soale	JV
 @tigerdans	O
 aduh	ID
 aku	ID
-direject	MIX-JV-EN
+direject	MIX-ID-EN
 
 Disclaimer	EN
 :	O
@@ -34455,7 +34455,7 @@ Nduk	JV
 ♀	O
 ️	O
 :	O
-Dalem	ID
+Dalem	JV
 👨	O
 🏻	O
 ‍	O
@@ -34527,7 +34527,7 @@ Hehe	ID
 Mah	JV
 nyengir	JV
 ,	O
-pengen	ID
+pengen	JV
 motor	ID
 sik	JV
 kaya	ID
@@ -34926,7 +34926,7 @@ lagi	ID
 ngetrend	MIX-ID-EN
 "	O
 
-Alhamdulilah	JV
+Alhamdulilah	ID
 ,	O
 sitik	JV
 ”	O
@@ -34965,7 +34965,7 @@ ngomong	JV
 diclearke	MIX-JV-EN
 aku	JV
 ra	JV
-seneng	ID
+seneng	JV
 nek	JV
 abcd	O
 ke	ID
@@ -35108,7 +35108,7 @@ jl	O
 kusuma	O
 negara	O
 ,	O
-niko	JV
+niko	O
 sekjend	ID
 pelaku	ID
 awal	ID
@@ -35269,7 +35269,7 @@ konco2	JV
 sing	JV
 diclearke	MIX-JV-EN
 .	O
-Oke	EN
+Oke	ID
 !	O
 
 Urusanmu	ID
@@ -35352,7 +35352,7 @@ mbe	JV
 cara	ID
 damai	ID
 wae	JV
-wk	JV
+wk	O
 "@tintonshiju:	O
 heleh	JV
 la	JV
@@ -35560,14 +35560,14 @@ diseleseke	MIX-ID-JV
 sik	JV
 apik2	JV
 sayank	ID
-masalah	JV
+masalah	ID
 ,	O
 e	JV
 RT	EN
 @emy_cemOedtt:	O
-Aku	JV
-gak	JV
-tau	JV
+Aku	ID
+gak	ID
+tau	ID
 yas	O
 ,	O
 alesane	JV
@@ -51977,7 +51977,7 @@ kamu	ID
 send	EN
 bubblechat	EN
 ingin	ID
-cut	ID
+cut	EN
 offnya	MIX-ID-EN
 ,	O
 jangan	ID
@@ -54869,7 +54869,7 @@ has	EN
 an	EN
 implant	EN
 in	EN
-his	ID
+his	EN
 nose	EN
 trs	ID
 diremove	MIX-ID-EN
@@ -54925,10 +54925,10 @@ bodo	ID
 amat	ID
 
 I	EN
-had	ID
+had	EN
 a	EN
 VERY	EN
-bad	ID
+bad	EN
 day	EN
 ,	O
 tadi	ID
@@ -55524,7 +55524,7 @@ tau	ID
 namanya	ID
 ,	O
 ada	ID
-winter	ID
+winter	EN
 ,	O
 ada	ID
 idol	EN
@@ -55563,7 +55563,7 @@ Lalu	ID
 iseng	ID
 ngesearch	MIX-ID-EN
 nama	ID
-Bagas	ID
+Bagas	O
 ,	O
 keluar	ID
 tweet	EN
@@ -55618,7 +55618,7 @@ gue	ID
 ga	ID
 niat	ID
 ngejelekin	ID
-lesti	ID
+lesti	O
 ,	O
 itu	ID
 gue	ID
@@ -55647,7 +55647,7 @@ fermin	O
 yg	ID
 manaa	ID
 ?	O
-ganemu	O
+ganemu	ID
 https://t.co/jZFQfzRa8Z	O
 
 @YoshiS4NC	O
@@ -55721,7 +55721,7 @@ yg	ID
 muncul	ID
 postingan	MIX-ID-EN
 pake	ID
-ava	O
+ava	EN
 tian	O
 hongjie	O
 semua	ID
@@ -55764,7 +55764,7 @@ https://t.co/Ws4XNjlqGV	O
 AKU	ID
 NGESEARCH	MIX-ID-EN
 BATIK	ID
-RAMAYANA	ID
+RAMAYANA	O
 YANG	ID
 KELUAR	ID
 BAJUUUUUUU	ID
@@ -55800,10 +55800,10 @@ merhatiin	ID
 suaranya	ID
 🤔	O
 
-awak	ID
-gemeter	ID
+awak	JV
+gemeter	JV
 ,	O
-tak	ID
+tak	JV
 kiro	JV
 jatuh	ID
 cinta	ID
@@ -55911,8 +55911,8 @@ tok	JV
 ,	O
 moro2	JV
 wes	JV
-tekan	ID
-batu	ID
+tekan	JV
+batu	O
 
 Sempet	ID
 kaget	ID
@@ -56000,7 +56000,7 @@ ujan	ID
 e	JV
 mlebu	JV
 shift	EN
-awan	ID
+awan	JV
 tibaknya	MIX-ID-JV
 
 Lemu	JV
@@ -57104,7 +57104,7 @@ lahh	ID
 anjirr	ID
 ya	ID
 kali	ID
-sad	ID
+sad	EN
 ending	EN
 ngga	ID
 mungkin	ID
@@ -57320,7 +57320,7 @@ telponan	ID
 kan	ID
 gw	ID
 walopun	ID
-make	EN
+make	ID
 earphone	EN
 tapi	ID
 kesetel	ID
@@ -58005,13 +58005,13 @@ sad	ID
 gw	ID
 ga	ID
 ngesave	MIX-ID-EN
-mgkin	JV
+mgkin	ID
 temen2	ID
 ada	ID
 yg	ID
 ngesave	MIX-ID-EN
 sila	ID
-didrop	ID
+didrop	MIX-ID-EN
 fotonya	ID
 ,	O
 nah	ID
@@ -58246,7 +58246,7 @@ noob	EN
 ,	O
 pertama	ID
 kali	ID
-make	EN
+make	ID
 aplikasi	ID
 capcut	O
 buat	ID
@@ -58484,7 +58484,7 @@ ku	ID
 :D	O
 mau	ID
 disaveke	MIX-JV-EN
-hapemu	JV
+hapemu	MIX-JV-EN
 yah	JV
 ?	O
 :D	O
@@ -58526,8 +58526,8 @@ disaveke	MIX-JV-EN
 dong	ID
 :p	O
 
-Aq	JV
-jugak	JV
+Aq	ID
+jugak	ID
 ON	EN
 :p	O
 RT	EN
@@ -58982,7 +58982,7 @@ share	EN
 webnya	MIX-ID-EN
 ,	O
 page	EN
-notion	EN
+notion	O
 jadi	ID
 gak	ID
 bisa	ID
@@ -58994,7 +58994,7 @@ IOS	O
 Solusinya	ID
 export	EN
 page	EN
-Notion	EN
+Notion	O
 sebagai	ID
 HTML	EN
 lalu	ID
@@ -59246,8 +59246,8 @@ skinfood	EN
 @caratlandmart	O
 OUCH	EN
 !?!?!??!	O
-AKU	ID
-LALI	ID
+AKU	JV
+LALI	JV
 PACKINGANE	MIX-JV-EN
 PIE	JV
 WKWKWKKWKWKWKWK	O
@@ -59285,7 +59285,7 @@ yg	ID
 aku	ID
 kirim	ID
 ke	ID
-kw	O
+kw	JV
 itu	ID
 ㅠㅠㅠㅠ	O
 aku	JV
@@ -59442,7 +59442,7 @@ pagi	ID
 siang	ID
 ,	O
 malem	ID
-tak	ID
+tak	JV
 jarke	JV
 wae	JV
 ,	O
@@ -60314,7 +60314,7 @@ sudah	ID
 selesai	ID
 koas	ID
 dan	ID
-intern	ID
+intern	EN
 tolong	ID
 disupport	MIX-ID-EN
 Pak	ID
@@ -60896,7 +60896,7 @@ malah	ID
 membebaskan	ID
 tanpa	ID
 tes	ID
-PCR	ID
+PCR	EN
 /	O
 Antigen	ID
 
@@ -61109,7 +61109,7 @@ gak	JV
 blok	JV
 ,	O
 onok	JV
-tulus	JV
+tulus	O
 ,	O
 4.20	O
 ,	O
@@ -61254,7 +61254,7 @@ kedua	ID
 soalnya	ID
 🤣	O
 
-skip	ID
+skip	EN
 event	EN
 oa	O
 soalnya	ID
@@ -61885,8 +61885,8 @@ nih	ID
 tips	EN
 ampuh	ID
 dari	ID
-Mbah	ID
-Monday	EN
+Mbah	O
+Monday	O
 di	ID
 episode	ID
 terbaru	ID
@@ -62861,7 +62861,7 @@ monitornya	ID
 ,	O
 budget	EN
 motor	ID
-beat	EN
+beat	O
 baru	ID
 turun	ID
 dealerlah	ID
@@ -63073,7 +63073,7 @@ kalau	ID
 inisiasi	ID
 berdua	ID
 ya	ID
-splitbill	ID
+splitbill	EN
 aja	ID
 ,	O
 kalau	ID
@@ -63112,7 +63112,7 @@ displit	MIX-ID-EN
 window	EN
 terus	ID
 1	O
-zoom	EN
+zoom	O
 1	O
 skripsi	ID
 juga	ID
@@ -63406,7 +63406,7 @@ hybe	O
 ,	O
 capitalism	EN
 at	EN
-its	ID
+its	EN
 finest	EN
 ,	O
 dude	EN
@@ -63642,9 +63642,9 @@ lah	ID
 ya	ID
 nikmatin	ID
 aja	ID
-fangirling	ID
+fangirling	EN
 mumpung	ID
-redvelvet	ID
+redvelvet	O
 mau	ID
 cb	ID
 ,	O
@@ -63834,7 +63834,7 @@ biasa	ID
 TERNYATAAA	ID
 NYINGGUNG	ID
 BANYAKK	ID
-HALL	EN
+HALL	ID
 ttg	ID
 gender	ID
 equality	EN
@@ -64091,7 +64091,7 @@ ya	ID
 btw	EN
 kira	ID
 kira	ID
-nick	O
+nick	EN
 gue	ID
 ratenya	MIX-ID-EN
 berapa	ID
@@ -64099,8 +64099,8 @@ nih	ID
 
 babu	ID
 !	O
-sender	ID
-pure	ID
+sender	EN
+pure	EN
 nanya	ID
 kan	ID
 kokomi	ID
@@ -64833,7 +64833,7 @@ netral	ID
 krn	ID
 pengaruh	ID
 fyp	EN
-tiktok	EN
+tiktok	O
 yg	ID
 blg	ID
 ratenya	MIX-ID-EN
@@ -65036,7 +65036,7 @@ tuh	ID
 gampang	ID
 ??	O
 Kalo	ID
-pure	ID
+pure	EN
 hasil	ID
 sendiri	ID
 mah	ID
@@ -65188,8 +65188,8 @@ yg	ID
 gampang	ID
 cuma	ID
 nge	ID
-cut	ID
-cut	ID
+cut	EN
+cut	EN
 doang	ID
 dari	ID
 mv	EN
@@ -65427,7 +65427,7 @@ corona	O
 tbtb	ID
 ada	ID
 oppa2	ID
-korea	ID
+korea	O
 dengan	ID
 rambut	ID
 hitam	ID
@@ -66141,7 +66141,7 @@ jelas	ID
 .	O
 Inilah	ID
 fans	EN
-asia	ID
+asia	O
 yang	ID
 tinggal	ID
 di	ID
@@ -67342,7 +67342,7 @@ soal	ID
 jadwal	ID
 ,	O
 tinggal	ID
-cut	ID
+cut	EN
 dari	ID
 awal	ID
 cari	ID
@@ -67810,7 +67810,7 @@ Kenapa	ID
 anakmu	ID
 nggak	ID
 mok	JV
-dulangi	ID
+dulangi	JV
 buah	ID
 serut	ID
 ,	O
@@ -67856,7 +67856,7 @@ bukan	ID
 ?	O
 😆	O
 
-made	ID
+made	EN
 from	EN
 pak'e	JV
 ahahaha	O
@@ -67879,7 +67879,7 @@ https://t.co/JCvQaWtbKv	O
 @kabarklaten	O
 Leres	JV
 mas	JV
-Mung	ID
+Mung	JV
 saran	ID
 itu	ID
 mbok	JV
@@ -67909,7 +67909,7 @@ setahun	ID
 l	O
 ,	O
 belum	ID
-make	EN
+make	ID
 skin	EN
 rangers	EN
 putih	ID
@@ -67930,7 +67930,7 @@ nopex	O
 mbok	JV
 dibuatke	MIX-ID-JV
 show	EN
-to	EN
+to	JV
 mas	O
 yopik	O
 itu	ID
@@ -68046,7 +68046,7 @@ gitu	ID
 dapet	ID
 yo	JV
 dibuatke	MIX-ID-JV
-rek	JV
+rek	ID
 baru	ID
 ,	O
 gk	ID
@@ -68940,7 +68940,7 @@ kui	JV
 dikick	MIX-JV-EN
 seko	JV
 grup	JV
-Presiden	JV
+Presiden	ID
 paling	JV
 
 @MahasiswaUMS	O
@@ -69564,7 +69564,7 @@ masuk	ID
 akhirnya	ID
 saya	ID
 ke	ID
-skip	ID
+skip	EN
 waktu	ID
 konsultasinya	ID
 .	O
@@ -70339,9 +70339,9 @@ direminder	MIX-ID-EN
 mslh	ID
 perjodohannya	ID
 ,	O
-top	ID
+top	EN
 priority	EN
-RT	ID
+RT	EN
 :	O
 Areke	JV
 wis	JV
@@ -70393,7 +70393,7 @@ hehe	O
 kadang	ID
 ono	JV
 sing	JV
-sok	ID
+sok	JV
 melu	JV
 nek	JV
 pas	JV
@@ -70625,7 +70625,7 @@ mnh	JV
 nk	JV
 lagi	JV
 ng	JV
-dalan	EN
+dalan	JV
 gek	JV
 perjalanane	MIX-ID-JV
 rodo	JV
@@ -70749,18 +70749,18 @@ Lah	ID
 omah	JV
 ne	JV
 pakdhe	JV
-ku	ID
-nak	ID
+ku	JV
+nak	JV
 kono	JV
 yo	JV
-an	EN
-tapi	ID
+an	JV
+tapi	JV
 yo	JV
 adoh	JV
-seh	ID
-lak	ID
-tekan	ID
-suroboyo	JV
+seh	JV
+lak	JV
+tekan	JV
+suroboyo	O
 adoh	JV
 perjalanane	MIX-ID-JV
 😅	O
@@ -70932,7 +70932,7 @@ must	EN
 going	EN
 on	EN
 ,	O
-gausah	JV
+gausah	ID
 trauma	ID
 ,	O
 terpuruk	ID
@@ -71001,7 +71001,7 @@ kesel	JV
 Bis	JV
 apik	JV
 onoke	JV
-mung	ID
+mung	JV
 Suroboyo	O
 Bus	ID
 ,	O
@@ -71397,7 +71397,7 @@ angel	EN
 ,	O
 angel	EN
 baby	EN
-Met	EN
+Met	ID
 pagi	ID
 semuanyaaa	ID
 ☀	O
@@ -71556,7 +71556,7 @@ angel	EN
 baby	EN
 
 @PuteriSrimaya	O
-Met	EN
+Met	ID
 pagi	ID
 my	EN
 angel	EN
@@ -71566,7 +71566,7 @@ angel	EN
 @PuteriSrimaya	O
 Waalaikumusalam	ID
 ...	O
-met	EN
+met	ID
 pagi	ID
 my	EN
 Angel	EN
@@ -72004,7 +72004,7 @@ dulu	ID
 .	O
 -	O
 gavra	O
-mode	ID
+mode	EN
 cool	EN
 on	EN
 #Gavraberanibeda	O
@@ -72475,7 +72475,7 @@ dulu	ID
 ⚠	O
 ️	O
 Business	EN
-Proposal	ID
+Proposal	EN
 ⚠	O
 ️	O
 🔥	O
@@ -72513,7 +72513,7 @@ back	EN
 .	O
 ALIASS	ID
 ,	O
-TYPE2	MIX-ID-EN
+TYPE2	EN
 KEMBALIIN	ID
 BARANG	ID
 LO	ID
@@ -72687,10 +72687,10 @@ dulu	ID
 baik-baik	ID
 .	O
 kalo	ID
-sender	ID
+sender	EN
 ngerasa	ID
 pacar	ID
-sender	ID
+sender	EN
 jadi	ID
 support	EN
 sistem	ID
@@ -72700,7 +72700,7 @@ lanjut	ID
 tapi	ID
 kalo	ID
 malah	ID
-sender	ID
+sender	EN
 ngerasa	ID
 jadi	ID
 beban	ID
@@ -72808,7 +72808,7 @@ badmood	EN
 isoh	JV
 diatur	ID
 -_-	O
-RT	ID
+RT	EN
 Fiqri_XX	O
 :	O
 kesel	JV
@@ -72823,7 +72823,7 @@ sg	JV
 badmood	EN
 
 kesel	JV
-to	EN
+to	JV
 yoo	JV
 ,	O
 mulane	JV
@@ -72832,7 +72832,7 @@ dibreak	MIX-JV-EN
 sik	JV
 sg	JV
 badmood	EN
-RT	ID
+RT	EN
 @hildarasnia:	O
 ra	JV
 kesel	JV
@@ -72841,7 +72841,7 @@ badmood	EN
 terus	JV
 ?	O
 Wkwk	O
-RT	ID
+RT	EN
 Fiqri_XX	O
 :	O
 woh	JV
@@ -73349,7 +73349,7 @@ parfum	ID
 .	O
 Maksudnya	ID
 ,	O
-notes	ID
+notes	EN
 parfum	ID
 itu	ID
 kan	ID
@@ -73359,7 +73359,7 @@ dan	ID
 presentasenya	ID
 berapa	ID
 untuk	ID
-top	ID
+top	EN
 ,	O
 middle	EN
 ,	O
@@ -73367,7 +73367,7 @@ atau	ID
 base	EN
 /	O
 bottom	EN
-notes	ID
+notes	EN
 .	O
 Ga	ID
 sesimpel	ID
@@ -73505,7 +73505,7 @@ ke	ID
 kantor	ID
 berapa	ID
 ,	O
-kos	EN
+kos	ID
 yang	ID
 ngejangkau	ID
 tapi	ID
@@ -73917,7 +73917,7 @@ saya	ID
 cenderung	ID
 reversal	EN
 short	EN
-term	ID
+term	EN
 https://t.co/hxQeniXgtf	O
 
 Iya	ID
@@ -74218,7 +74218,7 @@ kan	ID
 ?	O
 Kalo	ID
 di	ID
-cut	ID
+cut	EN
 mau	ID
 nonton	ID
 pake	ID
@@ -74283,7 +74283,7 @@ gak	ID
 boong	ID
 ...	O
 We	EN
-were	ID
+were	EN
 robbed	EN
 and	EN
 it's	EN
@@ -74474,7 +74474,7 @@ ilang	ID
 screentimenya	MIX-ID-EN
 karena	ID
 proses	ID
-cut	ID
+cut	EN
 editingnya	MIX-ID-EN
 😅	O
 semoga	ID
@@ -74929,7 +74929,7 @@ dibutuhin	ID
 ,	O
 ga	ID
 ada	ID
-cut	ID
+cut	EN
 .	O
 Masuk	ID
 semau	ID
@@ -75039,7 +75039,7 @@ indonesia	O
 emg	ID
 beneran	ID
 suka	ID
-cut	ID
+cut	EN
 scene	EN
 yg	ID
 ga	ID
@@ -88867,7 +88867,7 @@ ga	ID
 pnjg	ID
 gua	ID
 slalu	ID
-overthingking	ID
+overthingking	EN
 dia	ID
 lgi	ID
 marah	ID
@@ -89002,7 +89002,7 @@ when	EN
 you're	EN
 tired	EN
 as	EN
-f	EN
+f	O
 terus	ID
 pengen	ID
 ngasih	ID
@@ -89314,9 +89314,9 @@ tired	EN
 Ngentenii	JV
 film	JV
 "	O
-The	O
-New	O
-World	O
+The	EN
+New	EN
+World	EN
 "	O
 bee	O
 sue	JV
@@ -89659,7 +89659,7 @@ GBS	ID
 DISETELIN	ID
 JUST	EN
 AS	EN
-USUAL	ID
+USUAL	EN
 LAGI	ID
 😭	O
 
@@ -89859,7 +89859,8 @@ MALAH	ID
 DIPLAY	MIX-ID-EN
 PASTI	ID
 AUTO	EN
-MEWEK🥹🥹🥹	O
+MEWEK	ID
+🥹🥹🥹	O
 
 Endingnya	MIX-ID-EN
 just	EN
@@ -90247,7 +90248,7 @@ ngebayangin	ID
 mereka	ID
 bakal	ID
 nyanyiin	ID
-paradise	ID
+paradise	EN
 dan	ID
 just	EN
 as	EN
@@ -91639,7 +91640,7 @@ see	EN
 .	O
 Semangat	ID
 ,	O
-Bian	ID
+Bian	O
 .	O
 Wish	EN
 you	EN
@@ -92130,7 +92131,7 @@ all	EN
 the	EN
 best	EN
 ,	O
-sani	ID
+sani	O
 !!	O
 makasih	ID
 yaa	ID
@@ -92319,7 +92320,7 @@ wish	EN
 me	EN
 luck	EN
 &	O
-gt	ID
+gt	O
 ;•&	O
 lt	O
 ;	O
@@ -121631,7 +121632,7 @@ perhatiane	MIX-ID-JV
 lebih2	ID
 🙏	O
 mugo2	JV
-gusti	ID
+gusti	JV
 allah	O
 bales	JV
 niat	JV
@@ -122172,7 +122173,7 @@ klekar	JV
 kleker	JV
 semedi	ID
 Matursuwun	JV
-gusti	ID
+gusti	JV
 di	JV
 wenehi	JV
 extra	EN
