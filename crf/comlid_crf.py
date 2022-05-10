@@ -124,7 +124,7 @@ class LanguageIdentifier:
 
         rs = RandomizedSearchCV(self.model,
                                 params_space,  # pass the dictionary of parameters that we need to optimize
-                                cv=5,  # Determines the cross-validation splitting strategy
+                                cv=10,  # Determines the cross-validation splitting strategy
                                 verbose=1,  # Controls the verbosity: the higher, the more messages
                                 n_jobs=-1,  # Number of jobs to run in parallel, -1 means using all processors
                                 n_iter=50,  # Number of parameter settings that are sampled
@@ -185,7 +185,7 @@ class LanguageIdentifier:
 
         # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
         ax = plt.subplot()
-        # sns.set(rc={'figure.figsize': (15, 12)})
+        sns.set(rc={'figure.figsize': (15, 12)})
         sns.heatmap(cm, annot=True, fmt='d', ax=ax)
         # annot=True to annotate cells, ftm='g' to disable scientific notation
 
