@@ -22,7 +22,7 @@ class LanguageIdentifier:
     model = None
     window = 5
     symbols = ['@', '#', '&', '$']
-    labels = ['ID', 'JV', 'EN', 'O', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN']
+    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
     c1 = 0.1
     c2 = 0.1
 
@@ -47,7 +47,7 @@ class LanguageIdentifier:
                 'n_gram_0': token,
                 'token_BOS': index == 0,
                 'token_EOS': index == len(tokens) - 1,
-                'token.lower': token.lower(),
+                # 'token.lower': token.lower(),
                 'token.prefix_2': token[:2],
                 'token.prefix_3': token[:3],
                 'token.suffix_2': token[-2:],
@@ -84,7 +84,7 @@ class LanguageIdentifier:
             'next_2tag': '' if index == len(sentence) - 1 or index == len(sentence) - 2 else sentence[index + 2][1],
             #'prev_token': '' if index == 0 else sentence[index - 1][0],
             #'next_token': '' if index == len(sentence) - 1 else sentence[index + 1][0],
-            'token.lower': token.lower(),
+            #'token.lower': token.lower(),
             'token.prefix_2': token[:2],
             'token.prefix_3': token[:3],
             'token.suffix_2': token[-2:],
@@ -124,7 +124,7 @@ class LanguageIdentifier:
 
         rs = RandomizedSearchCV(self.model,
                                 params_space,  # pass the dictionary of parameters that we need to optimize
-                                cv=5,  # Determines the cross-validation splitting strategy
+                                cv=10,  # Determines the cross-validation splitting strategy
                                 verbose=1,  # Controls the verbosity: the higher, the more messages
                                 n_jobs=-1,  # Number of jobs to run in parallel, -1 means using all processors
                                 n_iter=50,  # Number of parameter settings that are sampled
@@ -184,17 +184,20 @@ class LanguageIdentifier:
         print(classification_report(flat_y, flat_y_pred, labels=self.labels))
 
         # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
-        ax = plt.subplot()
-        # sns.set(rc={'figure.figsize': (15, 12)})
-        sns.heatmap(cm, annot=True, fmt='d', ax=ax)
+        fig, ax = plt.subplots(figsize=(10,8))
+
+        # plt.figure(figsize=(12, 10))
+        # sns.set(rc={'figure.figsize': (14, 12)})
+        sns.heatmap(cm, annot=True, fmt='d', ax=ax, annot_kws={'size': 16})
         # annot=True to annotate cells, ftm='g' to disable scientific notation
 
+
         # labels, title and ticks
-        ax.set_title('Confusion Matrix')
-        ax.set_xlabel('Predicted labels')
-        ax.set_ylabel('True labels')
-        ax.xaxis.set_ticklabels(self.labels, rotation=90)
-        ax.yaxis.set_ticklabels(self.labels, rotation=0)
+        ax.set_title('Confusion Matrix', fontsize=16)
+        ax.set_xlabel('Predicted labels', fontsize=16)
+        ax.set_ylabel('True labels', fontsize=16)
+        ax.xaxis.set_ticklabels(self.labels, rotation=45, fontsize=16)
+        ax.yaxis.set_ticklabels(self.labels, rotation=0, fontsize=16)
 
         plt.show()
 
