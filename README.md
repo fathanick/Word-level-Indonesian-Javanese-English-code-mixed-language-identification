@@ -5,4 +5,5 @@ This project aims to:
 2. Create a code-mixed language identification model using:
 
    a. Conditional Random Fields (CRF)
+   
    b. Deep learning algorithms
