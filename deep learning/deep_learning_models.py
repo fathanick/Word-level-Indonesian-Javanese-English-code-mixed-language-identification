@@ -8,13 +8,17 @@ import tensorflow as tf
 from crf.langid_crf import *
 from helper.dataset_reader import read_tsv
 from helper.data_transformer import *
-from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Embedding, Dense, Flatten
-from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional
+from tensorflow import keras
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Flatten
+from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional, Conv1D, MaxPool1D, Dropout
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+from tensorflow.keras.utils import plot_model
+from keras_crf import CRFModel
+#from tf2crf import CRF, ModelWithCRFLoss
 from livelossplot.tf_keras import PlotLossesCallback
 
 
@@ -57,21 +61,66 @@ def input_data(words, tags, dt_pair):
     return X, y
 
 def blstm_model(num_words, num_tags, max_len):
-    model = Sequential()
-    model.add(Embedding(input_dim=num_words, output_dim=50, input_length=max_len))
-    model.add(SpatialDropout1D(0.1))
-    model.add(Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.1)))
-    model.add(TimeDistributed(Dense(num_tags, activation="softmax")))
+    inputs = Input(shape=(max_len,))
+    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len)(inputs)
+    model = SpatialDropout1D(0.1)(model)
+    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.1))(model)
+    out = TimeDistributed(Dense(num_tags, activation="softmax"))(model)
+    model = Model(inputs, out)
     model.summary()
-    model.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+
+    opt = keras.optimizers.Adam(learning_rate=0.01)
+    model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    plot_model(model, to_file="img_model/blstm.png")
 
     return model
 
-def training_history(model, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
-    chkpt = ModelCheckpoint("model/model_weights.h5", monitor='val_loss', verbose=1, save_best_only=True,
+def blstm_crf_model(num_words, num_tags, max_len):
+    inputs = Input(shape=(max_len,), dtype=tf.int32)
+    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, trainable=True, mask_zero=True)(inputs)
+    model = SpatialDropout1D(0.3)(model)
+    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(model)
+    out = TimeDistributed(Dense(num_tags, activation="softmax"))(model)
+    base_model = Model(inputs, out)
+
+    model = CRFModel(base_model, num_tags)
+
+    model.summary()
+    opt = keras.optimizers.Adam(learning_rate=0.01)
+    model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+
+    plot_model(model, to_file="img_model/blstm_crf.png")
+
+    return model
+
+
+def cnn_model(num_words, num_tags, max_len):
+    inputs = Input(shape=(max_len, ))
+    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len)(inputs)
+    model = Conv1D(filters=32, kernel_size=3, padding="same", strides=1, activation="relu")(model)
+    model = MaxPool1D(pool_size=2)(model)
+    model = Flatten()(model)
+    model = Dense(10, activation="relu")(model)
+    model = Dropout(0.3)(model)
+    out = Dense(num_tags, activation="softmax")(model)
+    model = Model(inputs, out)
+    model.summary()
+
+    opt = keras.optimizers.Adam(learning_rate=0.01)
+    model.compile(optimizer=opt, loss="categorical_crossentropy", metrics=["accuracy"])
+    plot_model(model, to_file="img_model/cnn.png")
+
+    return model
+
+
+def training_history(model, model_name, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
+    root_path = 'model/'
+    joined_path = os.path.join(root_path, model_name)
+
+    chkpt = ModelCheckpoint(joined_path, monitor='val_loss', verbose=1, save_best_only=True,
                             save_weights_only=True, mode='min')
 
-    early_stopping = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=2, verbose=0, mode='max',
+    early_stopping = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=3, verbose=0, mode='max',
                                    baseline=None, restore_best_weights=False)
 
     callbacks = [PlotLossesCallback(), chkpt, early_stopping]
@@ -116,14 +165,14 @@ def actual_idx2tag(y_test, tags):
     return actual_label
 
 def performance_report(model, x_test, y_test, tags, df):
+    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
     y_actual = actual_idx2tag(y_test=y_test,tags=tags)
     y_pred = model.predict(x_test, verbose=1)
     y_pred = pred_idx2tag(y_pred, tags)
-    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
 
     print(classification_report(y_actual, y_pred, labels=labels))
 
-    cm = confusion_matrix(y_actual, y_pred)
+    cm = confusion_matrix(y_actual, y_pred, labels=labels)
     # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
     fig, ax = plt.subplots(figsize=(10, 8))
 
@@ -141,6 +190,7 @@ def performance_report(model, x_test, y_test, tags, df):
 
     plt.show()
 
+'''
 if __name__ == "__main__":
     data = read_tsv('../dataset/comlid-data-140422-v1.tsv')
     all_data, words, tags = data
@@ -157,6 +207,6 @@ if __name__ == "__main__":
     max_len = 50
     model = blstm_model(num_words, num_tags, max_len)
 
-    training_history(model, x_train, y_train, x_test, y_test, num_epoch=20, batch_sz=32)
+    training_history(model, x_train, y_train, x_test, y_test, num_epoch=50, batch_sz=32)
     performance_report(model, x_test, y_test, tags, df)
-
+'''
