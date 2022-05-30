@@ -65812,7 +65812,7 @@ jadi	ID
 Lebay	ID
 ente	ID
 mak	ID
-RT	ID
+RT	EN
 @Jaccifreha:	O
 @MetroTipi	O
 biasa	ID
@@ -70258,7 +70258,7 @@ ngecek	JV
 email	EN
 ?"	O
 :)	O
-RT	ID
+RT	EN
 @mintorogo:	O
 @pasarsapi	O
 Senin	ID
@@ -70285,15 +70285,15 @@ nonton	JV
 Stju	ID
 sma	ID
 ganang	ID
-RT	ID
+RT	EN
 @ganangkaa:	O
 Mantap	ID
 ,	O
 ini	ID
 baru	ID
 teman	ID
-hahaha	ID
-RT	ID
+hahaha	O
+RT	EN
 @khisnisains:	O
 @hanifauly	O
 ganangkaa	O
@@ -70328,7 +70328,7 @@ Bani	JV
 sg	JV
 wis	JV
 turu	JV
-RT	ID
+RT	EN
 @faridristant:	O
 Tng	ID
 saja	ID
@@ -70361,7 +70361,7 @@ Padahal	ID
 wis	JV
 direminder	MIX-JV-EN
 .	O
-RT	ID
+RT	EN
 @jonathangilang:	O
 Agnes	O
 Monica	O
@@ -70377,7 +70377,7 @@ Padahal	ID
 wis	JV
 direminder	MIX-JV-EN
 .	O
-RT	ID
+RT	EN
 @jonathangilang:	O
 Agnes	O
 Monica	O
@@ -72797,7 +72797,7 @@ pengen	JV
 hil	O
 ?	O
 :D	O
-RT	ID
+RT	EN
 @hildarasnia:	O
 penak	JV
 bgt	JV
@@ -137352,7 +137352,7 @@ film	ID
 ndang	JV
 just	EN
 two	EN
-episode	ID
+episode	EN
 ve	O
 please	EN
 
@@ -137531,7 +137531,7 @@ acting	EN
 as	EN
 정기억	O
 4th	EN
-Nov	O
+Nov	EN
 2013	O
 "	O
 
@@ -137577,8 +137577,8 @@ ipin	O
 aku	ID
 downloadke	MIX-JV-EN
 film	ID
-MAMA	ID
-CAKE	ID
+MAMA	EN
+CAKE	EN
 dong	ID
 ..	O
 :D	O
@@ -137783,7 +137783,7 @@ piellania	O
 Downloadke	MIX-JV-EN
 lagu	ID
 iki	JV
-please	JV
+please	EN
 
 (`▽´)-σ	O
 piellania	O
@@ -137968,8 +137968,8 @@ yo	JV
 RT	EN
 @adi_lucky3:	O
 Film	ID
-Z	ID
-bel	ID
+Z	O
+bel	O
 “@tyotekblunk:	O
 Op	O
 movie	EN
@@ -139014,7 +139014,7 @@ yg	ID
 udh	ID
 lebih	ID
 dari	ID
-setaun	JV
+setaun	ID
 ,	O
 gw	ID
 tbtb	ID
