@@ -27,3 +27,14 @@ def list_to_dataframe(data):
     df_wordtag = pd.DataFrame(word_tag, columns=['Token', 'Label'])
 
     return df_wordtag
+
+def get_list_words_tags(all_data):
+    # input: all_data format [[[w1, w2, ...],[t1, t2, ...]], ...]
+    word_per_sent_list = []
+    tag_per_sent_list = []
+
+    for item in all_data:
+        word_per_sent_list.append(item[0])
+        tag_per_sent_list.append(item[1])
+
+    return word_per_sent_list, tag_per_sent_list
