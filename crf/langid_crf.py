@@ -7,7 +7,7 @@ import re
 import seaborn as sns
 import matplotlib.pyplot as plt
 import eli5
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 from sklearn.metrics import confusion_matrix, classification_report, make_scorer
 from sklearn_crfsuite import metrics
 from helper.splitter import sentence_splitter
@@ -30,8 +30,8 @@ class LanguageIdentifier:
         random.seed(0)
         self.model = sklearn_crfsuite.CRF(
             algorithm='lbfgs',  # for gradient descent for optimization and getting model parameters
-            c1=0.002468896291860494,  # Coefficient for Lasso (L1) regularization for
-            c2=0.02423329096488449,  # Coefficient for Ridge (L2) regularization
+            c1=0.0015687752086282754,  # Coefficient for Lasso (L1) regularization for
+            c2=0.0771007469219844,  # Coefficient for Ridge (L2) regularization
             max_iterations=100,
             # The maximum number of iterations for optimization algorithms,
             # iteration for the gradient descent optimization
@@ -44,6 +44,7 @@ class LanguageIdentifier:
 
         for index, token in enumerate(tokens):
             feature = {
+                'token.lower': token.lower(),
                 'n_gram_0': token,
                 'token_BOS': index == 0,
                 'token_EOS': index == len(tokens) - 1,
@@ -74,6 +75,7 @@ class LanguageIdentifier:
         token = sentence[index][0]
 
         features = {
+            'token.lower': token.lower(),
             'n_gram_0': token,
             'token_BOS': index == 0,
             'token_EOS': index == len(sentence) - 1,
@@ -196,14 +198,17 @@ class LanguageIdentifier:
         for (attr, label), weight in state_features:
             print("%0.6f %-10s %s" % (weight, label, attr))
 
-    def train_test_crf(self, X_train, y_train, X_test, y_test, model_name):
+    def train_test_crf(self, X_train, y_train, X_test):
         # train the data
-        self.model.fit(X_train, y_train)
+        crf_model = self.model.fit(X_train, y_train)
 
         # prediction
         y_pred_test = self.model.predict(X_test)
         y_pred_train = self.model.predict(X_train)
 
+        return crf_model, y_pred_train, y_pred_test
+
+    def result_performance(self, y_train, y_test, y_pred_train, y_pred_test, model_name):
         # show confusion matrix
         print('\n Evaluation on the test data')
         self.show_confusion_matrix(y_test, y_pred_test)
@@ -222,10 +227,11 @@ class LanguageIdentifier:
         print("\nTop negative:")
         self.print_state_features(Counter(self.model.state_features_).most_common()[-20:])
 
-        eli5.show_weights(self.model)
+        # eli5.show_weights(self.model)
         # save model
         self.save_model(model_name)
 
+    '''
     def pipeline_merge(self, data, test_size, model_name):
         data = to_token_tag_list(data)
 
@@ -246,6 +252,7 @@ class LanguageIdentifier:
         y_test = [self.sent2tags(s) for s in test]
 
         self.train_test_crf(X_train, y_train, X_test, y_test, model_name)
+    '''
 
     def lang_prediction(self, input_data, trained_model):
 
