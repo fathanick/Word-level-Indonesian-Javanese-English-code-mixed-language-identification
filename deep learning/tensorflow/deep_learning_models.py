@@ -17,7 +17,6 @@ from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Flatten
 from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional, Conv1D, MaxPool1D, Dropout
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from tensorflow.keras.utils import plot_model
-from keras_crf import CRFModel
 #from tf2crf import CRF, ModelWithCRFLoss
 from livelossplot.tf_keras import PlotLossesCallback
 
@@ -44,8 +43,8 @@ def tag2idx(tags):
     return {t: i for i, t in enumerate(tags)}
 
 def input_data(words, tags, dt_pair):
-    max_len = 50
-    num_words = len(words)
+    max_len = 100
+    # num_words = len(words)
 
     # word2idx = {w: i + 1 for i, w in enumerate(words)}
     # tag2idx = {t: i for i, t in enumerate(tags)}
@@ -53,25 +52,26 @@ def input_data(words, tags, dt_pair):
     tag_idx = tag2idx(tags)
 
     X = [[word_idx[w[0]] for w in s] for s in dt_pair]
-    X = pad_sequences(maxlen=max_len, sequences=X, padding='post', value=num_words-1)
-
+    X = pad_sequences(maxlen=max_len, sequences=X, padding='post')
+    #X = pad_sequences(maxlen=max_len, sequences=X, padding='post', value=num_words - 1)
     y = [[tag_idx[t[1]] for t in s] for s in dt_pair]
     y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
+    #y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
 
     return X, y
 
 def blstm_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
-    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len)(inputs)
-    model = SpatialDropout1D(0.1)(model)
-    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.1))(model)
+    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
+    model = SpatialDropout1D(0.3)(model)
+    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(model)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(model)
     model = Model(inputs, out)
     model.summary()
 
     opt = keras.optimizers.Adam(learning_rate=0.01)
     model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
-    plot_model(model, to_file="img_model/blstm.png")
+    # plot_model(model, to_file="img_model/blstm.png")
 
     return model
 
@@ -113,14 +113,14 @@ def cnn_model(num_words, num_tags, max_len):
     return model
 
 
-def training_history(model, model_name, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
+def model_fitting(model, model_name, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
     root_path = 'model/'
     joined_path = os.path.join(root_path, model_name)
 
     chkpt = ModelCheckpoint(joined_path, monitor='val_loss', verbose=1, save_best_only=True,
-                            save_weights_only=True, mode='min')
+                            save_weights_only=False, mode='min')
 
-    early_stopping = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=3, verbose=0, mode='max',
+    early_stopping = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=5, verbose=0, mode='max',
                                    baseline=None, restore_best_weights=False)
 
     callbacks = [PlotLossesCallback(), chkpt, early_stopping]
@@ -164,11 +164,15 @@ def actual_idx2tag(y_test, tags):
 
     return actual_label
 
-def performance_report(model, x_test, y_test, tags, df):
-    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
+def model_prediction(model, x_test, y_test, tags):
     y_actual = actual_idx2tag(y_test=y_test,tags=tags)
     y_pred = model.predict(x_test, verbose=1)
     y_pred = pred_idx2tag(y_pred, tags)
+
+    return y_actual, y_pred
+
+def performance_report(y_actual, y_pred):
+    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
 
     print(classification_report(y_actual, y_pred, labels=labels))
 
@@ -190,23 +194,3 @@ def performance_report(model, x_test, y_test, tags, df):
 
     plt.show()
 
-'''
-if __name__ == "__main__":
-    data = read_tsv('../dataset/comlid-data-140422-v1.tsv')
-    all_data, words, tags = data
-    df = list_to_dataframe(data)
-    words = get_unique_words(df)
-    tags = get_unique_tags(df)
-
-    dt_pair = to_token_tag_list(data)
-    X, y = input_data(words, tags, dt_pair)
-    x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1)
-
-    num_words = len(words)
-    num_tags = len(tags)
-    max_len = 50
-    model = blstm_model(num_words, num_tags, max_len)
-
-    training_history(model, x_train, y_train, x_test, y_test, num_epoch=50, batch_sz=32)
-    performance_report(model, x_test, y_test, tags, df)
-'''
