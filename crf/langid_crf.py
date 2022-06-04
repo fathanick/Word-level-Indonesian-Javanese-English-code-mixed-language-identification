@@ -231,29 +231,6 @@ class LanguageIdentifier:
         # save model
         self.save_model(model_name)
 
-    '''
-    def pipeline_merge(self, data, test_size, model_name):
-        data = to_token_tag_list(data)
-
-        X = [self.sent2features(s) for s in data]
-        y = [self.sent2tags(s) for s in data]
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=0)
-
-        self.train_test_crf(X_train, y_train, X_test, y_test, model_name)
-
-    def pipeline_split(self, train_data, test_data, model_name):
-        train = to_token_tag_list(train_data)
-        test = to_token_tag_list(test_data)
-
-        X_train = [self.sent2features(s) for s in train]
-        y_train = [self.sent2tags(s) for s in train]
-
-        X_test = [self.sent2features(s) for s in test]
-        y_test = [self.sent2tags(s) for s in test]
-
-        self.train_test_crf(X_train, y_train, X_test, y_test, model_name)
-    '''
-
     def lang_prediction(self, input_data, trained_model):
 
         if type(input_data) == list:
