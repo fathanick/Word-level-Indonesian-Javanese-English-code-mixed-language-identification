@@ -1,120 +1,61 @@
-# %matplotlib inline
-import seaborn as sns
-import matplotlib.pyplot as plt
 import numpy as np
-np.random.seed(0)
-plt.style.use("ggplot")
 import tensorflow as tf
 from crf.langid_crf import *
-from helper.dataset_reader import read_tsv
-from helper.data_transformer import *
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix
 from tensorflow import keras
-from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Flatten
 from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional, Conv1D, MaxPool1D, Dropout
+from tensorflow.keras.layers import concatenate
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from tensorflow.keras.utils import plot_model
+from keras_wc_embd import get_embedding_layer
 #from tf2crf import CRF, ModelWithCRFLoss
 from livelossplot.tf_keras import PlotLossesCallback
-
-
-def get_unique_words(df):
-    unique_words = list(set(df['Token'].values))
-    unique_words.append('ENDPAD')
-
-    return unique_words
-
-def get_unique_tags(df):
-    tags = list(set(df['Label'].values))
-
-    return tags
-
-def plot_stc_length(dt_pair):
-    plt.hist([len(s) for s in dt_pair], bins=50)
-    plt.show()
-
-def word2idx(words):
-    return {w: i + 1 for i, w in enumerate(words)}
-
-def tag2idx(tags):
-    return {t: i for i, t in enumerate(tags)}
-
-def input_data(words, tags, dt_pair):
-    max_len = 100
-    # num_words = len(words)
-
-    # word2idx = {w: i + 1 for i, w in enumerate(words)}
-    # tag2idx = {t: i for i, t in enumerate(tags)}
-    word_idx = word2idx(words)
-    tag_idx = tag2idx(tags)
-
-    X = [[word_idx[w[0]] for w in s] for s in dt_pair]
-    X = pad_sequences(maxlen=max_len, sequences=X, padding='post')
-    #X = pad_sequences(maxlen=max_len, sequences=X, padding='post', value=num_words - 1)
-    y = [[tag_idx[t[1]] for t in s] for s in dt_pair]
-    y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
-    #y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
-
-    return X, y
+np.random.seed(0)
+plt.style.use("ggplot")
 
 def blstm_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
-    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
-    model = SpatialDropout1D(0.3)(model)
-    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(model)
-    out = TimeDistributed(Dense(num_tags, activation="softmax"))(model)
+    embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
+    spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
     model = Model(inputs, out)
-    model.summary()
 
     opt = keras.optimizers.Adam(learning_rate=0.01)
     model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
     # plot_model(model, to_file="img_model/blstm.png")
+    model.summary()
 
     return model
 
-def blstm_crf_model(num_words, num_tags, max_len):
-    inputs = Input(shape=(max_len,), dtype=tf.int32)
-    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, trainable=True, mask_zero=True)(inputs)
-    model = SpatialDropout1D(0.3)(model)
-    model = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(model)
-    out = TimeDistributed(Dense(num_tags, activation="softmax"))(model)
-    base_model = Model(inputs, out)
+def wc_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
+    # word embedding as input
+    word_input = Input(shape=(max_len, ))
+    word_embd = Embedding(input_dim=num_words + 2, output_dim=50, input_length=max_len, mask_zero=True)(word_input)
 
-    model = CRFModel(base_model, num_tags)
+    # character embedding as input
+    char_input = Input(shape=(max_len, max_len_char, ))
+    char_embd = TimeDistributed(Embedding(input_dim=num_char + 2, output_dim = 10,
+                                          input_length=max_len_char, mask_zero=True))(char_input)
 
-    model.summary()
+    # character LSTM to obtain word encodings by characters
+    char_encd = TimeDistributed(LSTM(units=20, return_sequences=False, recurrent_dropout=0.5))(char_embd)
+
+    # main BLSTM stack
+    concate = concatenate([word_embd, char_encd])
+    spa_dropout_layer = SpatialDropout1D(0.3)(concate)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    out = TimeDistributed(Dense(num_tags + 1, activation='softmax'))(blstm_layer)
+    model = Model([word_input, char_input], out)
+
     opt = keras.optimizers.Adam(learning_rate=0.01)
     model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
-
-    plot_model(model, to_file="img_model/blstm_crf.png")
-
-    return model
-
-
-def cnn_model(num_words, num_tags, max_len):
-    inputs = Input(shape=(max_len, ))
-    model = Embedding(input_dim=num_words, output_dim=50, input_length=max_len)(inputs)
-    model = Conv1D(filters=32, kernel_size=3, padding="same", strides=1, activation="relu")(model)
-    model = MaxPool1D(pool_size=2)(model)
-    model = Flatten()(model)
-    model = Dense(10, activation="relu")(model)
-    model = Dropout(0.3)(model)
-    out = Dense(num_tags, activation="softmax")(model)
-    model = Model(inputs, out)
     model.summary()
 
-    opt = keras.optimizers.Adam(learning_rate=0.01)
-    model.compile(optimizer=opt, loss="categorical_crossentropy", metrics=["accuracy"])
-    plot_model(model, to_file="img_model/cnn.png")
-
     return model
 
-
-def model_fitting(model, model_name, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
-    root_path = 'model/'
+def get_callbacks(root_path, model_name):
     joined_path = os.path.join(root_path, model_name)
 
     chkpt = ModelCheckpoint(joined_path, monitor='val_loss', verbose=1, save_best_only=True,
@@ -125,10 +66,17 @@ def model_fitting(model, model_name, x_train, y_train, x_test, y_test, num_epoch
 
     callbacks = [PlotLossesCallback(), chkpt, early_stopping]
 
+    return callbacks
+
+def model_fitting(model, root_path, model_name, x_train, y_train, x_test, y_test, num_epoch, batch_sz):
+
+    callbacks = get_callbacks(root_path, model_name)
+
     history = model.fit(
         x=x_train,
         y=y_train,
-        validation_data=(x_test, y_test),
+        # validation_data=(x_test, y_test),
+        validation_split=0.1,
         batch_size=batch_sz,
         epochs=num_epoch,
         callbacks=callbacks,
@@ -139,58 +87,19 @@ def model_fitting(model, model_name, x_train, y_train, x_test, y_test, num_epoch
 
     return history
 
-def pred_idx2tag(y_pred, tags):
-    predicted_label = []
-    tag_idx = tag2idx(tags)
+def wc_embd_model_fitting(model, root_path, model_name, X_word_train, X_char_train, y_train, num_epoch, batch_sz,
+                          max_len, max_len_char):
 
-    idx2tag = {i: w for w, i in tag_idx.items()}
+    callbacks = get_callbacks(root_path, model_name)
 
-    for pred_i in y_pred:
-        for p in pred_i:
-            p_i = np.argmax(p)
-            predicted_label.append(idx2tag[p_i].replace("ENDPAD", "O"))
+    history = model.fit([X_word_train,
+                         np.array(X_char_train).reshape((len(X_char_train), max_len, max_len_char))],
+                        np.array(y_train).reshape(len(y_train), max_len, 1),
+                        validation_split=0.1,
+                        batch_size=batch_sz,
+                        epochs=num_epoch,
+                        callbacks=callbacks,
+                        verbose=1
+                        )
 
-    return predicted_label
-
-def actual_idx2tag(y_test, tags):
-    actual_label = []
-    tag_idx = tag2idx(tags)
-
-    idx2tag = {i: w for w, i in tag_idx.items()}
-
-    for act_i in y_test:
-        for a in act_i:
-            actual_label.append(idx2tag[a])
-
-    return actual_label
-
-def model_prediction(model, x_test, y_test, tags):
-    y_actual = actual_idx2tag(y_test=y_test,tags=tags)
-    y_pred = model.predict(x_test, verbose=1)
-    y_pred = pred_idx2tag(y_pred, tags)
-
-    return y_actual, y_pred
-
-def performance_report(y_actual, y_pred):
-    labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
-
-    print(classification_report(y_actual, y_pred, labels=labels))
-
-    cm = confusion_matrix(y_actual, y_pred, labels=labels)
-    # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
-    fig, ax = plt.subplots(figsize=(10, 8))
-
-    # plt.figure(figsize=(12, 10))
-    # sns.set(rc={'figure.figsize': (14, 12)})
-    sns.heatmap(cm, annot=True, fmt='d', ax=ax, annot_kws={'size': 16})
-    # annot=True to annotate cells, ftm='g' to disable scientific notation
-
-    # labels, title and ticks
-    ax.set_title('Confusion Matrix', fontsize=16)
-    ax.set_xlabel('Predicted labels', fontsize=16)
-    ax.set_ylabel('True labels', fontsize=16)
-    ax.xaxis.set_ticklabels(labels, rotation=45, fontsize=16)
-    ax.yaxis.set_ticklabels(labels, rotation=0, fontsize=16)
-
-    plt.show()
-
+    return history
