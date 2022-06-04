@@ -17,7 +17,6 @@ def to_token_tag_list(data):
 
     return token_tag_pair
 
-
 def list_to_dataframe(data):
     all_data, words, tags = data
 
@@ -38,3 +37,8 @@ def get_list_words_tags(all_data):
         tag_per_sent_list.append(item[1])
 
     return word_per_sent_list, tag_per_sent_list
+
+def to_df_tweet_tags(data):
+    df = pd.DataFrame(data, columns=['Tweets','Tags'])
+
+    return df
