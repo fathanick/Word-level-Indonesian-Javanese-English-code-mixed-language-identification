@@ -570,7 +570,7 @@ ndi	JV	JV
 ?	O	O
 mbok	JV	JV
 kiro	JV	JV
-ngurus	JV	ID
+ngurus	JV	JV
 visa	ID	JV
 lek	JV	JV
 gak	JV	JV
@@ -600,7 +600,7 @@ soalnya	ID	ID
 asuuu	JV	JV
 kabeh	JV	JV
 
-dengaren	JV	ID
+dengaren	JV	JV
 ngeprintke	MIX-JV-EN	MIX-JV-EN
 tugas	JV	JV
 karo	JV	JV
@@ -608,9 +608,9 @@ tiket	JV	JV
 ndelok	JV	JV
 persis	O	O
 larang	JV	JV
-ngeprint	MIX-JV-EN	MIX-ID-EN
-ke	JV	ID
-tugas	JV	ID
+ngeprint	MIX-JV-EN	MIX-JV-EN
+ke	JV	JV
+tugas	JV	JV
 ,	O	O
 suog	JV	JV
 ~	O	O
@@ -811,7 +811,7 @@ it	EN	EN
 mencoba	ID	ID
 cari	ID	ID
 pengalihan	ID	ID
-cis	O	ID
+cis	O	O
 ,	O	O
 drama	ID	ID
 opo	JV	JV
@@ -2566,7 +2566,7 @@ warnet	ID	ID
 buat	ID	ID
 print	EN	EN
 ,	O	O
-kdng	ID	O
+kdng	ID	ID
 tukang	ID	ID
 print	EN	EN
 gamau	ID	ID
@@ -2907,7 +2907,7 @@ efektivitas	ID	ID
 sama	ID	ID
 konsistensi	ID	ID
 defence	EN	EN
-si	ID	ID
+si	ID	O
 
 malah	ID	ID
 dikatain	ID	ID
@@ -3539,7 +3539,7 @@ kadang	ID	ID
 kalo	ID	ID
 pake	ID	ID
 wifi	EN	EN
-tuh	ID	ID
+tuh	ID	EN
 download	EN	EN
 speednya	MIX-ID-EN	MIX-ID-EN
 ngestuck	MIX-ID-EN	MIX-ID-EN
@@ -3857,7 +3857,7 @@ tuku	JV	JV
 brand	EN	EN
 lokal	ID	ID
 murah	ID	ID
-murah	ID	JV
+murah	ID	ID
 apik	JV	JV
 koyok	JV	JV
 rexus	O	JV
@@ -3943,7 +3943,7 @@ karya	ID	ID
 tapi	ID	ID
 sosmed	ID	ID
 dll	ID	ID
-radue	JV	ID
+radue	JV	JV
 .	O	O
 nek	JV	JV
 dewe	JV	JV
@@ -4013,7 +4013,7 @@ liburan	ID	JV
 mung	JV	JV
 mangan	JV	JV
 ,	O	O
-ngemall	MIX-JV-EN	MIX-JV-EN
+ngemall	MIX-JV-EN	MIX-ID-EN
 ,	O	O
 udan	JV	JV
 lha	JV	JV
@@ -4366,7 +4366,7 @@ zombie	EN	O
 .	O	O
 []	O	O
 
-pancet	JV	JV
+pancet	JV	ID
 ae	JV	JV
 jare	JV	JV
 niate	JV	JV
@@ -5166,7 +5166,7 @@ temen	ID	ID
 ,	O	O
 ada	ID	ID
 kenalannya	ID	ID
-lunch	EN	ID
+lunch	EN	EN
 di	ID	ID
 wc	ID	ID
 karna	ID	ID
@@ -5585,7 +5585,7 @@ botol	JV	JV
 rek	JV	JV
 demi	ID	ID
 allah	O	O
-muangkel	JV	JV
+muangkel	JV	ID
 ,	O	O
 ngutangi	JV	JV
 konco	JV	JV
@@ -5748,7 +5748,7 @@ blm	ID	ID
 bs	ID	ID
 d	ID	ID
 download	EN	EN
-y	ID	EN
+y	ID	ID
 
 sepertinya	ID	ID
 @indihome	O	O
@@ -6093,7 +6093,7 @@ buka	ID	ID
 twt	O	ID
 mana	ID	ID
 lupa	ID	ID
-sharescreennya	MIX-ID-EN	MIX-ID-EN
+sharescreennya	MIX-ID-EN	ID
 ga	ID	ID
 diclose	MIX-ID-EN	MIX-ID-EN
 😭	O	O
@@ -6102,7 +6102,7 @@ diclose	MIX-ID-EN	MIX-ID-EN
 malu	ID	JV
 cok	JV	JV
 
-gokil	ID	O
+gokil	ID	EN
 bundling	EN	ID
 font2	MIX-ID-EN	O
 keren	ID	ID
@@ -6991,7 +6991,7 @@ him	EN	EN
 https://t.co/lckqbwv23h	O	O
 
 "	O	O
-diliak-liak	ID	JV
+diliak-liak	ID	MIX-ID-EN
 sek	JV	JV
 ceee	O	JV
 ,	O	O
@@ -7114,7 +7114,7 @@ loadingnya	MIX-ID-EN	MIX-ID-EN
 
 @cassiedeobi	O	O
 @woojuzone	O	O
-yuls	O	ID
+yuls	O	EN
 coba	ID	ID
 yuls	O	ID
 cari	ID	ID
@@ -7148,7 +7148,7 @@ uwonge	JV	EN
 live	EN	EN
 size	EN	EN
 wkwkwkw	O	O
-duhh	JV	ID
+duhh	JV	JV
 ,	O	O
 siji	JV	JV
 350	O	O
@@ -7288,7 +7288,7 @@ golekne	JV	JV
 utangan	JV	JV
 pinjol	ID	JV
 karo	JV	JV
-cod	EN	EN
+cod	EN	JV
 shopee	O	O
 iphone	O	O
 paling	JV	JV
@@ -7533,7 +7533,7 @@ e	JV	JV
 eror	ID	ID
 pas	JV	ID
 donlodane	MIX-JV-EN	MIX-JV-EN
-nyampek	ID	ID
+nyampek	ID	JV
 58	O	O
 persen	ID	ID
 @danedannee	O	O
@@ -7554,7 +7554,7 @@ datengin	ID	ID
 ,	O	O
 mereka	ID	ID
 ga	ID	ID
-nge-set	MIX-ID-EN	MIX-ID-EN
+nge-set	MIX-ID-EN	ID
 harga	ID	ID
 segini	ID	ID
 tingginya	ID	ID
@@ -7751,9 +7751,9 @@ begini-begini	ID	ID
 dan	ID	ID
 begini	ID	ID
 tapi	ID	ID
-usut	ID	ID
+usut	ID	EN
 punya	ID	ID
-usut	ID	ID
+usut	ID	EN
 karena	ID	ID
 ulah	ID	ID
 anaknya	ID	ID
@@ -8319,7 +8319,7 @@ dengan	ID	ID
 baik	ID	ID
 .	O	O
 
-sore	ID	EN
+sore	ID	ID
 kakak	ID	ID
 admin	ID	ID
 @tokopedia	O	O
@@ -8395,7 +8395,7 @@ tugas	ID	ID
 bhsa	ID	ID
 lwat	ID	ID
 email	EN	EN
-kw	JV	JV
+kw	JV	O
 .	O	O
 gek	JV	JV
 minta	ID	ID
@@ -9722,7 +9722,7 @@ di	ID	ID
 switch	EN	EN
 jadi	ID	ID
 akun	ID	ID
-alter	EN	EN
+alter	EN	ID
 apa	ID	ID
 gimana	ID	ID
 yuuuu	O	ID
@@ -9748,7 +9748,7 @@ neng	JV	JV
 laptop	JV	ID
 mahad	ID	JV
 eh	JV	JV
-data	JV	ID
+data	JV	JV
 ne	JV	JV
 durung	JV	JV
 dicopy	MIX-JV-EN	MIX-JV-EN
@@ -9914,7 +9914,7 @@ bibit	ID	ID
 pohon	ID	ID
 gagal	ID	ID
 
-lhoo	ID	JV
+lhoo	ID	ID
 ...	O	O
 lhaaa	ID	ID
 ...	O	O
@@ -9951,7 +9951,7 @@ ki	JV	JV
 strategine	MIX-ID-JV	MIX-ID-JV
 piye	JV	JV
 
-huhuhu	O	O
+huhuhu	O	ID
 gk	ID	ID
 nyangka	ID	ID
 ,	O	O
@@ -9979,7 +9979,7 @@ sekarang	ID	ID
 ❤	O	O
 
 @ngalamfess	O	O
-biasae	JV	O
+biasae	JV	JV
 penipu	ID	JV
 iku	JV	JV
 gae	JV	JV
@@ -10134,7 +10134,7 @@ dibully	MIX-ID-EN	ID
 terus	ID	ID
 sama	ID	ID
 jaehyun	O	ID
-jleg	ID	ID
+jleg	ID	O
 itu	ID	ID
 😭	O	O
 😭	O	O
@@ -10596,7 +10596,7 @@ p'mew	O	O
 n'gulf	O	O
 ,	O	O
 ai	O	O
-bai	O	O
+bai	O	ID
 ,	O	O
 n'win	O	O
 disaat	ID	ID
@@ -10734,7 +10734,7 @@ lagi	ID	ID
 gasuka	ID	ID
 sama	ID	ID
 gua	ID	ID
-hfttt	O	EN
+hfttt	O	ID
 i'm	EN	EN
 f	EN	O
 tired	EN	EN
@@ -10936,7 +10936,7 @@ ada	ID	ID
 pelapis	ID	ID
 dari	ID	ID
 the	O	O
-minions	O	EN
+minions	O	O
 yang	ID	ID
 nggak	ID	ID
 kalah	ID	ID
@@ -10957,7 +10957,7 @@ title	EN	EN
 🔥	O	O
 
 @minmincold	O	O
-akwkwkwkwkwkkw	O	O
+akwkwkwkwkwkkw	O	ID
 story-nya	MIX-ID-EN	MIX-ID-EN
 kyk	ID	ID
 minta	ID	ID
@@ -11389,7 +11389,7 @@ copa	ID	ID
 sama	ID	ID
 best	EN	EN
 player	EN	EN
-copa	EN	O
+copa	EN	EN
 .	O	O
 kalo	ID	ID
 yg	ID	ID
@@ -11405,7 +11405,7 @@ gw	ID	ID
 suka	ID	ID
 dr	ID	ID
 pak	O	ID
-sandi	O	ID
+sandi	O	JV
 ,	O	O
 sepatunya	ID	ID
 .	O	O
@@ -12093,7 +12093,7 @@ harganya	ID	ID
 @convomf	O	O
 aku	JV	JV
 gur	JV	JV
-diem	ID	ID
+diem	ID	JV
 ,	O	O
 terus	ID	ID
 nek	JV	JV
@@ -12105,7 +12105,7 @@ nyamperin	ID	ID
 ke	ID	ID
 kamar	ID	ID
 "	O	O
-dik	ID	O
+dik	ID	ID
 ,	O	O
 mama	ID	ID
 salah	ID	ID
@@ -12125,8 +12125,8 @@ marah	ID	ID
 terus	ID	ID
 aku	ID	ID
 nangis	ID	ID
-gek	JV	JV
-dipeluk	ID	JV
+gek	JV	ID
+dipeluk	ID	ID
 .	O	O
 bar	JV	JV
 kui	JV	JV
@@ -12464,8 +12464,8 @@ yoan	JV	JV
 
 @ardiwiyantara	O	O
 downloadke	MIX-JV-EN	MIX-JV-EN
-y	JV	ID
-di	O	ID
+y	JV	O
+di	O	JV
 ...	O	O
 ^_^	O	O
 please	ID	EN
@@ -12544,7 +12544,7 @@ sekalian	ID	ID
 bareng	ID	ID
 bareng	ID	ID
 ,	O	O
-menawane	JV	MIX-ID-JV
+menawane	JV	JV
 butuh	ID	JV
 bantuan	ID	ID
 
@@ -12746,7 +12746,7 @@ ternyata	ID	ID
 belum	ID	ID
 
 @fcbarcelona	O	O
-alay	ID	O
+alay	ID	EN
 admin	EN	ID
 barca	O	O
 udah	ID	ID
@@ -13247,7 +13247,7 @@ tenan	JV	JV
 perjalanane	MIX-ID-JV	MIX-ID-JV
 koyo	JV	JV
 ndik	JV	JV
-bantul	O	ID
+bantul	O	JV
 raono	JV	JV
 rumah	ID	ID
 sakit	ID	ID
@@ -14154,7 +14154,7 @@ cobaan	ID	ID
 @miunatwt	O	O
 iyaaa	ID	ID
 ,	O	O
-arlcchino	O	EN
+arlcchino	O	O
 emang	ID	ID
 termasuk	ID	ID
 zanni	O	ID
@@ -14164,7 +14164,7 @@ zanni	O	ID
 bisa	ID	ID
 dipake	ID	ID
 buat	ID	ID
-chara	O	O
+chara	O	EN
 commedia	O	O
 del	O	O
 arte	O	EN
@@ -14853,7 +14853,7 @@ pie	JV	JV
 ???	O	O
 tek	JV	JV
 too	EN	JV
-much	EN	EN
+much	EN	JV
 omonganku	JV	JV
 tak	JV	JV
 hapuse	MIX-ID-JV	MIX-ID-JV
@@ -14885,7 +14885,7 @@ depan	ID	ID
 gilak	ID	ID
 visual	ID	ID
 nya	ID	ID
-mantep	ID	JV
+mantep	ID	ID
 bener	ID	ID
 wkwkwkkw	O	O
 https://t.co/7n0a1exelr	O	O
@@ -15447,7 +15447,7 @@ yg	ID	ID
 mau	ID	ID
 pakai	ID	ID
 erigo	O	ID
-pak	ID	ID
+pak	ID	O
 bos	ID	ID
 sadad	O	ID
 yg	ID	ID
@@ -15975,7 +15975,7 @@ sama	ID	ID
 tukang	ID	ID
 print	EN	EN
 kayak	ID	ID
-babi	ID	O
+babi	ID	ID
 .	O	O
 kita	ID	ID
 ngeprint	MIX-ID-EN	MIX-ID-EN
@@ -16229,7 +16229,7 @@ aku	JV	JV
 meh	JV	JV
 ng	JV	JV
 pln	ID	JV
-petugase	JV	JV
+petugase	JV	MIX-ID-JV
 tak	JV	JV
 kon	JV	JV
 garapke	JV	JV
@@ -16629,7 +16629,7 @@ tia	O	O
 
 @luffi_putra	O	O
 @jhani90	O	O
-aku	ID	JV
+aku	ID	ID
 wes	JV	JV
 nge-add	MIX-ID-EN	MIX-ID-EN
 dia	ID	ID
@@ -16754,7 +16754,7 @@ kayaknya	ID	ID
 @seputartetangga	O	O
 pernah	ID	ID
 ngalamin	ID	ID
-persis	ID	O
+persis	ID	ID
 kaya	ID	ID
 gini	ID	ID
 juga	ID	ID
@@ -17015,7 +17015,7 @@ donk	ID	EN
 
 cen	JV	JV
 ramasok	JV	JV
-antri	JV	ID
+antri	JV	O
 scan	EN	EN
 pcr	EN	EN
 bandara	ID	ID
@@ -17074,7 +17074,7 @@ yak	ID	ID
 misal	ID	ID
 gratis	ID	ID
 ongkir	ID	ID
-ambek	JV	JV
+ambek	JV	ID
 diskon	ID	ID
 
 @bluelatteo	O	O
@@ -17150,7 +17150,7 @@ usia	ID	ID
 berapa	ID	ID
 dan	ID	ID
 ternyata	ID	ID
-remaja	ID	O
+remaja	ID	ID
 …	O	O
 yaudahlah	ID	ID
 sabar	ID	ID
@@ -17167,11 +17167,11 @@ trssss	JV	JV
 py	JV	JV
 ki	JV	JV
 aku	JV	JV
-kesepian	ID	ID
-rk	JV	EN
+kesepian	ID	JV
+rk	JV	JV
 ono	JV	JV
-updatean	MIX-ID-EN	MIX-JV-EN
-pcr	EN	EN
+updatean	MIX-JV-EN	MIX-JV-EN
+pcr	EN	JV
 😭	O	O
 
 duh	ID	ID
@@ -17316,7 +17316,7 @@ twice	EN	EN
 nct	O	O
 yuta	O	ID
 pc	EN	EN
-ina	O	EN
+ina	O	O
 wts	EN	EN
 twice	EN	EN
 ~	O	O
@@ -17481,7 +17481,7 @@ bengi	JV	JV
 ,	O	O
 donlodane	MIX-JV-EN	MIX-JV-EN
 rung	JV	JV
-mulai	JV	ID
+mulai	JV	JV
 jebul	JV	JV
 ,	O	O
 hahahaha	O	O
@@ -17763,7 +17763,7 @@ kondisi	ID	ID
 moda	ID	ID
 
 @idextratime	O	O
-emyu	O	EN
+emyu	O	ID
 banyak	ID	ID
 salah	ID	ID
 passing	EN	EN
@@ -17907,7 +17907,7 @@ kalo	ID	ID
 misal	ID	ID
 kita	ID	ID
 beline	MIX-ID-JV	MIX-ID-JV
-fillet	EN	EN
+fillet	EN	ID
 ?	O	O
 spill	EN	EN
 dipasar	ID	ID
@@ -18283,7 +18283,7 @@ iso	JV	JV
 discan	MIX-JV-EN	MIX-JV-EN
 yaa	JV	JV
 .	O	O
-ok	EN	EN
+ok	EN	O
 
 gua	ID	ID
 qrt	EN	EN
@@ -19045,7 +19045,7 @@ kali	ID	ID
 tolong	ID	ID
 difilter	ID	ID
 juga	ID	ID
-kata-katanya	ID	ID
+kata-katanya	ID	MIX-ID-EN
 .	O	O
 bisa	ID	ID
 menyinggung	ID	ID
@@ -19409,7 +19409,7 @@ dibikin	ID	ID
 
 @brinashabi	O	O
 ya	ID	ID
-ilah	ID	JV
+ilah	ID	ID
 ribet	JV	ID
 amat	ID	ID
 sama	ID	ID
@@ -19472,7 +19472,7 @@ ini	ID	ID
 padahal	ID	ID
 behind	EN	EN
 story-nya	MIX-ID-EN	MIX-ID-EN
-si	O	ID
+si	O	O
 raka	O	ID
 kasian	ID	ID
 banget	ID	ID
@@ -19555,7 +19555,7 @@ dicopy	MIX-ID-EN	MIX-ID-EN
 ,	O	O
 kirain	ID	ID
 nomer	ID	ID
-virtual	EN	ID
+virtual	EN	EN
 account	EN	EN
 sama2	ID	ID
 aja	ID	ID
@@ -20667,7 +20667,7 @@ please	EN	EN
 streaming	EN	EN
 darari	O	EN
 on	EN	EN
-spotify	O	EN
+spotify	O	O
 ‼	O	O
 ️darari	O	O
 di	ID	ID
@@ -20771,7 +20771,7 @@ eh	ID	ID
 tapi	ID	ID
 moots	EN	EN
 kalian	ID	ID
-liet	ID	ID
+liet	ID	EN
 quote	EN	EN
 tweetku	MIX-ID-EN	MIX-ID-EN
 +	O	O
@@ -21194,7 +21194,7 @@ sama	ID	ID
 tp	ID	ID
 kualitasnya	ID	ID
 itu	ID	ID
-diverse	EN	ID
+diverse	EN	MIX-ID-EN
 banget	ID	ID
 .	O	O
 jugaan	ID	ID
@@ -21269,12 +21269,12 @@ bantu	ID	ID
 serangan	ID	ID
 ?	O	O
 uefa	O	O
-pro	O	JV
+pro	O	O
 kok	JV	JV
 ra	JV	JV
 nduwe	JV	JV
 plan	EN	JV
-b	O	JV
+b	O	O
 lek	JV	JV
 strategine	MIX-ID-JV	MIX-ID-JV
 macet	ID	ID
@@ -21555,7 +21555,7 @@ darimana	ID	ID
 https://t.co/ukqyvszazv	O	O
 
 bab	JV	ID
-direpoti	JV	MIX-JV-EN
+direpoti	JV	JV
 koncoku	JV	JV
 emg	ID	ID
 paling	ID	ID
@@ -21940,7 +21940,7 @@ having	EN	EN
 a	EN	EN
 good	EN	EN
 time	EN	EN
-tgt	EN	ID
+tgt	EN	EN
 .	O	O
 alim	ID	ID
 dan	ID	ID
@@ -21996,7 +21996,7 @@ to	JV	JV
 
 kok	ID	ID
 gabisa	ID	ID
-direply	MIX-ID-EN	MIX-ID-EN
+direply	MIX-ID-EN	ID
 maaci	ID	ID
 saint	EN	EN
 please	EN	EN
@@ -22074,7 +22074,7 @@ up	EN	EN
 cuma	ID	ID
 nek	JV	JV
 ben	JV	JV
-minggu	JV	JV
+minggu	JV	ID
 ono	JV	JV
 gangguan	ID	JV
 yo	JV	JV
@@ -22149,7 +22149,7 @@ aku	JV	JV
 sak	JV	JV
 kabeh	JV	JV
 sosmed	ID	ID
-namane	MIX-ID-JV	MIX-ID-JV
+namane	MIX-ID-JV	JV
 sama	ID	ID
 😭	O	O
 
@@ -22416,7 +22416,7 @@ ga	ID	ID
 guna	ID	ID
 yg	ID	ID
 bales	ID	ID
-bot	ID	ID
+bot	ID	EN
 semua	ID	ID
 males	ID	ID
 gw	ID	ID
@@ -22478,7 +22478,7 @@ kalo	ID	ID
 pengen	ID	ID
 aman	ID	ID
 pake	ID	ID
-cardless	EN	EN
+cardless	EN	O
 aja	ID	ID
 ,	O	O
 gw	ID	ID
@@ -22922,7 +22922,7 @@ meet	EN	EN
 my	EN	EN
 friend	EN	EN
 ;	O	O
-karate	ID	EN
+karate	ID	ID
 sabuk	ID	ID
 hitam	ID	ID
 dan	ID	ID
@@ -23370,7 +23370,7 @@ nanti	ID	ID
 ngopynya	MIX-ID-EN	ID
 gimana	ID	ID
 hoalah	JV	ID
-privilege	EN	EN
+privilege	EN	JV
 mac	O	JV
 ora	JV	JV
 iso	JV	JV
@@ -23541,7 +23541,7 @@ tp	ID	ID
 kalau	ID	ID
 kayak	ID	ID
 udah	ID	ID
-annoying	EN	ID
+annoying	EN	EN
 smpe	ID	ID
 ngaap2in	ID	ID
 hrus	ID	ID
@@ -23577,7 +23577,7 @@ kabeh	JV	JV
 ,	O	O
 ndadak	JV	JV
 nginstall	MIX-ID-EN	MIX-JV-EN
-plume	O	MIX-ID-JV
+plume	O	JV
 anyar	JV	JV
 mung	JV	JV
 nggo	JV	JV
@@ -23886,7 +23886,7 @@ https://t.co/ifqqhwqjmy	O	O
 koncoku	JV	JV
 dolanan	JV	JV
 crush	O	O
-gear	O	JV
+gear	O	O
 pas	JV	JV
 cilik	JV	JV
 cen	JV	JV
@@ -24813,7 +24813,7 @@ dan	ID	ID
 ditambahin	ID	ID
 j	O	ID
 doang	ID	ID
-didepannya	ID	ID
+didepannya	ID	MIX-ID-EN
 buat	ID	ID
 nandain	ID	ID
 dia	ID	ID
@@ -24871,7 +24871,7 @@ pustaka	O	O
 al-muhibbin	O	O
 .	O	O
 monggo	JV	JV
-disubscribe	MIX-ID-EN	MIX-ID-EN
+disubscribe	MIX-JV-EN	MIX-ID-EN
 ,	O	O
 agar	ID	ID
 muncul	ID	ID
@@ -24892,7 +24892,7 @@ kenal	ID	ID
 sampe	ID	ID
 aina	O	O
 teu	O	ID
-apal	ID	O
+apal	ID	ID
 saha	O	ID
 ngarana	O	ID
 yg	ID	ID
@@ -25478,7 +25478,7 @@ mikir	ID	ID
 dan	ID	ID
 nunggu	ID	ID
 disamperin	ID	ID
-mika	ID	O
+mika	ID	ID
 wkwkwk	O	O
 om	ID	ID
 om	ID	ID
@@ -26010,7 +26010,7 @@ hwekekeke	O	O
 ...	O	O
 
 wis	JV	JV
-ngeprint	MIX-JV-EN	MIX-ID-EN
+ngeprint	MIX-JV-EN	MIX-JV-EN
 tugas	ID	ID
 2rb	ID	ID
 ...	O	O
@@ -26918,7 +26918,7 @@ rt	EN	EN
 @akusetiankri	O	O
 @bakarsmith	O	O
 si	O	ID
-bakar	O	ID
+bakar	O	O
 ini	ID	ID
 ada	ID	ID
 dilist	MIX-ID-EN	MIX-ID-EN
@@ -27519,7 +27519,7 @@ twit	O	EN
 ngabari	JV	JV
 kui	JV	JV
 yo	JV	JV
-ldr	EN	JV
+ldr	EN	O
 
 dm	EN	ID
 nggak	ID	ID
@@ -27765,7 +27765,7 @@ dada	ID	ID
 mu	O	O
 sampe	ID	ID
 bunyi	ID	ID
-deg	ID	ID
+deg	ID	O
 
 -	O	O
 rek	JV	JV
@@ -27931,7 +27931,7 @@ sih	ID	ID
 kontenku	ID	ID
 dishare	MIX-ID-EN	MIX-ID-EN
 sama	ID	ID
-ustadz	ID	ID
+ustadz	ID	O
 sendiri	ID	ID
 .	O	O
 dulu	ID	ID
@@ -28399,7 +28399,7 @@ istimewa	ID	ID
 ,	O	O
 salah	ID	ID
 satu	ID	ID
-calon	ID	EN
+calon	ID	O
 juara	ID	ID
 .	O	O
 
@@ -29497,7 +29497,7 @@ soalnya	ID	ID
 ga	ID	ID
 suka	ID	ID
 sama	ID	ID
-fitur²nya	ID	ID
+fitur²nya	ID	MIX-ID-EN
 yg	ID	ID
 makin	ID	ID
 aneh	ID	ID
@@ -30218,7 +30218,7 @@ list	EN	EN
 ,	O	O
 kita	ID	ID
 tukar	ID	ID
-point	ID	O
+point	ID	EN
 buat	ID	ID
 lagunya	ID	ID
 distreaming	MIX-ID-EN	MIX-ID-EN
@@ -30504,7 +30504,7 @@ enggih	JV	ID
 mengkih	JV	JV
 kersane	JV	JV
 diprintke	MIX-JV-EN	MIX-JV-EN
-mbak	JV	O
+mbak	JV	JV
 10	O	O
 bulan	ID	ID
 kemudian	ID	ID
@@ -32859,7 +32859,7 @@ udah	ID	ID
 gak	ID	ID
 aktif	ID	ID
 ,	O	O
-brengshakeeeeeee	ID	EN
+brengshakeeeeeee	ID	O
 
 memang	ID	ID
 kalau	ID	ID
@@ -33633,7 +33633,7 @@ aku	JV	JV
 meh	JV	JV
 ndelok	JV	JV
 strategine	MIX-ID-JV	MIX-ID-JV
-ppt	EN	EN
+ppt	EN	JV
 po	JV	JV
 piye	JV	JV
 ???????	O	O
@@ -34220,7 +34220,7 @@ ga	ID	ID
 di	ID	ID
 cs	EN	EN
 biasa	ID	ID
-chae	O	O
+chae	O	EN
 ,	O	O
 dihandle	MIX-ID-EN	MIX-ID-EN
 prioritas	ID	ID
@@ -34525,7 +34525,7 @@ pm	EN	O
 creep	EN	EN
 in	EN	EN
 .	O	O
-komedi	ID	ID
+komedi	ID	O
 just	EN	EN
 friend	EN	EN
 ,	O	O
@@ -34809,7 +34809,7 @@ adminnya	ID	ID
 kooperatif	ID	ID
 .	O	O
 ongkir	ID	ID
-returnya	ID	ID
+returnya	ID	MIX-ID-EN
 juga	ID	ID
 bisa	ID	ID
 di	ID	ID
@@ -34922,7 +34922,7 @@ sih	ID	ID
 bos	ID	ID
 muzan	O	ID
 sama	ID	ID
-yoriichi	O	ID
+yoriichi	O	O
 sebagai	ID	ID
 sekretarisnya	ID	ID
 👍🏻	O	O
@@ -35091,7 +35091,7 @@ ngisor	JV	JV
 bali	JV	JV
 munggah	JV	JV
 dw	JV	JV
-tiba-tiba	ID	ID
+tiba-tiba	ID	O
 😭	O	O
 😭	O	O
 
@@ -35271,7 +35271,7 @@ wah	JV	JV
 rak	JV	JV
 reti	JV	JV
 ak	JV	JV
-tom	O	JV
+tom	O	O
 ,	O	O
 tekok	JV	JV
 papahku	JV	JV
@@ -36109,7 +36109,7 @@ toner	EN	EN
 itu	ID	ID
 buat	ID	ID
 balancing	EN	EN
-ph	EN	ID
+ph	EN	EN
 abis	ID	ID
 cuci	ID	ID
 muka	ID	ID
@@ -36431,7 +36431,7 @@ lemot	JV	JV
 kenek	JV	JV
 ge	JV	JV
 download	EN	EN
-50mb	EN	EN
+50mb	EN	O
 ....	O	O
 xl	O	O
 xlalu	ID	ID
@@ -36446,7 +36446,7 @@ galau	ID	ID
 @mbezz_syalala	O	O
 @dinihrdianti	O	O
 hp	EN	EN
-sae	JV	O
+sae	JV	JV
 bunda	ID	ID
 ...	O	O
 nak	JV	ID
@@ -36653,7 +36653,7 @@ ngakak	ID	ID
 
 @gagasnirgaling	O	O
 gas	O	ID
-aku	ID	ID
+aku	ID	JV
 downloadke	MIX-JV-EN	MIX-JV-EN
 "	O	O
 rumah	ID	ID
@@ -37098,7 +37098,7 @@ gak	JV	JV
 enek	JV	JV
 liyane	JV	JV
 yo	JV	JV
-kak	ID	O
+kak	ID	JV
 ..	O	O
 dadi	JV	JV
 wis	JV	JV
@@ -37866,7 +37866,7 @@ nge	ID	ID
 youtube	O	O
 aja	ID	ID
 .	O	O
-dibilangnya	ID	ID
+dibilangnya	ID	MIX-ID-EN
 masalah	ID	ID
 jaringan	ID	ID
 terus	ID	ID
@@ -38128,7 +38128,7 @@ mau	ID	ID
 1	O	O
 juta	ID	ID
 lg	ID	ID
-views	EN	EN
+views	EN	ID
 nya	ID	ID
 😭	O	O
 😭	O	O
@@ -38749,7 +38749,7 @@ ng	JV	JV
 line	O	JV
 ilang	JV	JV
 mergo	JV	JV
-pindah	JV	ID
+pindah	JV	JV
 hp	EN	EN
 ..	O	O
 piye	JV	JV
@@ -38860,7 +38860,7 @@ jam	ID	ID
 10	O	O
 pagi	ID	ID
 ,	O	O
-cgk-tpe	O	O
+cgk-tpe	O	ID
 jam	ID	ID
 3an	ID	ID
 sore	ID	ID
@@ -39172,7 +39172,7 @@ bener	ID	ID
 aja	ID	ID
 🙃	O	O
 
-do	JV	EN
+do	JV	JV
 kaget	JV	JV
 zara	O	O
 okin	O	O
@@ -39217,7 +39217,7 @@ mbok	O	JV
 sar	O	JV
 ngefollow	MIX-JV-EN	MIX-JV-EN
 ig	O	O
-ku	JV	ID
+ku	JV	JV
 ,	O	O
 dadi	JV	JV
 kangen	ID	ID
@@ -39310,7 +39310,7 @@ nek	JV	JV
 mahal	ID	ID
 yo	JV	JV
 rasa	ID	JV
-salmone	JV	ID
+salmone	JV	JV
 cenderung	ID	ID
 hambar	ID	ID
 ke	ID	ID
@@ -39537,8 +39537,8 @@ jualan	ID	ID
 @teuverse_id	O	O
 @4sahidobby	O	O
 @treasuremembers	O	O
-ciee	O	O
-direply	MIX-JV-EN	MIX-ID-EN
+ciee	O	JV
+direply	MIX-JV-EN	MIX-JV-EN
 dobby	O	EN
 .	O	O
 btw	EN	EN
@@ -39557,7 +39557,7 @@ lt	O	O
 mjb	MIX-ID-EN	MIX-ID-EN
 
 @syahrufeby	O	O
-ribut	JV	JV
+ribut	JV	ID
 wae	JV	JV
 kakeane	JV	JV
 ,	O	O
@@ -40629,7 +40629,7 @@ ini	ID	ID
 tak	ID	ID
 carine	MIX-ID-JV	MIX-ID-JV
 namanya	ID	ID
-kyungho	O	O
+kyungho	O	ID
 https://t.co/bgvxgkjlyt	O	O
 
 @bodykayajihyo	O	O
@@ -40762,7 +40762,7 @@ dicopy	MIX-ID-EN	MIX-ID-EN
 @badmintontalk	O	O
 jojo	O	O
 saranghaeeee	O	O
-jo	O	ID
+jo	O	O
 gile	ID	ID
 makin	ID	ID
 mantep	ID	ID
@@ -41496,7 +41496,7 @@ ngeluwihi	JV	JV
 pacar	JV	JV
 tapi	JV	JV
 tetep	JV	JV
-statuse	MIX-ID-JV	JV
+statuse	MIX-ID-JV	MIX-ID-JV
 mung	JV	JV
 konco	JV	JV
 .	O	O
@@ -41650,7 +41650,7 @@ gapapa	ID	ID
 je	O	O
 ,	O	O
 fokus	ID	ID
-us	ID	EN
+us	ID	ID
 sama	ID	ID
 uprak	ID	ID
 nya	ID	ID
@@ -41769,7 +41769,7 @@ susah	ID	ID
 move	EN	EN
 on	EN	EN
 dari	ID	ID
-james	O	O
+james	O	ID
 sm	ID	ID
 michael	O	O
 sih	ID	ID
@@ -42061,7 +42061,7 @@ arth_r	O	O
 🗿	O	O
 mosok	JV	JV
 kabeh	JV	JV
-dirumorke	MIX-ID-JV	MIX-JV-EN
+dirumorke	MIX-ID-JV	JV
 
 lanjut	ID	ID
 ikut	ID	ID
@@ -42190,13 +42190,13 @@ b	O	O
 ,	O	O
 nyanyi	JV	JV
 ngantik	JV	JV
-ngos2an	JV	ID
+ngos2an	JV	JV
 ,	O	O
 jebule	JV	JV
 rung	JV	JV
 ono	JV	JV
 apdetan	MIX-JV-EN	MIX-JV-EN
-trit'e	MIX-JV-EN	JV
+trit'e	MIX-JV-EN	O
 🤣	O	O
 asem	JV	JV
 🤣	O	O
@@ -42523,7 +42523,7 @@ hapene	MIX-JV-EN	MIX-JV-EN
 cah	JV	JV
 kae	JV	JV
 wis	JV	JV
-dilogout	MIX-JV-EN	MIX-JV-EN
+dilogout	MIX-JV-EN	JV
 durung	JV	JV
 yo	JV	JV
 ?	O	O
@@ -42673,7 +42673,7 @@ dulu	ID	ID
 .	O	O
 demi	ID	ID
 ikut	ID	ID
-calon	ID	EN
+calon	ID	O
 suami	ID	ID
 .	O	O
 untung	ID	ID
@@ -42812,7 +42812,7 @@ gitu	ID	ID
 ,	O	O
 kmren	ID	ID
 nnton	ID	ID
-titanic	O	O
+titanic	O	EN
 aja	ID	ID
 banyak	ID	ID
 scene	EN	EN
@@ -42934,7 +42934,7 @@ gue	ID	ID
 pikir	ID	ID
 peran	ID	ID
 jo	O	O
-in	O	ID
+in	O	O
 sung	O	O
 di	ID	ID
 escape	EN	EN
@@ -43531,7 +43531,7 @@ shouldn't	EN	EN
 do	EN	EN
 .	O	O
 mau	ID	ID
-nangiss	ID	O
+nangiss	ID	ID
 sumpah	ID	ID
 ini	ID	ID
 udah	ID	ID
@@ -44314,7 +44314,7 @@ baim	O	O
 
 "	O	O
 kak	ID	ID
-ale	O	O
+ale	O	EN
 km	ID	ID
 jadi	ID	ID
 rent	EN	EN
@@ -44636,7 +44636,7 @@ ini	ID	ID
 😭	O	O
 aku	ID	ID
 aja	ID	ID
-s1	ID	ID
+s1	ID	O
 udah	ID	ID
 stres	ID	EN
 walaupun	ID	ID
@@ -44644,7 +44644,7 @@ org2	ID	ID
 selalu	ID	ID
 berkomentar	ID	ID
 "	O	O
-halah	ID	JV
+halah	ID	ID
 lu	ID	ID
 kuliah	ID	ID
 hukum	ID	ID
@@ -44729,8 +44729,8 @@ dulu	ID	ID
 @vocketfcid	O	O
 tak	JV	JV
 dungakno	JV	JV
-mobile	MIX-ID-JV	EN
-kecelakaan	ID	ID
+mobile	MIX-ID-JV	JV
+kecelakaan	ID	JV
 pas	JV	JV
 budal	JV	JV
 nang	JV	JV
@@ -45015,7 +45015,7 @@ salahe	JV	JV
 mikirke	JV	JV
 aku	JV	JV
 :-p	O	O
-ntar	ID	JV
+ntar	ID	ID
 ditanyake	MIX-ID-JV	MIX-ID-JV
 lagi	ID	ID
 wae	JV	JV
@@ -45103,7 +45103,7 @@ klien	ID	ID
 pengennya	ID	ID
 dihandle	MIX-ID-EN	MIX-ID-EN
 sama	ID	ID
-emily	O	EN
+emily	O	O
 .	O	O
 indah	ID	ID
 bener	ID	ID
@@ -45468,7 +45468,7 @@ berisiko	ID	ID
 juga	ID	ID
 tapi	ID	ID
 kan	ID	ID
-woman’s	EN	O
+woman’s	EN	EN
 choice	EN	EN
 .	O	O
 lagian	ID	ID
