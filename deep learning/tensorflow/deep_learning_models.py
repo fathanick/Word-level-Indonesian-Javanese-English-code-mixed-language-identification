@@ -8,7 +8,6 @@ from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirecti
 from tensorflow.keras.layers import concatenate
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 from tensorflow.keras.utils import plot_model
-from keras_wc_embd import get_embedding_layer
 #from tf2crf import CRF, ModelWithCRFLoss
 from livelossplot.tf_keras import PlotLossesCallback
 np.random.seed(0)
@@ -77,7 +76,6 @@ def model_fitting(model, root_path, model_name, x_train, y_train, x_test, y_test
         y=y_train,
         # validation_data=(x_test, y_test),
         validation_split=0.1,
-        batch_size=batch_sz,
         epochs=num_epoch,
         callbacks=callbacks,
         verbose=1
