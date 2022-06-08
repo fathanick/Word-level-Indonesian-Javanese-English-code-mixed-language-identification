@@ -17026,7 +17026,7 @@ ntar	ID
 kamvek	O
 tinggal	ID
 masukin	ID
-updatean	MIX-JV-EN
+updatean	MIX-ID-EN
 ke	ID
 ono	ID
 
@@ -17034,7 +17034,7 @@ ono	ID
 @mlbbfess	O
 Dota	O
 ono	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 anyar	JV
 din	O
 
@@ -17105,7 +17105,7 @@ kamerane	JV
 pixel	EN
 ,	O
 tur	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 andro	O
 iseh	JV
 entuk	JV
@@ -17200,7 +17200,7 @@ aku	JV
 kesepian	ID
 rk	JV
 ono	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 pcr	EN
 😭	O
 
@@ -17889,7 +17889,7 @@ Barang	JV
 rak	JV
 tekan	JV
 ngerti2	JV
-statuse	JV
+statuse	MIX-ID-JV
 wes	JV
 kompliy	EN
 orderane	MIX-ID-JV
