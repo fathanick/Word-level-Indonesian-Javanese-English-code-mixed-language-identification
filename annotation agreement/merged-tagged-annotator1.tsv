@@ -339,7 +339,7 @@ muluu	ID
 🤣	O
 
 “	O
-halah	JV
+halah	ID
 tinggal	ID
 ngeprint	MIX-ID-EN
 sendiri	ID
@@ -3633,7 +3633,7 @@ dibeli	ID
 dibelii	ID
 ...	O
 Susu	ID
-UHT-nya	ID
+UHT-nya	MIX-ID-EN
 ka	ID
 asli	ID
 dari	ID
@@ -8861,7 +8861,7 @@ paling	JV
 males	JV
 ..	O
 suwi	JV
-soale	MIX-ID-JV
+soale	JV
 :))	O
 kowe	JV
 donlod	EN
@@ -10866,7 +10866,7 @@ Bikin	ID
 aja	ID
 akun	ID
 at	EN
-kecapnasional	ID
+kecapnasional	O
 .	O
 Lebih	ID
 interaktif	ID
@@ -13209,7 +13209,7 @@ aku	ID
 pengguna	ID
 baru	ID
 tokped	O
-soale	MIX-ID-JV
+soale	JV
 dadi	JV
 gakro	JV
 info2ne	MIX-ID-JV
@@ -14842,7 +14842,7 @@ HPne	MIX-JV-EN
 
 @Gondd4	O
 @sbyfess	O
-soale	MIX-ID-JV
+soale	JV
 biasane	JV
 gada	ID
 yg	ID
@@ -15310,7 +15310,7 @@ hee	O
 rek	JV
 aku	JV
 seneng	JV
-soale	MIX-ID-JV
+soale	JV
 postingane	MIX-ID-JV
 mas	O
 crush	O
@@ -15583,7 +15583,7 @@ chattingane	MIX-JV-EN
 WA	O
 ku	JV
 sepi	JV
-soale	MIX-ID-JV
+soale	JV
 chattingane	MIX-JV-EN
 nggae	JV
 telegram	O
@@ -15683,7 +15683,7 @@ nggih	JV
 Putrane	JV
 bu	JV
 Lurah	JV
-soale	MIX-ID-JV
+soale	JV
 niku	JV
 ”	O
 What	EN
@@ -15974,7 +15974,7 @@ penjuale	MIX-ID-JV
 Hargane	MIX-ID-JV
 tergantung	ID
 penjuale	MIX-ID-JV
-soale	MIX-ID-JV
+soale	JV
 mas	ID
 ,	O
 ada	ID
@@ -17034,7 +17034,7 @@ ono	ID
 @mlbbfess	O
 Dota	O
 ono	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 anyar	JV
 din	O
 
@@ -17105,7 +17105,7 @@ kamerane	JV
 pixel	EN
 ,	O
 tur	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 andro	O
 iseh	JV
 entuk	JV
@@ -17200,7 +17200,7 @@ aku	JV
 kesepian	ID
 rk	JV
 ono	JV
-updatean	MIX-ID-EN
+updatean	MIX-JV-EN
 pcr	EN
 😭	O
 
@@ -17354,7 +17354,7 @@ jamanku	JV
 install	EN
 iko	JV
 abot	JV
-soale	MIX-ID-JV
+soale	JV
 ,	O
 60fps	EN
 gaiso	JV
@@ -17382,7 +17382,7 @@ ternyata	ID
 macam	ID
 99%	O
 ngananers	MIX-ID-EN
-soale	MIX-ID-JV
+soale	JV
 nek	JV
 ra	JV
 folo	EN
@@ -17390,7 +17390,7 @@ ra	JV
 ono	JV
 apdetan	MIX-JV-EN
 
-Statuse	JV
+Statuse	MIX-ID-JV
 mbak2	JV
 story	EN
 ne	JV
@@ -17889,7 +17889,7 @@ Barang	JV
 rak	JV
 tekan	JV
 ngerti2	JV
-statuse	JV
+statuse	MIX-ID-JV
 wes	JV
 kompliy	EN
 orderane	MIX-ID-JV
@@ -18893,7 +18893,7 @@ barang	JV
 @kevinjodi96	O
 @pakantono	O
 lewat	ID
-tl	JV
+tl	EN
 baru	ID
 ping	JV
 dua	ID
@@ -19382,7 +19382,7 @@ debat	ID
 wes	JV
 ora	JV
 usah	JV
-direply	MIX-ID-EN
+direply	MIX-JV-EN
 atau	ID
 diritwit	MIX-ID-EN
 ,	O
@@ -19971,7 +19971,7 @@ rung	JV
 pengalaman	ID
 ngono	JV
 (?)	O
-soale	MIX-ID-JV
+soale	JV
 intl	EN
 dihandle	MIX-ID-EN
 manual	ID
@@ -21573,7 +21573,7 @@ to	JV
 ?	O
 aku	ID
 lali	JV
-soale	MIX-ID-JV
+soale	JV
 eling	JV
 e	JV
 mung	JV
@@ -22533,7 +22533,7 @@ mbe	JV
 percakapane	MIX-ID-JV
 mereka	ID
 ?	O
-soale	MIX-ID-JV
+soale	JV
 ancen	JV
 awdw	JV
 gak	JV
@@ -23065,7 +23065,7 @@ meneh	JV
 katanya	ID
 kan	ID
 gampang	ID
-ngeprint	MIX-ID-EN
+ngeprint	MIX-JV-EN
 meneh	JV
 ..	O
 ha	O
@@ -23251,7 +23251,7 @@ Wingi	JV
 muncul	ID
 pak	JV
 jarene	JV
-soale	MIX-ID-JV
+soale	JV
 aku	ID
 Ndak	ID
 diliatkan	ID
@@ -24284,7 +24284,7 @@ Pustaka	O
 Al-Muhibbin	O
 .	O
 Monggo	JV
-disubscribe	MIX-ID-EN
+disubscribe	MIX-JV-EN
 ,	O
 agar	ID
 muncul	ID
@@ -28398,7 +28398,7 @@ oiyo	JV
 lali	JV
 akunku	JV
 ndek	JV
-hpmu	JV
+hpmu	MIX-JV-EN
 durung	JV
 dilogout	MIX-JV-EN
 alaah	JV
@@ -28415,7 +28415,7 @@ dilogout	MIX-JV-EN
 durung	JV
 twitterku	JV
 nang	JV
-hpmu	JV
+hpmu	MIX-JV-EN
 .?	O
 (⌣_⌣)	O
 
@@ -29231,7 +29231,7 @@ djum	O
 ..	O
 Heleehh	O
 malioboro	O
-mall	O
+mall	EN
 ngidul	JV
 sithik	JV
 njuk	JV
@@ -32044,7 +32044,7 @@ dihandle	MIX-ID-EN
 nya	ID
 ya	ID
 ?	O
-Mba	JV
+Mba	ID
 jangan	ID
 bosen	ID
 sama	ID
@@ -32219,9 +32219,9 @@ daily	EN
 scrum	EN
 meeting	EN
 .	O
-Dev	O
+Dev	EN
 vs	EN
-PM	O
+PM	EN
 Yang	ID
 menang	ID
 backlognya	MIX-ID-EN
@@ -32458,7 +32458,7 @@ pengen	ID
 ke	ID
 korea	O
 tp	ID
-gaisa	MIX-ID-JV
+gaisa	JV
 cuti	ID
 ca	O
 ,	O
@@ -40289,7 +40289,7 @@ https://t.co/rzFLeiElU4	O
 Kok	JV
 kesuwen	JV
 ,	O
-pintune	MIX-ID-EN
+pintune	MIX-ID-JV
 dibuka	JV
 mobile	MIX-ID-JV
 dimiringke	JV
@@ -42877,7 +42877,7 @@ gabisa	ID
 reply	EN
 ga	ID
 si	ID
-soale	MIX-ID-JV
+soale	JV
 diprotect	MIX-ID-EN
 .	O
 Kecuali	ID
@@ -49140,7 +49140,7 @@ heii	ID
 mbaknya	ID
 like	EN
 '	O
-soale	MIX-ID-JV
+soale	JV
 kemaren	ID
 sempet	ID
 rame	ID
@@ -49277,7 +49277,7 @@ i	JV
 bingung	ID
 sebenere	MIX-ID-JV
 ,	O
-soale	MIX-ID-JV
+soale	JV
 emng	ID
 bingung	ID
 sii	ID
@@ -49287,7 +49287,7 @@ yang	ID
 no	ID
 3	O
 ,	O
-soale	MIX-ID-JV
+soale	JV
 aku	ID
 punya	ID
 acne	EN
@@ -49914,7 +49914,7 @@ yang	ID
 pernah	ID
 menghemat	ID
 ,	O
-soale	MIX-ID-JV
+soale	JV
 uange	MIX-ID-JV
 ngalir	JV
 terus	ID
@@ -51459,7 +51459,7 @@ carine	MIX-ID-JV
 aku	ID
 lupa	ID
 naruhe	MIX-ID-JV
-soale	MIX-ID-JV
+soale	JV
 
 @sungganteng	O
 Bentar	ID
@@ -52062,7 +52062,7 @@ jpg	EN
 @Boes71250965	O
 @ruhutsitompul	O
 Itu	ID
-ngeditnya	MIX-ID-EN
+ngeditnya	ID
 niat	ID
 banget	ID
 ya	ID
@@ -56108,7 +56108,7 @@ dijatuhke	MIX-ID-JV
 nek	JV
 ra	JV
 diece	JV
-soale	MIX-ID-JV
+soale	JV
 .	O
 sono	O
 sono	O
@@ -59261,7 +59261,7 @@ asli	JV
 
 @sbyfess	O
 Iya	ID
-soale	MIX-ID-JV
+soale	JV
 packingane	MIX-JV-EN
 box	EN
 Kena	ID
@@ -61218,7 +61218,7 @@ bgt	ID
 ,	O
 Bws	O
 udah	ID
-ovt	O
+ovt	EN
 kenapa	ID
 bw	O
 blm	ID
@@ -64516,7 +64516,7 @@ banyaaak	ID
 Agak	ID
 ribet	ID
 sih	ID
-editnya	MIX-ID-EN
+editnya	ID
 tp	ID
 seengganya	ID
 ada	ID
@@ -65812,7 +65812,7 @@ jadi	ID
 Lebay	ID
 ente	ID
 mak	ID
-RT	ID
+RT	EN
 @Jaccifreha:	O
 @MetroTipi	O
 biasa	ID
@@ -68295,7 +68295,7 @@ ate	JV
 rapat	JV
 ,	O
 hasile	JV
-aku	JV
+aku	ID
 dikick	MIX-ID-EN
 dari	ID
 grup	ID
@@ -68947,7 +68947,7 @@ paling	JV
 Nekat	ID
 sobron	O
 meskipun	ID
-dikick	MIX-ID-EN
+dikick	MIX-JV-EN
 seko	JV
 grup	JV
 
@@ -69110,7 +69110,7 @@ saiki	JV
 butuh	JV
 duit	JV
 malah	JV
-dikick	MIX-ID-EN
+dikick	MIX-JV-EN
 seko	JV
 grup	JV
 .	O
@@ -70258,7 +70258,7 @@ ngecek	JV
 email	EN
 ?"	O
 :)	O
-RT	ID
+RT	EN
 @mintorogo:	O
 @pasarsapi	O
 Senin	ID
@@ -70285,15 +70285,15 @@ nonton	JV
 Stju	ID
 sma	ID
 ganang	ID
-RT	ID
+RT	EN
 @ganangkaa:	O
 Mantap	ID
 ,	O
 ini	ID
 baru	ID
 teman	ID
-hahaha	ID
-RT	ID
+hahaha	O
+RT	EN
 @khisnisains:	O
 @hanifauly	O
 ganangkaa	O
@@ -70328,7 +70328,7 @@ Bani	JV
 sg	JV
 wis	JV
 turu	JV
-RT	ID
+RT	EN
 @faridristant:	O
 Tng	ID
 saja	ID
@@ -70361,7 +70361,7 @@ Padahal	ID
 wis	JV
 direminder	MIX-JV-EN
 .	O
-RT	ID
+RT	EN
 @jonathangilang:	O
 Agnes	O
 Monica	O
@@ -70377,7 +70377,7 @@ Padahal	ID
 wis	JV
 direminder	MIX-JV-EN
 .	O
-RT	ID
+RT	EN
 @jonathangilang:	O
 Agnes	O
 Monica	O
@@ -70815,7 +70815,7 @@ Kecut	JV
 nko	JV
 cuk	JV
 ,	O
-soale	MIX-ID-JV
+soale	JV
 ngepit	JV
 dadi	JV
 perjalanane	MIX-ID-JV
@@ -71115,7 +71115,7 @@ disek	JV
 .	O
 Perjalanane	MIX-ID-JV
 adoh	JV
-soale	MIX-ID-JV
+soale	JV
 
 anyway	EN
 ,	O
@@ -72797,7 +72797,7 @@ pengen	JV
 hil	O
 ?	O
 :D	O
-RT	ID
+RT	EN
 @hildarasnia:	O
 penak	JV
 bgt	JV
