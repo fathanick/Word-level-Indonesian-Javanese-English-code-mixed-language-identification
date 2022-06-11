@@ -2046,12 +2046,12 @@ salah	JV
 e	JV
 siji	JV
 loro	JV
-pemain	JV
+pemain	ID
 .	O
 Menang	JV
 horeee	ID
 ...	O
-Pemain	JV
+Pemain	ID
 arep	JV
 main	JV
 neng	JV
@@ -9219,7 +9219,7 @@ ngomong	JV
 ra	JV
 nyambung	JV
 .	O
-Akhire	JV
+Akhire	MIX-ID-JV
 dikon	JV
 muleh	JV
 Xl	O
@@ -9436,7 +9436,7 @@ bok	JV
 konsisten	ID
 ,	O
 ws	JV
-paketan	JV
+paketan	ID
 e	JV
 larang	JV
 dewe	JV
@@ -10041,7 +10041,7 @@ lelet	ID
 👍	O
 percuma	ID
 harga	ID
-paketan	JV
+paketan	ID
 mahal	ID
 tapi	ID
 kualitas	ID
@@ -12164,8 +12164,8 @@ Januari	ID
 sesuk	JV
 tulung	JV
 tuku	JV
-pemain	JV
-yaaa	ID
+pemain	ID
+yaaa	JV
 ..	O
 pleaseee	EN
 
@@ -12494,7 +12494,7 @@ keliwatan	JV
 yowis	JV
 ,	O
 mulai	JV
-emosi	JV
+emosi	ID
 .	O
 Arsenal	O
 butuh	ID
@@ -14612,7 +14612,7 @@ pas	JV
 gk	JV
 akur	ID
 mbi	JV
-pemain	JV
+pemain	ID
 e	JV
 Imbas	ID
 e	JV
@@ -14950,7 +14950,7 @@ hp	EN
 koncone	JV
 nggo	JV
 on	EN
-twit	O
+twit	EN
 ngabari	JV
 Kui	JV
 yo	JV
@@ -15460,7 +15460,7 @@ bijak	ID
 
 @ILoveJepara	O
 @masandijepara	O
-Instagramku	MIX-ID-EN
+Instagramku	ID
 tak	JV
 ge	JV
 ndelok	JV
@@ -15470,7 +15470,7 @@ tok	JV
 i	JV
 
 @jowoshitpost	O
-Admine	JV
+Admine	MIX-ID-JV
 Saiki	JV
 postingane	MIX-ID-JV
 saru-saru	JV
@@ -16771,7 +16771,7 @@ engga	ID
 ngefollow	MIX-JV-EN
 dadi	JV
 gak	JV
-emosi	JV
+emosi	ID
 🤣	O
 @perpajakanua	O
 mana	ID
@@ -16781,7 +16781,7 @@ nih	ID
 @barcelonabryan	O
 Lha	JV
 wong	JV
-pemain	JV
+pemain	ID
 sing	JV
 di	JV
 follow	EN
@@ -16866,7 +16866,7 @@ ngefollow	MIX-JV-EN
 akun	ID
 cat	EN
 lovers	EN
-tapi	ID
+tapi	JV
 malah	JV
 dadi	JV
 ngilu	ID
@@ -17265,7 +17265,7 @@ kate	JV
 ngecheat	MIX-JV-EN
 domisili	ID
 ,	O
-akhire	JV
+akhire	MIX-ID-JV
 pupus	ID
 .	O
 Cuk	JV
@@ -18162,7 +18162,7 @@ plume	O
 anyar	JV
 mung	JV
 nggo	JV
-ngetwit	JV
+ngetwit	MIX-JV-EN
 ngene	JV
 tok	JV
 .	O
@@ -19129,7 +19129,7 @@ besti	EN
 @aegiddol	O
 Mencari	ID
 sugar	EN
-d*ddy	EN
+d*ddy	O
 ?	O
 Perlu	ID
 disensor	ID
@@ -19364,7 +19364,7 @@ sarung	JV
 .	O
 Ngunu	JV
 ya	JV
-Gus	JV
+Gus	O
 ?	O
 
 Kalo	ID
@@ -19643,7 +19643,7 @@ dhewe	JV
 ke	ID
 postingan	MIX-ID-EN
 teratas	ID
-halah	ID
+halah	JV
 kesel	JV
 .	O
 
@@ -19665,7 +19665,7 @@ balik	ID
 munggah	JV
 mudun	JV
 marai	JV
-emosi	JV
+emosi	ID
 😒	O
 
 @ridlwandjogja	O
@@ -34892,7 +34892,7 @@ ATM	ID
 itu	ID
 namanya	ID
 gyaru	O
-peace	O
+peace	EN
 ,	O
 lagi	ID
 ngetrend	MIX-ID-EN
@@ -35391,7 +35391,7 @@ aku	JV
 Aku	JV
 wegah	JV
 katut	JV
-emosi	JV
+emosi	ID
 mergo	JV
 aku	JV
 ngerti	JV
@@ -37946,7 +37946,7 @@ dimonggoke	JV
 trus	ID
 dijagongi	JV
 tpi	JV
-akhire	JV
+akhire	MIX-ID-JV
 mlah	JV
 dikon	JV
 bali	JV
@@ -59643,7 +59643,7 @@ samasekali	ID
 ,	O
 marai	JV
 tambah	JV
-emosi	JV
+emosi	ID
 aku	ID
 turun	ID
 tangan	ID
@@ -59685,7 +59685,7 @@ asupan	ID
 ,	O
 ngapain	ID
 gabut	ID
-nyepam	MIX-JV-EN
+nyepam	MIX-ID-EN
 sc	EN
 😭	O
 🤝	O
@@ -70284,7 +70284,7 @@ nonton	JV
 
 Stju	ID
 sma	ID
-ganang	ID
+ganang	O
 RT	EN
 @ganangkaa:	O
 Mantap	ID
@@ -70324,7 +70324,7 @@ mentalnya	ID
 !!!!	O
 hahahaha	O
 
-Bani	JV
+Bani	O
 sg	JV
 wis	JV
 turu	JV
@@ -70353,7 +70353,8 @@ Cc	EN
 
 wkwkwk	O
 ..	O
-nasibbbRT	O
+nasibbb	ID
+RT	EN
 @juwita_maharani:	O
 Podo	JV
 .	O
