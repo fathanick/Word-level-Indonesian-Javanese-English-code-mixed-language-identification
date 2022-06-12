@@ -39,6 +39,24 @@ def get_list_words_tags(all_data):
     return word_per_sent_list, tag_per_sent_list
 
 def to_df_tweet_tags(data):
+    # input: all_data format [[[w1, w2, ...],[t1, t2, ...]], ...]
+    # output: dataframe containing 2 columns
+    # Tweets column: list of words
+    # Tags column: list of tags
     df = pd.DataFrame(data, columns=['Tweets','Tags'])
 
     return df
+
+def list_to_tsv(filename, X, y):
+    # input X = list of words [w1, w2, ...]
+    # input y = list of tags [t1, t2, ...]
+    # output => write a tsv file containing word and token pairs
+
+    with open(filename, 'a', encoding='utf-8') as f:
+        word_tag = [[w, t] for w, t in zip(X, y)]
+        for word, tag in word_tag:
+            ls = list(zip(word, tag))
+            for l in ls:
+                f.write('\t'.join([str(i) for i in l]))
+                f.write('\n')
+            f.write('\n')
