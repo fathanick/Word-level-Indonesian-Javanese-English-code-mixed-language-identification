@@ -6,20 +6,19 @@ plt.style.use("ggplot")
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.metrics import classification_report, confusion_matrix
 from helper.data_transformer import *
-from helper.dataset_reader import read_tsv
 
-def input_converter(merged_data, input_data):
+def input_converter(merged_data, input_dt):
 
     df = list_to_dataframe(merged_data)
 
     words = get_unique_words(df)
     tags = get_unique_tags(df)
 
-    data_pair = to_token_tag_list(input_data)
+    data_pair = to_token_tag_list(input_dt)
 
-    X_, y_ = input_data(words, tags, data_pair)
+    X, y = input_data(words, tags, data_pair)
 
-    return X_, y_
+    return X, y
 
 def wc_input_converter(merged_data, input_data):
     df = list_to_dataframe(merged_data)
