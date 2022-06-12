@@ -8,22 +8,30 @@ from sklearn.metrics import classification_report, confusion_matrix
 from helper.data_transformer import *
 from helper.dataset_reader import read_tsv
 
-def input_converter(merged_data, train_data, val_data, test_data):
+def input_converter(merged_data, input_data):
 
     df = list_to_dataframe(merged_data)
 
     words = get_unique_words(df)
     tags = get_unique_tags(df)
 
-    train_pair = to_token_tag_list(train_data)
-    val_pair = to_token_tag_list(val_data)
-    test_pair = to_token_tag_list(test_data)
+    data_pair = to_token_tag_list(input_data)
 
-    X_train, y_train = input_data(words, tags, train_pair)
-    X_val, y_val = input_data(words, tags, val_pair)
-    X_test, y_test = input_data(words, tags, test_pair)
+    X_, y_ = input_data(words, tags, data_pair)
 
-    return X_train, y_train, X_val, y_val, X_test, y_test
+    return X_, y_
+
+def wc_input_converter(merged_data, input_data):
+    df = list_to_dataframe(merged_data)
+
+    words = get_unique_words(df)
+    tags = get_unique_tags(df)
+
+    data_pair = to_token_tag_list(input_data)
+
+    X_word, X_char, y_, idx_word, idx_tag = input_data_wc_embd(words, tags, data_pair)
+
+    return X_word, X_char, y_, idx_word, idx_tag
 
 def input_data(words, tags, dt_pair):
     # input data using word embeddings only
