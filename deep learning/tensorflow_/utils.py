@@ -32,6 +32,7 @@ def wc_input_converter(merged_data, input_data):
 
     return X_word, X_char, y_, idx_word, idx_tag
 
+
 def input_data(words, tags, dt_pair):
     # input data using word embeddings only
     max_len = 100
