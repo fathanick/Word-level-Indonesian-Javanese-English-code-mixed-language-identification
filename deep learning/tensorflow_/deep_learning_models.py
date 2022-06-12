@@ -28,6 +28,22 @@ def blstm_model(num_words, num_tags, max_len):
 
     return model
 
+def blstm_w2v_model(num_words, num_tags, max_len):
+    inputs = Input(shape=(max_len,))
+    embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
+    spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
+    model = Model(inputs, out)
+
+    opt = keras.optimizers.Adam(learning_rate=0.01)
+    model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    # plot_model(model, to_file="img_model/blstm.png")
+    model.summary()
+
+    return model
+
+
 def wc_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
     # word embedding as input
     word_input = Input(shape=(max_len, ))
