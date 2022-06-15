@@ -7,8 +7,7 @@ from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Flatten
 from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional, Conv1D, MaxPool1D, Dropout
 from tensorflow.keras.layers import concatenate
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-from tensorflow.keras.utils import plot_model
-#from tf2crf import CRF, ModelWithCRFLoss
+from keras_crf import CRFModel
 from livelossplot.tf_keras import PlotLossesCallback
 np.random.seed(0)
 plt.style.use("ggplot")
@@ -28,9 +27,30 @@ def blstm_model(num_words, num_tags, max_len):
 
     return model
 
-def blstm_w2v_model(num_words, num_tags, max_len):
-    inputs = Input(shape=(max_len,))
+def blstm_crf_model(num_words, num_tags, max_len):
+    # build backbone model, you can use large models like BERT
+    inputs = Input(shape=(max_len,), dtype=tf.int32, name='inputs')
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
+    spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    out = Dense(100, activation='relu')(blstm_layer)
+    base = Model(inputs=inputs, outputs=out)
+
+    model = CRFModel(base, num_tags)
+
+    # no need to specify a loss for CRFModel, model will compute crf loss by itself
+    model.compile(
+        optimizer=keras.optimizers.Adam(learning_rate=0.01),
+        metrics=['acc']
+    )
+    model.summary()
+
+    return model
+
+def blstm_w2v_model(num_words, num_tags, max_len, embedding_weights):
+    inputs = Input(shape=(max_len,))
+    embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, weights=[embedding_weights],
+                           trainable=False, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
     blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
@@ -66,6 +86,40 @@ def wc_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
 
     opt = keras.optimizers.Adam(learning_rate=0.01)
     model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    model.summary()
+
+    return model
+
+def wc_blstm_crf_model(num_words, num_tags, num_char, max_len, max_len_char):
+    # word embedding as input
+    word_input = Input(shape=(max_len, ))
+    word_embd = Embedding(input_dim=num_words + 1, output_dim=50, input_length=max_len, mask_zero=True)(word_input)
+
+    # character embedding as input
+    char_input = Input(shape=(max_len, max_len_char, ))
+    char_embd = TimeDistributed(Embedding(input_dim=num_char + 1, output_dim = 10,
+                                          input_length=max_len_char, mask_zero=True))(char_input)
+
+    # character LSTM to obtain word encodings by characters
+    char_encd = TimeDistributed(LSTM(units=20, return_sequences=False, recurrent_dropout=0.5))(char_embd)
+
+    # main BLSTM stack
+    concate = concatenate([word_embd, char_encd])
+    spa_dropout_layer = SpatialDropout1D(0.3)(concate)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    #out = Dense(100, activation='relu')(blstm_layer)
+    out = TimeDistributed(Dense(num_tags, activation='softmax'))(blstm_layer)
+    base = Model([word_input, char_input], out)
+
+    model = CRFModel(base, num_tags)
+
+    # no need to specify a loss for CRFModel, model will compute crf loss by itself
+    model.compile(
+        optimizer=keras.optimizers.Adam(learning_rate=0.01),
+        loss="sparse_categorical_crossentropy",
+        metrics=["accuracy"],
+        run_eagerly=True
+    )
     model.summary()
 
     return model
