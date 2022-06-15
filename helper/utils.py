@@ -32,6 +32,17 @@ def wc_input_converter(merged_data, input_data):
 
     return X_word, X_char, y_, idx_word, idx_tag
 
+def wc_input_crf_converter(merged_data, input_data):
+    df = list_to_dataframe(merged_data)
+
+    words = get_unique_words(df)
+    tags = get_unique_tags(df)
+
+    data_pair = to_token_tag_list(input_data)
+
+    X_word, X_char, y_ = input_data_wc_embd_crf(words, tags, data_pair)
+
+    return X_word, X_char, y_
 
 def input_data(words, tags, dt_pair):
     # input data using word embeddings only
@@ -47,6 +58,39 @@ def input_data(words, tags, dt_pair):
     y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
 
     return X, y
+
+def input_data_wc_embd_crf(words, tags, dt_pair):
+    # input data using character and word embedding for CRF
+    # The CRF doesn't support left padding
+
+    max_len = 100
+    max_len_char = 10
+
+    word_idx = word2idx(words, n=1)
+    tag_idx = tag2idx(tags, n=0)
+
+    X_word = [[word_idx[w[0]] for w in s] for s in dt_pair]
+    X_word = pad_sequences(maxlen=max_len, sequences=X_word, padding='post')
+
+    chars = set([w_i for w in words for w_i in w])
+    char_idx = {c: i for i, c in enumerate(chars)}
+    X_char = []
+    for sentence in dt_pair:
+        sent_seq = []
+        for i in range(max_len):
+            word_seq = []
+            for j in range(max_len_char):
+                try:
+                    word_seq.append(char_idx.get(sentence[i][0][j]))
+                except:
+                    word_seq.append(0)
+            sent_seq.append(word_seq)
+        X_char.append(np.array(sent_seq))
+
+    y = [[tag_idx[t[1]] for t in s] for s in dt_pair]
+    y = pad_sequences(maxlen=max_len, sequences=y, padding='post', value=tag_idx["O"])
+
+    return X_word, X_char, y
 
 def input_data_wc_embd(words, tags, dt_pair):
     # input data using character and word embedding
