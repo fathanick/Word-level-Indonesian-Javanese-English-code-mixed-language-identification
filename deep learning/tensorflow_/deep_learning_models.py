@@ -7,6 +7,7 @@ from tensorflow.keras.layers import Input, LSTM, Embedding, Dense, Flatten
 from tensorflow.keras.layers import TimeDistributed, SpatialDropout1D, Bidirectional, Conv1D, MaxPool1D, Dropout
 from tensorflow.keras.layers import concatenate
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+from tensorflow.keras.initializers import RandomUniform
 from keras_crf import CRFModel
 from livelossplot.tf_keras import PlotLossesCallback
 np.random.seed(0)
@@ -90,6 +91,38 @@ def wc_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
 
     return model
 
+def wc_cnn_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
+    # word embedding as input
+    word_input = Input(shape=(max_len, ))
+    word_embd = Embedding(input_dim=num_words + 2, output_dim=50, input_length=max_len)(word_input)
+
+    # character embedding as input
+    char_input = Input(shape=(max_len, max_len_char, ))
+    char_embd = TimeDistributed(Embedding(input_dim=num_char + 2, output_dim = 10,
+                                          input_length=max_len_char,
+                                          embeddings_initializer=RandomUniform(minval=-0.5, maxval=0.5)))(char_input)
+
+    dropout= Dropout(0.5)(char_embd)
+    conv1d_out= TimeDistributed(Conv1D(kernel_size=3, filters=max_len_char, padding='same',activation='tanh', strides=1))(dropout)
+    maxpool_out=TimeDistributed(MaxPooling1D(max_len_char))(conv1d_out)
+    flat_layer = TimeDistributed(Flatten())(maxpool_out)
+    char_encd = Dropout(0.5)(flat_layer)
+    # character LSTM to obtain word encodings by characters
+    #char_encd = TimeDistributed(LSTM(units=20, return_sequences=False, recurrent_dropout=0.5))(char_embd)
+
+    # main BLSTM stack
+    concate = concatenate([word_embd, char_encd])
+    spa_dropout_layer = SpatialDropout1D(0.3)(concate)
+    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    out = TimeDistributed(Dense(num_tags + 1, activation='softmax'))(blstm_layer)
+    model = Model([word_input, char_input], out)
+
+    opt = keras.optimizers.Adam(learning_rate=0.01)
+    model.compile(optimizer=opt, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    model.summary()
+
+    return model
+
 def wc_blstm_crf_model(num_words, num_tags, num_char, max_len, max_len_char):
     # word embedding as input
     word_input = Input(shape=(max_len, ))
@@ -123,6 +156,7 @@ def wc_blstm_crf_model(num_words, num_tags, num_char, max_len, max_len_char):
     model.summary()
 
     return model
+
 
 def get_callbacks(root_path, model_name):
     joined_path = os.path.join(root_path, model_name)
