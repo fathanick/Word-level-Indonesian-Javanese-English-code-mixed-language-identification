@@ -22297,7 +22297,7 @@ TAU	ID
 @uoktavia_	O
 ngunuku	JV
 lek	JV
-ketemu	ID
+ketemu	JV
 langsung	ID
 percakapane	MIX-ID-JV
 bhs	ID
@@ -22509,7 +22509,7 @@ perasaanmu	ID
 pas	JV
 ngancani	JV
 pacarmu	JV
-ketemuan	ID
+ketemuan	JV
 karo	JV
 pacare	JV
 konco	JV
@@ -100395,7 +100395,7 @@ ren	O
 ,	O
 setaun	JV
 ra	JV
-ketemu	ID
+ketemu	JV
 #ngawur	O
 RT	EN
 @renanditaa:	O
@@ -119194,8 +119194,8 @@ Akeh	JV
 seng	JV
 ke	ID
 prank	EN
-lo	ID
-ngakak	ID
+lo	JV
+ngakak	JV
 moco	JV
 komenan	JV
 pokok	JV
@@ -119211,7 +119211,7 @@ Akeh	JV
 tenan	JV
 postingane	MIX-ID-JV
 ra	JV
-ketemu	ID
+ketemu	JV
 .	O
 Ampe	JV
 mataku	JV
@@ -135389,8 +135389,8 @@ rti	ID
 lagi	ID
 aku	ID
 kok	ID
-ngakak	ID
-moco	ID
+ngakak	JV
+moco	JV
 storyne	MIX-JV-EN
 kak	O
 fania	O
@@ -137394,7 +137394,7 @@ setengah	ID
 salmon	ID
 nggak	ID
 ?	O
-please	ID
+please	EN
 mau	ID
 yaah	ID
 :D"	O
@@ -137415,7 +137415,7 @@ setengah	ID
 salmon	ID
 nggak	ID
 ?	O
-please	ID
+please	EN
 mau	ID
 yaah	ID
 :D	O
@@ -137502,7 +137502,7 @@ surya	ID
 itu	ID
 nah	ID
 mel	O
-please	ID
+please	EN
 mel	O
 :(	O
 
@@ -137588,7 +137588,7 @@ please	EN
 :(	O
 
 @ollialia13	ID
-please	ID
+please	EN
 mak	ID
 downloadke	MIX-JV-EN
 ,	O
@@ -137826,7 +137826,7 @@ y	JV
 di	O
 ...	O
 ^_^	O
-please	ID
+please	EN
 di	O
 .	O
 ^_^	O

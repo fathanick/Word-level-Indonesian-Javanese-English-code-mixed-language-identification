@@ -76,7 +76,7 @@ class LanguageIdentifier:
 
         features = {
             'token.lower': token.lower(),
-            'n_gram_0': token,
+            'n_gram_0': token, # only show 5 characters, more than 5 chars will be cut
             'token_BOS': index == 0,
             'token_EOS': index == len(sentence) - 1,
             'prev_tag': '' if index == 0 else sentence[index - 1][1],

@@ -4,8 +4,20 @@ import numpy as np
 plt.style.use("ggplot")
 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.preprocessing.text import Tokenizer
 from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.preprocessing import LabelEncoder
 from helper.data_transformer import *
+
+def x_to_padded(word_list, max_len):
+    # input: list of words
+    # output:
+    X_seq = Tokenizer().texts_to_sequences(word_list)
+    X_padded = pad_sequences(sequences=X_seq, maxlen=max_len, padding='post')
+    # print("Training data sample: ", X_padded[10:][:3])
+
+    return X_padded
 
 def input_converter(merged_data, input_dt):
 
@@ -59,6 +71,20 @@ def input_data(words, tags, dt_pair):
 
     return X, y
 
+def input_data_categorical(words, tags):
+    # input data using word embeddings only
+    max_len = 100
+    num_tags = 7
+
+    X = Tokenizer().texts_to_sequences(words)
+    X = pad_sequences(maxlen=max_len, sequences=X)
+
+    y = LabelEncoder().fit_transform(tags)
+    y = to_categorical(y, num_tags)
+
+    return X, y
+
+
 def input_data_wc_embd_crf(words, tags, dt_pair):
     # input data using character and word embedding for CRF
     # The CRF doesn't support left padding
@@ -66,7 +92,7 @@ def input_data_wc_embd_crf(words, tags, dt_pair):
     max_len = 100
     max_len_char = 10
 
-    word_idx = word2idx(words, n=1)
+    word_idx = word2idx(words, n=0)
     tag_idx = tag2idx(tags, n=0)
 
     X_word = [[word_idx[w[0]] for w in s] for s in dt_pair]
@@ -172,7 +198,7 @@ def idx2tag(tag2idx):
 def performance_report(y_actual, y_pred):
     labels = ['ID', 'JV', 'EN', 'MIX-ID-EN', 'MIX-ID-JV', 'MIX-JV-EN', 'O']
 
-    print(classification_report(y_actual, y_pred, labels=labels))
+    print(classification_report(y_actual, y_pred, labels=labels, digits=4))
 
     cm = confusion_matrix(y_actual, y_pred, labels=labels)
     # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
