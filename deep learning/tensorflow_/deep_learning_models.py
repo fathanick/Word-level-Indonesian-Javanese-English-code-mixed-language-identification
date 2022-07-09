@@ -18,7 +18,7 @@ def blstm_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
     model = Model(inputs, out)
 
@@ -33,8 +33,8 @@ def blstm_lstm_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
-    lstm_layer = LSTM(units=50, return_sequences=True, recurrent_dropout=0.3)(blstm_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
+    lstm_layer = LSTM(units=32, return_sequences=True, recurrent_activation='sigmoid')(blstm_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(lstm_layer)
     model = Model(inputs, out)
 
@@ -49,7 +49,7 @@ def bigru_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(GRU(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(GRU(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
     model = Model(inputs, out)
 
@@ -64,7 +64,7 @@ def birnn_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,))
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(SimpleRNN(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(SimpleRNN(units=64, return_sequences=True, activation='tanh'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
     model = Model(inputs, out)
 
@@ -97,14 +97,13 @@ def cnn_blstm_model(num_words, num_tags, max_len):
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     # Channel 1
     conv_layer = Conv1D(filters=64, kernel_size=2, strides=1, activation='relu')(embd_layer)
-    dropout_layer = Dropout(0.2)(conv_layer)
-    max_pool_layer = GlobalMaxPooling1D()(dropout_layer)
+    max_pool_layer = GlobalMaxPooling1D()(conv_layer)
     flatten_1 = Flatten()(max_pool_layer)
 
     # Channel 2
     lstm_1 = Bidirectional(LSTM(15, return_sequences=True))(embd_layer)
-    lstm_2 = LSTM(25)(lstm_1)
-    flatten_2 = Flatten()(lstm_2)
+    #lstm_2 = LSTM(25)(lstm_1)
+    flatten_2 = Flatten()(lstm_1)
 
     concate = concatenate([flatten_1, flatten_2])
 
@@ -123,8 +122,8 @@ def blstm_crf_model(num_words, num_tags, max_len):
     inputs = Input(shape=(max_len,), dtype=tf.int32, name='inputs')
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
-    out = Dense(100, activation='relu')(blstm_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
+    out = Dense(50, activation='relu')(blstm_layer)
     base = Model(inputs=inputs, outputs=out)
 
     model = CRFModel(base, num_tags)
@@ -143,7 +142,7 @@ def blstm_w2v_model(num_words, num_tags, max_len, embedding_weights):
     embd_layer = Embedding(input_dim=num_words, output_dim=50, input_length=max_len, weights=[embedding_weights],
                            trainable=False, mask_zero=True)(inputs)
     spa_dropout_layer = SpatialDropout1D(0.3)(embd_layer)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags, activation="softmax"))(blstm_layer)
     model = Model(inputs, out)
 
@@ -166,12 +165,12 @@ def wc_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
                                           input_length=max_len_char, mask_zero=True))(char_input)
 
     # character LSTM to obtain word encodings by characters
-    char_encd = TimeDistributed(LSTM(units=20, return_sequences=False, recurrent_dropout=0.5))(char_embd)
+    char_encd = TimeDistributed(LSTM(units=64, return_sequences=False, recurrent_activation='sigmoid'))(char_embd)
 
     # main BLSTM stack
     concate = concatenate([word_embd, char_encd])
     spa_dropout_layer = SpatialDropout1D(0.3)(concate)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags + 1, activation='softmax'))(blstm_layer)
     model = Model([word_input, char_input], out)
 
@@ -201,7 +200,7 @@ def wc_cnn_blstm_model(num_words, num_tags, num_char, max_len, max_len_char):
     # main BLSTM stack
     concate = concatenate([word_embd, char_encd])
     spa_dropout_layer = SpatialDropout1D(0.3)(concate)
-    blstm_layer = Bidirectional(LSTM(units=100, return_sequences=True, recurrent_dropout=0.3))(spa_dropout_layer)
+    blstm_layer = Bidirectional(LSTM(units=64, return_sequences=True, recurrent_activation='sigmoid'))(spa_dropout_layer)
     out = TimeDistributed(Dense(num_tags + 1, activation='softmax'))(blstm_layer)
     model = Model([word_input, char_input], out)
 
