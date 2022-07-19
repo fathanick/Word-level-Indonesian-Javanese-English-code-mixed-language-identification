@@ -5,7 +5,7 @@ from gensim.models import Word2Vec
 def w2v_training(method):
 
     # read raw data
-    data = read_tsv("../../dataset/comlid-data-140422-v1.tsv")
+    data = read_tsv("../../dataset/09-06-22/comlid-data-140422-v1.tsv")
     all_data, all_words, all_tags = data
 
     # create list of words and list of tags

@@ -163,7 +163,7 @@ class LanguageIdentifier:
         # print(cm)
 
         # show classification report
-        print(classification_report(flat_y, flat_y_pred, labels=self.labels))
+        print(classification_report(flat_y, flat_y_pred, labels=self.labels, digits=4))
 
         # sns.heatmap(cm, annot=True, fmt='d', ax=ax)
         fig, ax = plt.subplots(figsize=(10, 8))

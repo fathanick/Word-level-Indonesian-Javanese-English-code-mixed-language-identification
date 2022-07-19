@@ -10,6 +10,18 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
 from helper.data_transformer import *
 
+def get_word_tag_df(data):
+    # input: all_data format [[[w1, w2, ...],[t1, t2, ...]], ...
+    # output: words and tags in dataframe format
+    words = data[1]
+    tags = data[2]
+    data_tuples = list(zip(words, tags))
+    df = pd.DataFrame(data_tuples, columns=['Word', 'Tag'])
+    X = df['Word']
+    y = df['Tag']
+
+    return X, y
+
 def x_to_padded(word_list, max_len):
     # input: list of words
     # output:
@@ -167,7 +179,7 @@ def input_data_wc_embd(words, tags, dt_pair):
 
 def get_unique_words(df):
     unique_words = list(set(df['Token'].values))
-    unique_words.append('ENDPAD')
+    unique_words.append('PAD')
 
     return unique_words
 
@@ -218,3 +230,32 @@ def performance_report(y_actual, y_pred):
 
     plt.show()
 
+def predict_result(model, X_test, y_test, words, tags):
+    all_w_pair = []
+    all_true_pair = []
+    all_pred_pair = []
+
+    for i in range(len(X_test)):
+        p = model.predict(np.array([X_test[i]]))
+        p = np.argmax(p, axis=-1)
+        y_true = y_test[i]
+        w_pair = []
+        true_pair = []
+        pred_pair = []
+        for w, true, pred in zip(X_test[i], y_true, p[0]):
+            if words[w - 1] != "PAD":
+                print("{:30}{:10}\t{}".format(words[w - 1], tags[true], tags[pred]))
+                w_pair.append(words[w - 1])
+                true_pair.append(tags[true])
+                pred_pair.append(tags[pred])
+        all_w_pair.append(w_pair)
+        all_true_pair.append(true_pair)
+        all_pred_pair.append(pred_pair)
+
+    return all_w_pair, all_true_pair, all_pred_pair
+
+def flatten_result(all_true_pair, all_pred_pair):
+    true_flat = [item for sublist in all_true_pair for item in sublist]
+    pred_flat = [item for sublist in all_pred_pair for item in sublist]
+
+    return true_flat, pred_flat

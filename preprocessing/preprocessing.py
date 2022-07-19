@@ -36,7 +36,6 @@ def preprocess(data):
 
     return new_list
 
-
 if __name__ == '__main__':
     lst = ['@budi', 'saya', 'http://t.co/1W7NBYC', '#tagMikirSek', 'sudah', '200rb']
     res = preprocess(lst)
