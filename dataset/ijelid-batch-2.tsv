@@ -1173,7 +1173,7 @@ balesin	ID
 ,	O
 update	EN
 ,	O
-ngedit	MIX-ID-EN
+ngedit	ID
 ,	O
 ngpost	MIX-ID-EN
 dsb	ID
@@ -5784,7 +5784,7 @@ TEMEN	ID
 OMG	EN
 LAGU	ID
 LAWASKU	ID
-WKWK	ID
+WKWK	O
 PENGEN	ID
 NGETAG	MIX-ID-EN
 TEMEN	ID
@@ -7096,7 +7096,7 @@ cowo	ID
 sekelas	ID
 di	ID
 bio	ID
-instagram	EN
+instagram	O
 😋	O
 😋	O
 
@@ -10549,7 +10549,7 @@ ke	ID
 crush	O
 itu	ID
 perbuatan	ID
-disgusting	MIX-ID-EN
+disgusting	EN
 ,	O
 menyebalkan	ID
 dan	ID
@@ -10564,7 +10564,7 @@ jujur	ID
 merasa	ID
 sangat	ID
 terganggu	ID
-privasinya	MIX-ID-EN
+privasinya	ID
 .	O
 cont	EN
 :	O
@@ -10601,7 +10601,7 @@ ga	ID
 lsg	ID
 distalking	MIX-ID-EN
 trs	ID
-direbut	MIX-ID-EN
+direbut	ID
 orang	ID
 nder	EN
 gmn	ID
@@ -10700,7 +10700,7 @@ nama	ID
 pasaran	ID
 :	O
 susah	ID
-dicari	MIX-ID-EN
+dicari	ID
 tau	ID
 /	O
 distalking	MIX-ID-EN
@@ -10713,17 +10713,17 @@ bermodal	ID
 nama	ID
 lengkap	ID
 
-JIAH	EN
+JIAH	O
 LOCK	EN
 ACCOUNT	EN
 wkwkwkwk	O
-hobinya	MIX-ID-EN
+hobinya	ID
 stalking	EN
 orang	ID
 pas	ID
 mau	ID
 distalking	MIX-ID-EN
-se	JV
+se	ID
 twitter	O
 malah	ID
 takut	ID
@@ -10738,7 +10738,7 @@ sini	ID
 liat	ID
 tweet	EN
 ak	ID
-dongs	EN
+dongs	ID
 
 gua	ID
 pernah	ID
@@ -10805,7 +10805,7 @@ bahaya	ID
 Giliran	ID
 distalking	MIX-ID-EN
 orang	ID
-psycho	ID
+psycho	EN
 baru	ID
 berhenti	ID
 ini	ID
@@ -10828,7 +10828,7 @@ Kalian	ID
 risih	ID
 ngga	ID
 kalau	ID
-LinkedIn	EN
+LinkedIn	O
 nya	ID
 distalking	MIX-ID-EN
 orang	ID
@@ -10862,7 +10862,7 @@ distalking	MIX-ID-EN
 sama	ID
 ceweknya	ID
 .	O
-Heleh	JV
+Heleh	ID
 😑	O
 
 @28moonchild	O
@@ -10883,7 +10883,7 @@ https://t.co/Ap6ojgk5qP	O
 PERNAHHH	ID
 !!!	O
 Pas	ID
-ngevaksin	MIX-ID-EN
+ngevaksin	ID
 trs	ID
 ketemu	ID
 sama	ID
@@ -10898,13 +10898,13 @@ kita	ID
 ,	O
 pas	ID
 distalking	MIX-ID-EN
-gillsssss	EN
+gillsssss	ID
 orang	ID
 kayaaa	ID
 bgt	ID
 😭	O
 ada	ID
-blasterannya	MIX-ID-EN
+blasterannya	ID
 juga	ID
 ,	O
 ya	ID
@@ -10914,7 +10914,7 @@ sama	ID
 artis	ID
 ,	O
 ya	ID
-neneknya	MIX-ID-EN
+neneknya	ID
 aja	ID
 cakep	ID
 bgt	ID
@@ -10954,7 +10954,7 @@ orang	ID
 stalking	EN
 sampe	ID
 ke	ID
-akar"nya	MIX-ID-EN
+akar"nya	ID
 itu	ID
 beneran	ID
 ada	ID
@@ -11001,7 +11001,7 @@ usah	ID
 bangga	ID
 juga	ID
 bisa	ID
-stalkin	ID
+stalkin	EN
 '	O
 orang	ID
 kalau	ID
@@ -11012,7 +11012,7 @@ gitu	ID
 serem	ID
 dan	ID
 freak	EN
-jatuhnya	MIX-ID-EN
+jatuhnya	ID
 .	O
 Nyari	ID
 nama	ID
@@ -11051,7 +11051,7 @@ usah	ID
 distalking	MIX-ID-EN
 terus	ID
 akun	ID
-sosmednya	MIX-ID-EN
+sosmednya	ID
 pake	ID
 akun	ID
 fake	EN
@@ -11062,14 +11062,14 @@ Setelah	ID
 sekian	ID
 tahun	ID
 papa	ID
-cana	ID
+cana	O
 ikutan	ID
 buka	ID
 twitter	O
 lagi	ID
 ,	O
 terus	ID
-nemu	JV
+nemu	ID
 satu	ID
 akun	ID
 familiar	ID
@@ -11083,10 +11083,10 @@ sambil	ID
 doi	ID
 komentar	ID
 "	O
-yak	ID
-yek	ID
-yak	ID
-yek	ID
+yak	O
+yek	O
+yak	O
+yek	O
 "	O
 "	O
 kok	JV
@@ -11153,7 +11153,7 @@ kelar	ID
 @blendersuper	O
 @acel144p	O
 @tanyakanrl	O
-Mbaknya	MIX-ID-EN
+Mbaknya	ID
 ngerti	ID
 distalking	MIX-ID-EN
 ga	ID
@@ -11169,7 +11169,8 @@ lo	ID
 bukan	ID
 masalah	ID
 ke	ID
-ge-er-an,	MIX-ID-EN
+ge-er-an    ID
+,	O
 yaaa	ID
 orang	ID
 yg	ID
@@ -11187,7 +11188,7 @@ informasi	ID
 tentang	ID
 kita	ID
 atau	ID
-apalah	JV
+apalah	ID
 
 @tanyakanrl	O
 Kalo	ID
@@ -11212,7 +11213,7 @@ akar	ID
 dan	ID
 siap²	ID
 juga	ID
-secreto	JV
+secreto	O
 penuh	ID
 hujatan	ID
 😂	O
@@ -11280,9 +11281,9 @@ ga	ID
 ada	ID
 hujan	ID
 mimpiin	ID
-win	EN
+win	O
 nya	ID
-bright	EN
+bright	O
 ..	O
 ada	ID
 apakah	ID
@@ -11319,7 +11320,7 @@ sender	EN
 gak	ID
 sengaja	ID
 buka	ID
-sg	JV
+sg	EN
 orang	ID
 pas	ID
 stalking	EN
@@ -11330,7 +11331,7 @@ langsung	ID
 deactive	EN
 ig	O
 dan	ID
-ngeblok	MIX-ID-EN
+ngeblok	ID
 ig	O
 yg	ID
 distalking	MIX-ID-EN
@@ -11375,7 +11376,7 @@ direquest	MIX-ID-EN
 follow	EN
 dong	ID
 .	O
-Hmm	ID
+Hmm	O
 baru	ID
 ngerasain	ID
 ternyata	ID
@@ -11402,7 +11403,7 @@ distalking	MIX-ID-EN
 kecuali	ID
 stalking	EN
 dia	ID
-WAKAKAKA	ID
+WAKAKAKA	O
 )	O
 .	O
 
@@ -11416,21 +11417,21 @@ jadi	ID
 yang	ID
 paling	ID
 dikepoin	ID
-sekepo"nya	MIX-ID-EN
+sekepo"nya	ID
 aku	ID
 ga	ID
 pernah	ID
 ya	ID
 ampe	ID
-nyomot	JV
-nomer	JV
+nyomot	ID
+nomer	ID
 dr	ID
 hp	EN
 orang	ID
 lain	ID
 🥱	O
 
-Ughh	ID
+Ughh	O
 my	EN
 heart	EN
 💔	O
@@ -11441,7 +11442,7 @@ bnyak	ID
 orang	ID
 difollow	MIX-ID-EN
 kagak	ID
-WKWK	ID
+WKWK	O
 https://t.co/L5rIsmIC79	O
 
 @sunookiml	O
@@ -11466,9 +11467,9 @@ ini	ID
 bgttt	ID
 grgr	ID
 liat	ID
-yutup	ID
+yutup	O
 org	ID
-koriyah	ID
+koriyah	O
 ngevlog	MIX-ID-EN
 beli	ID
 waffle	EN
@@ -11479,13 +11480,13 @@ waffle	EN
 Pas	ID
 makan	ID
 juga	ID
-la	JV
+la	ID
 😭	O
 krn	ID
 selalu	ID
 nontoin	ID
 mb	ID
-jiwo	ID
+jiwo	O
 jd	ID
 apal	ID
 bgt	ID
@@ -11556,33 +11557,33 @@ Soalnya	ID
 pernh	ID
 liat	ID
 orang	ID
-bule	EN
+bule	ID
 ,	O
 orang	ID
-korea	ID
+korea	O
 sama	ID
 siapa	ID
 ya	ID
 lupa	ID
-Paula	ID
+Paula	O
 istri	ID
 baim	O
-wong	JV
+wong	O
 atau	ID
 istrinya	ID
-raditya	ID
-dima	ID
+raditya	O
+dima	O
 atau	ID
 siapa	ID
 gt	ID
 ngevlog	MIX-ID-EN
-in	EN
+in	ID
 skincare	EN
 anaknya	ID
 serius	ID
 deh	ID
 byk	ID
-step2	ID
+step2	MIX-ID-EN
 nya	ID
 
 Aaaa	O
@@ -11590,7 +11591,7 @@ seneng	ID
 banget	ID
 liat	ID
 konten	ID
-pewdiepie	MIX-ID-JV
+pewdiepie	O
 kalo	ID
 ngevlog	MIX-ID-EN
 sama	ID
@@ -11603,26 +11604,26 @@ Kek	ID
 lagi	ID
 liat	ID
 tkw	ID
-hongkong	ID
+hongkong	O
 ngevlog	MIX-ID-EN
 bareng	ID
 :’)	O
 
 mauuuu	ID
 liat	ID
-taeyong	ID
-doyoung	ID
+taeyong	O
+doyoung	O
 ngevlog	MIX-ID-EN
 bareng	ID
 
 @weishenvess	O
 jd	ID
 inget	ID
-bella	ID
+bella	O
 liat	ID
 hantu	ID
 ,	O
-ngeliatin	MIX-ID-EN
+ngeliatin	ID
 lemari	ID
 apa	ID
 ya	ID
@@ -11670,7 +11671,7 @@ pengen	ID
 juga	ID
 liat	ID
 anak	ID
-day6	EN
+day6	O
 ngevlog	MIX-ID-EN
 nyicipin	ID
 makanan	ID
@@ -11681,8 +11682,8 @@ tau	ID
 apa	ID
 kesukaan	ID
 nya	ID
-Park	EN
-Sungjin	EN
+Park	O
+Sungjin	O
 .	O
 
 ngeliat	ID
@@ -11699,11 +11700,11 @@ liat	ID
 tingkah	ID
 laku	ID
 ny	ID
-sebong	ID
+sebong	O
 jugaa	ID
 dsini	ID
 ,,	O
-affkh	ID
+affkh	O
 bakal	ID
 ada	ID
 yg	ID
@@ -11712,7 +11713,7 @@ smbl	EN
 makan	ID
 martabak	ID
 ?	O
-cilok	JV
+cilok	ID
 ?	O
 mie	ID
 ayam	ID
@@ -11739,8 +11740,8 @@ nya	ID
 nyetir	ID
 mobil	ID
 wkwkwk	O
-thv	EN
-bilaik	ID
+thv	O
+bilaik	O
 "	O
 mamam	ID
 tuh	ID
@@ -11776,7 +11777,7 @@ kek	ID
 
 Pengen	ID
 liat	ID
-elast	EN
+elast	O
 ngevlog	MIX-ID-EN
 di	ID
 dorm	EN
@@ -11790,7 +11791,7 @@ fam	EN
 Ini	ID
 kemungkinan	ID
 concert	EN
-swf	EN
+swf	O
 trakhir	ID
 jadi	ID
 kedepannya	MIX-ID-EN
@@ -11808,7 +11809,7 @@ grup	ID
 yang	ID
 di	ID
 stan	EN
-disbnd	MIX-ID-EN
+disbnd	EN
 .	O
 Sedih	ID
 😭	O
@@ -11829,7 +11830,7 @@ sama	ID
 .	O
 Semoga	ID
 mama	ID
-choi	EN
+choi	O
 ngevlog	MIX-ID-EN
 juga	ID
 https://t.co/G667js0bx4	O
@@ -11838,9 +11839,9 @@ https://t.co/G667js0bx4	O
 Liat	ID
 cara	ID
 pendektan	ID
-sal	ID
+sal	O
 ke	ID
-reyna	ID
+reyna	O
 gmn	ID
 ga	ID
 ?	O
@@ -11893,7 +11894,7 @@ cerita	ID
 soal	ID
 kehidupannya	ID
 ke	ID
-sal	ID
+sal	O
 
 Anak	ID
 the	EN
@@ -11916,7 +11917,7 @@ kepo	ID
 trus	ID
 ngevlog	MIX-ID-EN
 bareng	ID
-hewan-hewan	MIX-ID-EN
+hewan-hewan	ID
 itu	ID
 .	O
 
@@ -11943,10 +11944,10 @@ LIAT	ID
 QURBAN	ID
 
 Tbtb	ID
-paginya	MIX-ID-EN
+paginya	ID
 ngevlog	MIX-ID-EN
 pas	ID
-jelong	ID
+jelong	O
 ",	O
 tautau	ID
 amazed	EN
@@ -11987,10 +11988,10 @@ di	ID
 luar	ID
 kota	ID
 cuma	ID
-laptopnya	MIX-ID-EN
+laptopnya	ID
 rusak	ID
 jd	ID
-videonya	MIX-ID-EN
+videonya	ID
 ilang	ID
 semua	ID
 .	O
@@ -12001,9 +12002,9 @@ suka	ID
 blg	ID
 "	O
 kaka	ID
-oan	ID
+oan	O
 ,	O
-dede	EN
+dede	O
 ,	O
 papa	ID
 lagi	ID
@@ -12048,54 +12049,54 @@ ganteng	ID
 ngevlog	MIX-ID-EN
 😭	O
 
-bangchan	ID
+bangchan	O
 ke	ID
-bali	JV
+bali	O
 surfing	EN
 &	O
 amp	O
 ;	O
 watersport	EN
 ,	O
-jayb	ID
+jayb	O
 &	O
 amp	O
 ;	O
-jaehyun	ID
+jaehyun	O
 kayanya	ID
 ke	ID
 blok	ID
 m	O
 liat	ID
-toko2	MIX-ID-EN
+toko2	ID
 vinyl	EN
 ,	O
-mingyu	EN
+mingyu	O
 ke	ID
-pik	ID
+pik	O
 ngevlog	MIX-ID-EN
 pinggir	ID
 pantai	ID
 ,	O
-harry	EN
+harry	O
 ke	ID
 kemang	ID
 ato	ID
-wijaya	MIX-ID-EN
+wijaya	O
 gt	ID
 dateng	ID
 party	EN
-skenanya	MIX-ID-EN
-ramen	JV
+skenanya	ID
+ramen	ID
 ,	O
 jay	O
 nongkrong	ID
 sama	ID
-raffi	EN
-ahmad	EN
+raffi	O
+ahmad	O
 WKWKWK	O
 NGAKAK	ID
-BAYANGINNYA	MIX-ID-EN
+BAYANGINNYA	ID
 
 Tapi	ID
 gila	ID
@@ -12118,7 +12119,7 @@ lagi	ID
 liat	ID
 mreka	ID
 ngevlog	MIX-ID-EN
-se	JV
+se	ID
 gemes	ID
 ini	ID
 
@@ -12134,13 +12135,13 @@ https://t.co/znC9EIaMhD	O
 
 @vailquise	O
 Liat	ID
-Oting	EN
+Oting	O
 di	ID
 sini	ID
 kayak	ID
 liat	ID
 kak	ID
-Cia	ID
+Cia	O
 lagi	ID
 ngevlog	MIX-ID-EN
 .	O
@@ -12203,7 +12204,7 @@ ngevlog	MIX-ID-EN
 kah	ID
 
 @jiiw0on	O
-Ahhahaha	ID
+Ahhahaha	O
 oke	ID
 oke	ID
 aku	ID
@@ -12214,7 +12215,7 @@ liat	ID
 orng	ID
 ngevlog	MIX-ID-EN
 apalagi	ID
-Vidio	O
+Vidio	ID
 aestetik	ID
 parah	ID
 
@@ -12224,7 +12225,7 @@ sabar	ID
 ga	ID
 sih	ID
 liat	ID
-siganteng	EN
+siganteng	ID
 ngevlog	MIX-ID-EN
 😭	O
 
@@ -12246,7 +12247,7 @@ cantik	ID
 
 Pengen	ID
 liat	ID
-saerom	EN
+saerom	O
 ngevlog	MIX-ID-EN
 di	ID
 era	ID
@@ -12261,7 +12262,7 @@ NYIAPIN	ID
 MENTAL	ID
 BUAT	ID
 LIAT	ID
-TAEHYUNG	ID
+TAEHYUNG	O
 NGEVLOG	MIX-ID-EN
 SAMBIL	ID
 NYETIR	ID
@@ -12275,8 +12276,8 @@ youtubers	EN
 ngevlog	MIX-ID-EN
 
 Jadiin	ID
-jinki	JV
-jangpan	ID
+jinki	O
+jangpan	O
 kek	ID
 mas	ID
 @skehehdanfdldi	O
@@ -12288,7 +12289,7 @@ juga	ID
 Kapan	ID
 lagi	ID
 liat	ID
-ijingki	JV
+ijingki	O
 turun	ID
 pesawat	ID
 langsung	ID
@@ -12304,7 +12305,7 @@ indo	O
 @TaufikDamas	O
 @pengarang_sajak	O
 kalo	ID
-Madinah	ID
+Madinah	O
 masih	ID
 boleh	ID
 ,	O
@@ -12313,7 +12314,7 @@ sy	ID
 pernah	ID
 liat	ID
 cewe	ID
-bule	EN
+bule	ID
 ngevlog	MIX-ID-EN
 sendirian	ID
 lagi	ID
@@ -12321,10 +12322,10 @@ tp	ID
 dia	ID
 gak	ID
 sampai	ID
-mekah	ID
+mekah	O
 ,	O
 kalo	ID
-riyad	EN
+riyad	O
 malah	ID
 banyak	ID
 pekerja	ID
@@ -12332,11 +12333,11 @@ asing	ID
 yg	ID
 mampir	ID
 ,	O
-Madinah	ID
+Madinah	O
 kota	ID
 juga	ID
 cantik	ID
-rapi	JV
+rapi	ID
 ,	O
 bahkan	ID
 dpt	ID
@@ -12353,7 +12354,7 @@ ye	ID
 wak	ID
 udah	ID
 jadi	ID
-wonurideul	ID
+wonurideul	O
 sejati	ID
 🤝	O
 KAPAN	ID
@@ -12364,7 +12365,7 @@ LAGI	ID
 kangen	ID
 deh	ID
 
-Harukyu	EN
+Harukyu	O
 vlog	EN
 karena	ID
 kapan	ID
@@ -12405,7 +12406,7 @@ ngevlog	MIX-ID-EN
 @selfoli	O
 lagi	ID
 ngevlog	MIX-ID-EN
-juy	ID
+juy	O
 ?	O
 
 @satriohendri	O
@@ -12454,10 +12455,10 @@ justru	ID
 henxiao	O
 sebenernya	ID
 lebih	ID
-ngegas	MIX-ID-EN
+ngegas	ID
 ,	O
 tapi	ID
-ver	EN
+ver	O
 video	ID
 kalau	ID
 lagi	ID
@@ -12486,13 +12487,13 @@ horor	ID
 😭	O
 😭	O
 
-Y	ID
+Y	O
 :	O
 Kita	ID
 kan	ID
 lagi	ID
 Live	EN
-instagram	EN
+instagram	O
 nanti	ID
 follower	EN
 abang	ID
@@ -12509,7 +12510,7 @@ ingus	ID
 pakai	ID
 kaos	ID
 *	O
-Y	ID
+Y	O
 :	O
 hadeehh	ID
 salah	ID
@@ -12518,12 +12519,12 @@ sih	ID
 pakai	ID
 ngajak	ID
 anak	ID
-TK	EN
+TK	ID
 ngevlog	MIX-ID-EN
 😔	O
 https://t.co/gXRWOcbTGe	O
 
-Yutti	ID
+Yutti	O
 jalan2	ID
 sambil	ID
 ngevlog	MIX-ID-EN
@@ -12531,8 +12532,8 @@ bawa	ID
 adeknya	ID
 yg	ID
 masih	ID
-TK	EN
-Y	ID
+TK	ID
+Y	O
 :	O
 Halo	ID
 gaes	EN
@@ -12545,15 +12546,15 @@ ama	ID
 adekku	ID
 yg	ID
 masih	ID
-TK	EN
+TK	ID
 namanya	ID
-Daiki	JV
+Daiki	O
 D:	O
 Halo	ID
 !	O
 😁	O
 namaku	ID
-Daiki	JV
+Daiki	O
 umur	ID
 5	O
 tahun	ID
@@ -12564,15 +12565,15 @@ ini	ID
 kita	ID
 main	ID
 apa	ID
-Dai	ID
+Dai	O
 ?	O
 D:	O
 Sauna	ID
 yuk	ID
 !	O
-Y	ID
+Y	O
 :	O
-hush	EN
+hush	ID
 !	O
 main	ID
 ya	ID
@@ -12599,7 +12600,7 @@ guys	EN
 Walcome	EN
 back	EN
 my	EN
-YouTube	EN
+YouTube	O
 channel	EN
 "	O
 padahal	ID
@@ -12621,7 +12622,7 @@ guys	EN
 Walcome	EN
 back	EN
 my	EN
-YouTube	EN
+YouTube	O
 channel	EN
 "	O
 hahah	ID
@@ -12632,11 +12633,11 @@ ngevlog	MIX-ID-EN
 😭	O
 😭	O
 
-doyoung	ID
+doyoung	O
 tuh	ID
 tetep	ID
 aja	ID
-doyoung	ID
+doyoung	O
 ,	O
 mau	ID
 ke	ID
@@ -12650,11 +12651,11 @@ aja	ID
 seneng	ID
 banget	ID
 ngeliat	ID
-doyoung	ID
+doyoung	O
 joy	EN
 di	ID
 vlog	EN
-rv	EN
+rv	O
 beneran	ID
 kek	ID
 ngeliat	ID
@@ -12680,7 +12681,7 @@ liburan	ID
 @blueminapril	O
 Baru	ID
 pertama	ID
-ngedit	MIX-ID-EN
+ngedit	ID
 sama	ID
 baru	ID
 pertama	ID
@@ -13191,7 +13192,7 @@ tiba-tiba	ID
 aku	ID
 disamperin	ID
 sama	ID
-bule	EN
+bule	ID
 .	O
 😳	O
 
@@ -16128,7 +16129,7 @@ nder	EN
 .	O
 besok	ID
 lusa	ID
-paginya	MIX-ID-EN
+paginya	ID
 tinggal	ID
 survei	ID
 😎	O
@@ -17840,7 +17841,7 @@ ngantuk	ID
 emang	ID
 ga	ID
 bisa	ID
-ngedit	MIX-ID-EN
+ngedit	ID
 naskah	ID
 .	O
 Dadine	MIX-ID-JV
@@ -25810,7 +25811,7 @@ Atau	ID
 ngecheat	MIX-ID-EN
 naik	ID
 tiang	ID
-WKWK	ID
+WKWK	O
 
 @wonyounm	O
 Yaahh	ID
@@ -29345,7 +29346,7 @@ __	O
 ⭐	O
 *	O
 awalnya	ID
-doyoung	ID
+doyoung	O
 buat	ID
 postingan	MIX-ID-EN
 yang	ID
@@ -32035,7 +32036,7 @@ dah	ID
 pensiun	ID
 
 Di	ID
-instagram	EN
+instagram	O
 gw	ID
 lagi	ID
 ngetrend	MIX-ID-EN
@@ -32798,7 +32799,7 @@ sampe	ID
 trending	EN
 1	O
 on	EN
-YouTube	EN
+YouTube	O
 Music	EN
 Indonesiaa	ID
 !!	O
@@ -34499,7 +34500,7 @@ merugikan	ID
 orang	ID
 lain	ID
 😭	O
-WKWK	ID
+WKWK	O
 nnti	ID
 bisa	ID
 dituntut	ID
@@ -36457,7 +36458,7 @@ gtu	ID
 haha	O
 ,	O
 KIM	ID
-TAEHYUNG	ID
+TAEHYUNG	O
 si	ID
 anak	ID
 cakep	ID
@@ -37917,7 +37918,7 @@ TEGAA	ID
 padahal	ID
 buku	ID
 yang	ID
-dicari	MIX-ID-EN
+dicari	ID
 berkali	ID
 kali	ID
 sliweran	ID
@@ -38571,7 +38572,7 @@ bbrp	ID
 jam	ID
 bingung	ID
 mo	ID
-ngedit	MIX-ID-EN
+ngedit	ID
 apa	ID
 ..	O
 apa	ID
@@ -39002,7 +39003,7 @@ TUH	ID
 KALEM	ID
 BGT	ID
 JUJUR	ID
-WKWK	ID
+WKWK	O
 TP	ID
 GWS	EN
 BANGET	ID
@@ -41300,7 +41301,7 @@ disave	MIX-ID-EN
 editannya	MIX-ID-EN
 jd	ID
 ngulang	ID
-ngedit	MIX-ID-EN
+ngedit	ID
 lagi	ID
 makanya	ID
 lama	ID
@@ -41363,7 +41364,7 @@ banget	ID
 :')	O
 
 Lagi	ID
-ngedit	MIX-ID-EN
+ngedit	ID
 ,	O
 terus	ID
 lupa	ID
@@ -43658,7 +43659,7 @@ tidur	ID
 baru	ID
 cek	ID
 pas	ID
-paginya	MIX-ID-EN
+paginya	ID
 gua	ID
 bales	ID
 dong	ID
@@ -48743,7 +48744,7 @@ aja	ID
 diprivate	MIX-ID-EN
 
 itu	ID
-instagram	EN
+instagram	O
 bisa	ID
 ga	ID
 diprivate	MIX-ID-EN
@@ -49950,7 +49951,7 @@ sinkron	MIX-ID-JV
 Aku	ID
 sbg	ID
 guru	ID
-TK	EN
+TK	ID
 kadang	ID
 jg	ID
 bingung	ID
@@ -55070,7 +55071,7 @@ sopan	ID
 kami	ID
 santai	ID
 Anda	ID
-ngegas	MIX-ID-EN
+ngegas	ID
 betumbuk	ID
 pun	ID
 jadi	ID
@@ -56460,7 +56461,7 @@ Dihh	ID
 paan	ID
 sih	ID
 itu	ID
-bule	EN
+bule	ID
 amrik	ID
 sok	JV
 inggris	ID
@@ -57204,7 +57205,7 @@ skd	ID
 di	ID
 stan	EN
 ,	O
-apalah	JV
+apalah	ID
 gw	ID
 udah	ID
 nggak	ID
@@ -59336,7 +59337,7 @@ yang	ID
 ada	ID
 sekarang	ID
 harus	ID
-direbut	MIX-ID-EN
+direbut	ID
 dulu	ID
 .	O
 Pihak2	ID
@@ -69620,7 +69621,7 @@ aja	ID
 yg	ID
 ada	ID
 dicontact	MIX-ID-EN
-WKWK	ID
+WKWK	O
 
 !	O
 lapakjpwts	EN
@@ -70735,7 +70736,7 @@ sosmed	ID
 Trs	ID
 ga	ID
 ada	ID
-LinkedIn	EN
+LinkedIn	O
 juga	ID
 .	O
 Kaya	ID
@@ -71361,7 +71362,7 @@ kun	JV
 ,	O
 jungwoo	ID
 ,	O
-doyoung	ID
+doyoung	O
 ,	O
 mark	EN
 .	O
@@ -77297,7 +77298,7 @@ juga	ID
 lancar	ID
 lancar	ID
 aja	ID
-WKWK	ID
+WKWK	O
 giliran	ID
 gue	ID
 belajar	ID
@@ -77605,7 +77606,7 @@ online	EN
 cuma	ID
 search	EN
 mau	ID
-dicari	MIX-ID-EN
+dicari	ID
 doang	ID
 ,	O
 soalnya	ID
@@ -78361,7 +78362,7 @@ malah	ID
 ngefreeze	MIX-ID-EN
 pose	MIX-ID-JV
 legend	EN
-doyoung	ID
+doyoung	O
 😭	O
 😭	O
 https://t.co/6fNQ0Vr7NF	O
@@ -96498,7 +96499,7 @@ doang	ID
 sayangggg	ID
 banget	ID
 sama	ID
-doyoung	ID
+doyoung	O
 🥺	O
 ❤	O
 ️	O
@@ -96519,7 +96520,7 @@ sukses	ID
 terus	ID
 semua	ID
 projectnya	MIX-ID-EN
-doyoung	ID
+doyoung	O
 &	O
 lt	O
 ;	O
@@ -98544,7 +98545,7 @@ doang	ID
 
 @callhimjo	O
 Egk	ID
-diving	MIX-ID-EN
+diving	EN
 sih	ID
 ,	O
 cuma	ID
@@ -99600,7 +99601,7 @@ wis	JV
 seneng	ID
 Terus	ID
 Ngomong	ID
-dicari	MIX-ID-EN
+dicari	ID
 dulu	ID
 ya	ID
 jurnalnya	ID
@@ -103445,7 +103446,7 @@ sangat	ID
 indah	ID
 ,	O
 tertata	ID
-rapi	JV
+rapi	ID
 ,	O
 orang	ID
 luar	ID
@@ -114324,7 +114325,7 @@ ngguyu	JV
 .	O
 Anak	ID
 sik	JV
-TK	EN
+TK	ID
 dijak	ID
 nonton	ID
 spidermen	EN
@@ -114846,7 +114847,7 @@ dipikir	ID
 -	O
 ning	JV
 ,	O
-instagram	EN
+instagram	O
 digembok	MIX-ID-EN
 ,	O
 twitter	O
@@ -118372,8 +118373,8 @@ homecoming	EN
 sampe	ID
 akhirnya	ID
 ke	ID
-spider-man  O
-:   O
+spider-man	O
+:	O
 No	MIX-ID-EN
 Way	EN
 Home	EN
